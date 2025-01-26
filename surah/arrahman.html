@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah Al-arrahman</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1E1E2E;
+            color: #FFFFFF;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: #29293D;
+            padding: 20px;
+            display: none;
+        }
+
+        .sidebar.active {
+            display: block;
+        }
+
+        .sidebar h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar .search {
+            margin-bottom: 20px;
+        }
+
+        .sidebar .search input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background-color: #2F2F47;
+            color: white;
+        }
+
+        .sidebar .surah-list {
+        list-style-type: none;
+        padding: 0;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+    .sidebar .surah-list::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .sidebar .surah-list::-webkit-scrollbar-thumb {
+        background-color: #3A3A57;
+        border-radius: 5px;
+    }
+
+    .sidebar .surah-list::-webkit-scrollbar-thumb:hover {
+        background-color: #4B4B6A;
+    }
+
+        .sidebar .surah-list li {
+            padding: 10px;
+            background-color: #2F2F47;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .sidebar .surah-list li:hover {
+            background-color: #3A3A57;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: #1E1E2E;
+            padding: 20px;
+        }
+
+        .content .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content .header h1 {
+            font-size: 28px;
+        }
+
+        .content .ayah {
+            background-color: #29293D;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content .ayah .arabic {
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .content .ayah .translation {
+            font-size: 16px;
+            color: #B0B0C0;
+        }
+
+        .toggle-button {
+            display: block;
+            background-color: #3A3A57;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        span{
+            color:#0dd7de;
+        }
+
+        .a1{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 20%;
+                display: block;
+            }
+
+            .toggle-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-button" onclick="toggleSidebar()">Menu</button>
+        <div class="sidebar">
+            <h1><span>XII</span>TKJ 1</h1>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Cari Surah..." oninput="filterSurahs()">
+            </div>
+            <ul class="surah-list" id="surahList">
+                <li><a href="alfatihah.html" class="a1">1. Al-Fatihah</a></li>
+                <li><a href="Al-baqarah.html" class="a1">2. Al-Baqarah</a></li>
+                <li>3. Ali 'Imran</li>
+                <li>4. An-Nisa'</li>
+                <li>5. Al-Ma'idah</li>
+                <li>6. Al-An'am</li>
+                <li>7. Al-A'raf</li>
+                <li>8. Al-Anfal</li>
+                <li>9. At-Tawbah</li>
+                <li>10. Yunus</li>
+                <li>11. Hud</li>
+                <li>12. Yusuf</li>
+                <li>13. Ar-Ra'd</li>
+                <li>14. Ibrahim</li>
+                <li>15. Al-Hijr</li>
+                <li>16. An-Nahl</li>
+                <li>17. Al-Isra'</li>
+                <li>18. Al-Kahf</li>
+                <li>19. Maryam</li>
+                <li>20. Ta-Ha</li>
+                <li>21. Al-Anbiya'</li>
+                <li>22. Al-Hajj</li>
+                <li>23. Al-Mu'minun</li>
+                <li>24. An-Nur</li>
+                <li>25. Al-Furqan</li>
+                <li>26. Ash-Shu'ara'</li>
+                <li>27. An-Naml</li>
+                <li>28. Al-Qasas</li>
+                <li>29. Al-Ankabut</li>
+                <li>30. Ar-Rum</li>
+                <li>31. Luqman</li>
+                <li>32. As-Sajdah</li>
+                <li>33. Al-Ahzab</li>
+                <li>34. Saba'</li>
+                <li>35. Fatir</li>
+                <li>36. Ya-Sin</li>
+                <li>37. As-Saffat</li>
+                <li>38. Sad</li>
+                <li>39. Az-Zumar</li>
+                <li>40. Ghafir</li>
+                <li>41. Fussilat</li>
+                <li>42. Ash-Shura</li>
+                <li>43. Az-Zukhruf</li>
+                <li>44. Ad-Dukhan</li>
+                <li>45. Al-Jathiya</li>
+                <li>46. Al-Ahqaf</li>
+                <li>47. Muhammad</li>
+                <li>48. Al-Fath</li>
+                <li>49. Al-Hujurat</li>
+                <li>50. Qaf</li>
+                <li>51. Adh-Dhariyat</li>
+                <li>52. At-Tur</li>
+                <li>53. An-Najm</li>
+                <li>54. Al-Qamar</li>
+                <li>55. Ar-Rahman</li>
+                <li>56. Al-Waqi'ah</li>
+                <li>57. Al-Hadid</li>
+                <li>58. Al-Mujadila</li>
+                <li>59. Al-Hashr</li>
+                <li>60. Al-Mumtahanah</li>
+                <li>61. As-Saff</li>
+                <li>62. Al-Jumu'ah</li>
+                <li>63. Al-Munafiqun</li>
+                <li>64. At-Taghabun</li>
+                <li>65. At-Talaq</li>
+                <li>66. At-Tahrim</li>
+                <li>67. Al-Mulk</li>
+                <li>68. Al-Qalam</li>
+                <li>69. Al-Haqqah</li>
+                <li>70. Al-Ma'arij</li>
+                <li>71. Nuh</li>
+                <li>72. Al-Jinn</li>
+                <li>73. Al-Muzzammil</li>
+                <li>74. Al-Muddaththir</li>
+                <li>75. Al-Qiyamah</li>
+                <li>76. Al-Insan</li>
+                <li>77. Al-Mursalat</li>
+                <li><a href="../surah/an-naba.html" class="a1">78. An-Naba'</li></a> 
+                <li><a href="../surah/annaziat.html" class="a1">79. An-Nazi'at</li></a> 
+                <li><a href="../surah/abbasa.html" class="a1">80. Ab-basa</li></a> 
+                <li><a href="../surah/attakwir.html" class="a1">81. At-Takwir</li></a> 
+                <li><a href="../surah/alinfitar.html" class="a1">82. Al-Infitar</li></a> 
+                <li><a href="../surah/almutaffifin.html" class="a1">83. Al-Mutaffifin</li></a> 
+                <li><a href="../surah/al-insyiqaq.html" class="a1">84. Al-Inshiqaq</li></a> 
+                <li><a href="../surah/alburuj.html" class="a1">85. Al-Buruj</li></a> 
+                <li><a href="../surah/attariq.html" class="a1">86. At-Tariq</li></a> 
+                <li><a href="../surah/al-ala.html" class="a1">87. Al-A'la</li></a> 
+                <li><a href="../surah/algasyiyah.html" class="a1">88. Al-Ghashiyah</li></a> 
+                <li><a href="../surah/alfajr.html" class="a1">89. Al-Fajr</li></a> 
+                <li><a href="../surah/albalad.html" class="a1">90. Al-Balad</li></a> 
+                <li><a href="../surah/assyam.html" class="a1">91. Ash-Shams</li></a> 
+                <li><a href="../surah/allail.html" class="a1">92. Al-Lail</li></a> 
+                <li><a href="../surah/adduha.html" class="a1">93. Ad-Duha</li></a> 
+                <li><a href="../surah/alinsyirah.html" class="a1">94. Al-Insyirah</li></a> 
+                <li><a href="../surah/attin.html" class="a1">95. At-Tin</li></a> 
+                <li><a href="../surah/alalaq.html" class="a1">96. Al-Alaq</li></a> 
+                <li><a href="../surah/alqadr" class="a1">97. Al-Qadr</li></a> 
+                <li><a href="../surah/albayyinah.html" class="a1">98. Al-Bayyinah</li></a> 
+                <li><a href="../surah/alzalzalah.html" class="a1">99. Az-Zalzalah</li></a> 
+                <li><a href="../surah/aladiyat.html" class="a1">100. Al-Adiyat</li></a> 
+                <li><a href="../surah/alqoriah.html" class="a1">101. Al-Qari'ah</li></a> 
+                <li><a href="../surah/attakasur.html" class="a1">102. At-Takasur</li></a> 
+                <li><a href="../surah/alasr.html" class="a1">103. Al-Asr</li></a> 
+                <li><a href="../surah/alhumazah.html" class="a1">104. Al-Humazah</li></a> 
+                <li><a href="../surah/alfil.html" class="a1">105. Al-Fil</li></a> 
+                <li><a href="../surah/alquraisy.html" class="a1">106. Quraysh</li></a> 
+                <li><a href="../surah/almaun.html" class="a1">107. Al-Ma'un</li></a> 
+                <li><a href="../surah/alkausar.html" class="a1">108. Al-Kausar</li></a> 
+                <li><a href="../surah/alkafirun.html" class="a1">109. Al-Kafirun</li></a> 
+                <li><a href="../surah/annasr.html" class="a1">110. An-Nasr</li></a> 
+                <li><a href="../surah/allahab.html" class="a1">111. Al-Masad</li></a> 
+                <li><a href="../surah/alikhlas.html" class="a1">112. Al-Ikhlas</li></a> 
+                <li><a href="../surah/alfalaq.html" class="a1">113. Al-Falaq</li></a> 
+                <li><a href="../surah/annas.html" class="a1">114. An-Nas</li></a>                           
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>Surah Al-arrahman</h1>
+            </div>
+            <div class="ayah">
+                <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <div class="translation">Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.</div>
+            <div class="ayah">
+                <div class="arabic">١. ٱلرَّحۡمَٰنُ</div>
+                <div class="translation">1. (Allah) Yang Maha Pengasih,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢. عَلَّمَ ٱلۡقُرۡءَانَ</div>
+                <div class="translation">2. yang telah mengajarkan Al-Qur'an.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣. خَلَقَ ٱلۡإِنسَٰنَ</div>
+                <div class="translation">3. Dia menciptakan manusia,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤. عَلَّمَهُ ٱلۡبَيَانَ</div>
+                <div class="translation">4. mengajarnya pandai berbicara.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥. ٱلشَّمۡسُ وَٱلۡقَمَرُ بِحُسۡبَانٖ</div>
+                <div class="translation">5. Matahari dan bulan (beredar) menurut perhitungan,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦. وَٱلنَّجۡمُ وَٱلشَّجَرُ يَسۡجُدَانِ</div>
+                <div class="translation">6. dan tumbuh-tumbuhan serta pohon-pohonan, keduanya tunduk (kepada-Nya).</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧. وَٱلسَّمَآءَ رَفَعَهَا وَوَضَعَ ٱلۡمِيزَانَ</div>
+                <div class="translation">7. Dan langit telah ditinggikan-Nya dan Dia ciptakan keseimbangan,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٨. أَلَّا تَطۡغَوۡاْ فِي ٱلۡمِيزَانِ</div>
+                <div class="translation">8. agar kamu jangan merusak keseimbangan itu,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٩. وَأَقِيمُواْ ٱلۡوَزۡنَ بِٱلۡقِسۡطِ وَلَا تُخۡسِرُواْ ٱلۡمِيزَانَ</div>
+                <div class="translation">9. dan tegakkanlah timbangan itu dengan adil dan janganlah kamu mengurangi neraca itu.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٠. وَٱلۡأَرۡضَ وَضَعَهَا لِلۡأَنَامِ</div>
+                <div class="translation">10. Dan bumi telah dibentangkan-Nya untuk makhluk(-Nya),</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١١. فِيهَا فَٰكِهَةٞ وَٱلنَّخۡلُ ذَاتُ ٱلۡأَكۡمَامِ</div>
+                <div class="translation">11. di dalamnya ada buah-buahan dan pohon kurma yang mempunyai kelopak mayang,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٢. وَٱلۡحَبُّ ذُو ٱلۡعَصۡفِ وَٱلرَّيۡحَانُ</div>
+                <div class="translation">12. serta biji-bijian yang berkulit dan bunga-bunga yang harum baunya.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٣. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">13. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٤. خَلَقَ ٱلۡإِنسَٰنَ مِن صَلۡصَٰلٖ كَٱلۡفَخَّارِ</div>
+                <div class="translation">14. Dia menciptakan manusia dari tanah kering seperti tembikar,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٥. وَخَلَقَ ٱلۡجَآنَّ مِن مَّارِجٖ مِّن نَّارٖ</div>
+                <div class="translation">15. dan Dia menciptakan jin dari nyala api tanpa asap,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٦. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">16. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٧. رَبُّ ٱلۡمَشۡرِقَيۡنِ وَرَبُّ ٱلۡمَغۡرِبَيۡنِ</div>
+                <div class="translation">17. (Dia adalah) Tuhan dua timur dan Tuhan dua barat.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٨. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">18. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">١٩. مَرَجَ ٱلۡبَحۡرَيۡنِ يَلۡتَقِيَانِ</div>
+                <div class="translation">19. Dia membiarkan dua laut mengalir yang keduanya kemudian bertemu,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٠. بَيۡنَهُمَا بَرۡزَخٞ لَّا يَبۡغِيَانِ</div>
+                <div class="translation">20. antara keduanya ada batas yang tidak dilampaui masing-masing.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢١. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">21. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٢. يَخۡرُجُ مِنۡهُمَا ٱللُّؤۡلُؤُ وَٱلۡمَرۡجَانُ</div>
+                <div class="translation">22. Dari keduanya keluar mutiara dan marjan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٣. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">23. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٤. وَلَهُ ٱلۡجَوَارِ ٱلۡمُنشَـَٔاتُ فِي ٱلۡبَحۡرِ كَٱلۡأَعۡلَٰمِ</div>
+                <div class="translation">24. Dan milik-Nya kapal-kapal yang tinggi layarnya di lautan laksana gunung-gunung.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٥. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">25. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٦. كُلُّ مَنۡ عَلَيۡهَا فَانٖ</div>
+                <div class="translation">26. Semua yang ada di bumi itu akan binasa,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٧. وَيَبۡقَىٰ وَجۡهُ رَبِّكَ ذُو ٱلۡجَلَٰلِ وَٱلۡإِكۡرَامِ</div>
+                <div class="translation">27. dan tetap kekal Wajah Tuhanmu yang mempunyai kebesaran dan kemuliaan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٨. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">28. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢٩. يَسۡـَٔلُهُۥ مَن فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۚ كُلَّ يَوۡمٍ هُوَ فِي شَأۡنٖ</div>
+                <div class="translation">29. Semua yang ada di langit dan di bumi selalu meminta kepada-Nya. Setiap waktu Dia dalam kesibukan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٠. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">30. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣١. سَنَفۡرُغُ لَكُمۡ أَيُّهَ ٱلثَّقَلَانِ</div>
+                <div class="translation">31. Kami akan memperhatikan sepenuhnya kepadamu, wahai golongan jin dan manusia!</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٢. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">32. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٣. يَٰمَعۡشَرَ ٱلۡجِنِّ وَٱلۡإِنسِ إِنِ ٱسۡتَطَعۡتُمۡ أَن تَنفُذُواْ مِنۡ أَقۡطَارِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ فَٱنفُذُواْۚ لَا تَنفُذُونَ إِلَّا بِسُلۡطَٰنٖ</div>
+                <div class="translation">33. Wahai golongan jin dan manusia, jika kamu sanggup menembus (melintasi) penjuru langit dan bumi, maka tembuslah; kamu tidak akan mampu menembusnya kecuali dengan kekuatan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٤. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">34. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٥. يُرۡسَلُ عَلَيۡكُمَا شُوَاظٞ مِّن نَّارٖ وَنُحَاسٞ فَلَا تَنتَصِرَانِ</div>
+                <div class="translation">35. Kepadamu berdua akan dikirim nyala api dan cairan tembaga sehingga kamu tidak dapat menyelamatkan diri (daripadanya).</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٦. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">36. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٧. فَإِذَا ٱنشَقَّتِ ٱلسَّمَآءُ فَكَانَتۡ وَرۡدَةٗ كَٱلدِّهَانِ</div>
+                <div class="translation">37. Maka apabila langit telah terbelah dan menjadi merah seperti (kilapan) minyak,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٨. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">38. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣٩. فَيَوۡمَئِذٖ لَّا يُسۡـَٔلُ عَن ذَنۢبِهِۦٓ إِنسٞ وَلَا جَآنّٞ</div>
+                <div class="translation">39. Maka pada hari itu manusia dan jin tidak ditanya tentang dosanya.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٠. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">40. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤١. يُعۡرَفُ ٱلۡمُجۡرِمُونَ بِسِيمَٰهُمۡ فَيُؤۡخَذُ بِٱلنَّوَٰصِي وَٱلۡأَقۡدَامِ</div>
+                <div class="translation">41. Orang-orang yang berdosa dikenal dengan tanda-tandanya, lalu dipegang ubun-ubun dan kaki mereka.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٢. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">42. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٣. هَٰذِهِۦ جَهَنَّمُ ٱلَّتِي يُكَذِّبُ بِهَا ٱلۡمُجۡرِمُونَ</div>
+                <div class="translation">43. Inilah neraka Jahannam yang didustakan oleh orang-orang yang berdosa.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٤. يَطُوفُونَ بَيۡنَهَا وَبَيۡنَ حَمِيمِۭ ءَانٖ</div>
+                <div class="translation">44. Mereka berkeliling di antaranya dan di antara air yang mendidih yang memuncak panasnya.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٥. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">45. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٦. وَلِمَنۡ خَافَ مَقَامَ رَبِّهِۦ جَنَّتَانِ</div>
+                <div class="translation">46. Dan bagi siapa yang takut akan saat menghadap Tuhannya ada dua surga,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٧. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">47. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٨. ذَوَاتَآ أَفۡنَانٖ</div>
+                <div class="translation">48. (Kedua surga itu) mempunyai pohon-pohonan dan buah-buahan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٤٩. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">49. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٠. فِيهِمَا عَيۡنَانِ تَجۡرِيَانِ</div>
+                <div class="translation">50. Di dalam kedua surga itu ada dua mata air yang mengalir.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥١. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">51. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٢. فِيهِمَا مِن كُلِّ فَٰكِهَةٖ زَوۡجَانِ</div>
+                <div class="translation">52. Di dalam kedua surga itu terdapat segala macam buah-buahan yang berpasangan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٣. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">53. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٤. مُتَّكِـِٔينَ عَلَىٰ فُرُشِۭ بَطَآئِنُهَا مِنۡ إِسۡتَبۡرَقٖۖ وَجَنَى ٱلۡجَنَّتَيۡنِ دَانٖ</div>
+                <div class="translation">54. Mereka bertelekan di atas permadani yang sebelah dalamnya dari sutra tebal, dan buah-buahan kedua surga itu dekat (dijangkau).</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٥. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">55. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٦. فِيهِنَّ قَٰصِرَٰتُ ٱلطَّرۡفِ لَمۡ يَطۡمِثۡهُنَّ إِنسٞ قَبۡلَهُمۡ وَلَا جَآنّٞ</div>
+                <div class="translation">56. Di dalam surga itu ada bidadari-bidadari yang sopan, menundukkan pandangannya, yang tidak pernah disentuh oleh manusia maupun jin sebelumnya.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٧. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">57. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٨. كَأَنَّهُنَّ ٱلۡيَاقُوتُ وَٱلۡمَرۡجَانُ</div>
+                <div class="translation">58. Seakan-akan bidadari itu permata yakut dan marjan.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٥٩. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">59. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٠. هَلۡ جَزَآءُ ٱلۡإِحۡسَٰنِ إِلَّا ٱلۡإِحۡسَٰنُ</div>
+                <div class="translation">60. Tidak ada balasan kebaikan kecuali kebaikan (pula).</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦١. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">61. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٢. وَمِن دُونِهِمَا جَنَّتَانِ</div>
+                <div class="translation">62. Dan selain dari dua surga itu ada dua surga lagi.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٣. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">63. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٤. مُدۡهَآمَّتَانِ</div>
+                <div class="translation">64. Kedua surga itu (kelihatan) hijau tua warnanya.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٥. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">65. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٦. فِيهِمَا عَيۡنَانِ نَضَّاخَتَانِ</div>
+                <div class="translation">66. Di dalam kedua surga itu ada dua mata air yang memancar.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٧. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">67. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٨. فِيهِمَا فَٰكِهَةٞ وَنَخۡلٞ وَرُمَّانٞ</div>
+                <div class="translation">68. Di dalam kedua surga itu ada (macam-macam) buah-buahan, kurma dan delima.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٦٩. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">69. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٠. فِيهِنَّ خَيۡرَٰتٌ حِسَانٌ</div>
+                <div class="translation">70. Di dalam surga-surga itu ada bidadari yang baik-baik lagi cantik-cantik.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧١. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">71. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٢. حُورٞ مَّقۡصُورَٰتٞ فِي ٱلۡخِيَامِ</div>
+                <div class="translation">72. (Bidadari-bidadari) yang jelita, yang dipelihara di dalam kemah-kemah.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٣. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">73. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٤. لَمۡ يَطۡمِثۡهُنَّ إِنسٞ قَبۡلَهُمۡ وَلَا جَآنّٞ</div>
+                <div class="translation">74. Mereka belum pernah disentuh oleh manusia maupun jin sebelumnya.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٥. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">75. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٦. مُتَّكِـِٔينَ عَلَىٰ رَفۡرَفٍ خُضۡرٖ وَعَبۡقَرِيٍّ حِسَانٍ</div>
+                <div class="translation">76. Mereka bersandar di atas bantal-bantal yang hijau dan permadani yang indah.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٧. فَبِأَيِّ ءَالَآءِ رَبِّكُمَا تُكَذِّبَانِ</div>
+                <div class="translation">77. Maka nikmat Tuhanmu yang manakah yang kamu dustakan?</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٧٨. تَبَٰرَكَ ٱسۡمُ رَبِّكَ ذِي ٱلۡجَلَٰلِ وَٱلۡإِكۡرَامِ</div>
+                <div class="translation">78. Maha Suci nama Tuhanmu yang memiliki kebesaran dan kemuliaan.</div>
+            </div>
+                                                            
+            </div>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        function filterSurahs() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const surahList = document.getElementById('surahList');
+            const surahs = surahList.getElementsByTagName('li');
+
+            for (let i = 0; i < surahs.length; i++) {
+                const txtValue = surahs[i].textContent || surahs[i].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    surahs[i].style.display = "";
+                } else {
+                    surahs[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

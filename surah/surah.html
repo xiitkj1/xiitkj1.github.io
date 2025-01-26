@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #ccc;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .tabs a.active {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .juz-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .juz-card {
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .juz-card:hover {
+            transform: translateY(-10px);
+            background-color: #333;
+        }
+
+        .juz-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .juz-header .juz-number {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .juz-header h3 {
+            margin: 0;
+        }
+
+        .juz-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .juz-info span {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        .read-link {
+            text-decoration: none;
+            color: #00bcd4;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .tabs {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .juz-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <a href="#" class="active">Surah</a>
+            <a href="juz.html">Juz</a>
+        </div>
+
+        <div class="juz-container">
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">1</div>
+                    <h3>Al-Fatihah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pembukaan</span>
+                    <span>7 Ayat</span>
+                </div>
+                <a href="../surah/alfatihah.html" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">2</div>
+                    <h3>Al-Baqarah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Sapi Betina</span>
+                    <span>286 Ayat</span>
+                </div>
+                <a href="../surah/Al-baqarah.html" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">3</div>
+                    <h3>Ali 'Imran</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Keluarga Imran</span>
+                    <span>200 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">4</div>
+                    <h3>An-Nisa</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Wanita</span>
+                    <span>176 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">5</div>
+                    <h3>Al-Ma'idah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hidangan</span>
+                    <span>120 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">6</div>
+                    <h3>Al-An'am</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hewan Ternak</span>
+                    <span>165 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">7</div>
+                    <h3>Al-A'raf</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Tempat Tertinggi</span>
+                    <span>206 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">8</div>
+                    <h3>Al-Anfal</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Rampasan Perang</span>
+                    <span>75 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">9</div>
+                    <h3>At-Tawbah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pertobatan</span>
+                    <span>129 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">10</div>
+                    <h3>Yunus</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Nabi Yunus</span>
+                    <span>109 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">11</div>
+                    <h3>Hud</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Nabi Hud</span>
+                    <span>123 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">12</div>
+                    <h3>Yusuf</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Nabi Yusuf</span>
+                    <span>111 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">13</div>
+                    <h3>Ar-Ra'd</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Guruh</span>
+                    <span>43 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">14</div>
+                    <h3>Ibrahim</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Nabi Ibrahim</span>
+                    <span>52 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">15</div>
+                    <h3>Al-Hijr</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Gunung Al-Hijr</span>
+                    <span>99 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">16</div>
+                    <h3>An-Nahl</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Lebah</span>
+                    <span>128 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">17</div>
+                    <h3>Al-Isra</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Perjalanan Malam</span>
+                    <span>111 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">18</div>
+                    <h3>Al-Kahf</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Gua</span>
+                    <span>110 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">19</div>
+                    <h3>Maryam</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Maryam</span>
+                    <span>98 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">20</div>
+                    <h3>Ta-Ha</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Ta-Ha</span>
+                    <span>135 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">21</div>
+                    <h3>Al-Anbiya</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Para Nabi</span>
+                    <span>112 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">22</div>
+                    <h3>Al-Hajj</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Haji</span>
+                    <span>78 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">23</div>
+                    <h3>Al-Mu'minun</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Orang-Orang Mukmin</span>
+                    <span>118 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">24</div>
+                    <h3>An-Nur</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Cahaya</span>
+                    <span>64 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">25</div>
+                    <h3>Al-Furqan</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pembeda</span>
+                    <span>77 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">26</div>
+                    <h3>Asy-Syu'ara</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Penyair</span>
+                    <span>227 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">27</div>
+                    <h3>An-Naml</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Semut</span>
+                    <span>93 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">28</div>
+                    <h3>Al-Qasas</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kisah-Kisah</span>
+                    <span>88 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">29</div>
+                    <h3>Al-Ankabut</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Laba-Laba</span>
+                    <span>69 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">30</div>
+                    <h3>Ar-Rum</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bangsa Romawi</span>
+                    <span>60 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">31</div>
+                    <h3>Luqman</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Luqman</span>
+                    <span>34 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">32</div>
+                    <h3>As-Sajdah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Sujud</span>
+                    <span>30 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">33</div>
+                    <h3>Al-Ahzab</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Golongan Yang Bersekutu</span>
+                    <span>73 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">34</div>
+                    <h3>Saba'</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kaum Saba</span>
+                    <span>54 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">35</div>
+                    <h3>Fatir</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pencipta</span>
+                    <span>45 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">36</div>
+                    <h3>Yasin</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Yasin</span>
+                    <span>83 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">37</div>
+                    <h3>As-Saffat</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Barisan-Barisan</span>
+                    <span>182 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">38</div>
+                    <h3>Sad</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Sad</span>
+                    <span>88 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">39</div>
+                    <h3>Az-Zumar</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Rombongan-Rombongan</span>
+                    <span>75 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">40</div>
+                    <h3>Ghafir</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Maha Pengampun</span>
+                    <span>85 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">41</div>
+                    <h3>Fussilat</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Yang Dijelaskan</span>
+                    <span>54 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">42</div>
+                    <h3>Asy-Syura</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Musyawarah</span>
+                    <span>53 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">43</div>
+                    <h3>Az-Zukhruf</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Perhiasan</span>
+                    <span>89 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">44</div>
+                    <h3>Ad-Dukhan</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Asap</span>
+                    <span>59 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">45</div>
+                    <h3>Al-Jasiyah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Yang Berlutut</span>
+                    <span>37 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">46</div>
+                    <h3>Al-Ahqaf</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bukit-Bukit Pasir</span>
+                    <span>35 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">47</div>
+                    <h3>Muhammad</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Nabi Muhammad</span>
+                    <span>38 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">48</div>
+                    <h3>Al-Fath</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kemenangan</span>
+                    <span>29 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">49</div>
+                    <h3>Al-Hujurat</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kamar-Kamar</span>
+                    <span>18 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">50</div>
+                    <h3>Qaf</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Qaf</span>
+                    <span>45 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">51</div>
+                    <h3>Adz-Dzariyat</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Angin Yang Menerbangkan</span>
+                    <span>60 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">52</div>
+                    <h3>At-Tur</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bukit</span>
+                    <span>49 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">53</div>
+                    <h3>An-Najm</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bintang</span>
+                    <span>62 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">54</div>
+                    <h3>Al-Qamar</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bulan</span>
+                    <span>55 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">55</div>
+                    <h3>Ar-Rahman</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Maha Pemurah</span>
+                    <span>78 Ayat</span>
+                </div>
+                <a href="../surah/arrahman.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">56</div>
+                    <h3>Al-Waqi'ah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kiamat</span>
+                    <span>96 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">57</div>
+                    <h3>Al-Hadid</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Besi</span>
+                    <span>29 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">58</div>
+                    <h3>Al-Mujadilah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Wanita Yang Mengajukan Gugatan</span>
+                    <span>22 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">59</div>
+                    <h3>Al-Hasyr</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pengusiran</span>
+                    <span>24 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">60</div>
+                    <h3>Al-Mumtahanah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Wanita Yang Diuji</span>
+                    <span>13 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">61</div>
+                    <h3>As-Saff</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Barisan</span>
+                    <span>14 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">62</div>
+                    <h3>Al-Jumu'ah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hari Jumat</span>
+                    <span>11 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">63</div>
+                    <h3>Al-Munafiqun</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Orang-Orang Munafik</span>
+                    <span>11 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">64</div>
+                    <h3>At-Tagabun</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hari Ditampakkan Kesalahan</span>
+                    <span>18 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">65</div>
+                    <h3>At-Talaq</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Talak</span>
+                    <span>12 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">66</div>
+                    <h3>At-Tahrim</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pengharaman</span>
+                    <span>12 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">67</div>
+                    <h3>Al-Mulk</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kerajaan</span>
+                    <span>30 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">68</div>
+                    <h3>Al-Qalam</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pena</span>
+                    <span>52 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">69</div>
+                    <h3>Al-Haqqah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hari Kiamat</span>
+                    <span>52 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">70</div>
+                    <h3>Al-Ma'arij</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Tempat-Tempat Naik</span>
+                    <span>44 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">71</div>
+                    <h3>Nuh</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Nabi Nuh</span>
+                    <span>28 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">72</div>
+                    <h3>Al-Jinn</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Jin</span>
+                    <span>28 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">73</div>
+                    <h3>Al-Muzzammil</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Orang Yang Berselimut</span>
+                    <span>20 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">74</div>
+                    <h3>Al-Muddassir</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Orang Yang Berkemul</span>
+                    <span>56 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">75</div>
+                    <h3>Al-Qiyamah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hari Kiamat</span>
+                    <span>40 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">76</div>
+                    <h3>Al-Insan</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Manusia</span>
+                    <span>31 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">77</div>
+                    <h3>Al-Mursalat</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Malaikat Yang Diutus</span>
+                    <span>50 Ayat</span>
+                </div>
+                <a href="#" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">78</div>
+                    <h3>An-Naba'</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Berita Besar</span>
+                    <span>40 Ayat</span>
+                </div>
+                <a href="../surah/an-naba.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">79</div>
+                    <h3>An-Nazi'at</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Malaikat Yang Mencabut</span>
+                    <span>46 Ayat</span>
+                </div>
+                <a href="../surah/annaziat.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">80</div>
+                    <h3>Abasa</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Ia Bermuka Masam</span>
+                    <span>42 Ayat</span>
+                </div>
+                <a href="../surah/abbasa.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">81</div>
+                    <h3>At-Takwir</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Menggulung</span>
+                    <span>29 Ayat</span>
+                </div>
+                <a href="../surah/attakwir.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">82</div>
+                    <h3>Al-Infitar</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Terbelah</span>
+                    <span>19 Ayat</span>
+                </div>
+                <a href="../surah/alinfitar.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">83</div>
+                    <h3>Al-Mutaffifin</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Orang-Orang yang Curang</span>
+                    <span>36 Ayat</span>
+                </div>
+                <a href="../surah/almutaffifin.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">84</div>
+                    <h3>Al-Insyiqaq</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Terbelah</span>
+                    <span>25 Ayat</span>
+                </div>
+                <a href="../surah/al-insyiqaq.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">85</div>
+                    <h3>Al-Buruj</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Gugusan Bintang</span>
+                    <span>22 Ayat</span>
+                </div>
+                <a href="../surah/alburuj.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">86</div>
+                    <h3>At-Tariq</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bintang yang Datang di Malam Hari</span>
+                    <span>17 Ayat</span>
+                </div>
+                <a href="../surah/attariq.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">87</div>
+                    <h3>Al-A'la</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Maha Tinggi</span>
+                    <span>19 Ayat</span>
+                </div>
+                <a href="../surah/al-ala.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">88</div>
+                    <h3>Al-Gasyiyah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hari Pembalasan</span>
+                    <span>26 Ayat</span>
+                </div>
+                <a href="../surah/algasyiyah.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">89</div>
+                    <h3>Al-Fajr</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Fajar</span>
+                    <span>30 Ayat</span>
+                </div>
+                <a href="../surah/alfajr.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">90</div>
+                    <h3>Al-Balad</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Negeri</span>
+                    <span>20 Ayat</span>
+                </div>
+                <a href="../surah/albalad.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">91</div>
+                    <h3>Asy-Syams</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Matahari</span>
+                    <span>15 Ayat</span>
+                </div>
+                <a href="../surah/assyam.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">92</div>
+                    <h3>Al-Lail</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Malam</span>
+                    <span>21 Ayat</span>
+                </div>
+                <a href="../surah/allail.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">93</div>
+                    <h3>Ad-Dhuha</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Waktu Dhuha</span>
+                    <span>11 Ayat</span>
+                </div>
+                <a href="../surah/adduha.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">94</div>
+                    <h3>Al-Insyirah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kelapangan</span>
+                    <span>8 Ayat</span>
+                </div>
+                <a href="../surah/alinsyirah.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">95</div>
+                    <h3>At-Tin</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Buah Tin</span>
+                    <span>8 Ayat</span>
+                </div>
+                <a href="../surah/attin.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">96</div>
+                    <h3>Al-'Alaq</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Segumpal Darah</span>
+                    <span>19 Ayat</span>
+                </div>
+                <a href="../surah/alalaq.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">97</div>
+                    <h3>Al-Qadr</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Malam Kemuliaan</span>
+                    <span>5 Ayat</span>
+                </div>
+                <a href="../surah/alqadr" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">98</div>
+                    <h3>Al-Bayyinah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bukti Yang Nyata</span>
+                    <span>8 Ayat</span>
+                </div>
+                <a href="../surah/albayyinah.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">99</div>
+                    <h3>Az-Zalzalah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Goncangan</span>
+                    <span>8 Ayat</span>
+                </div>
+                <a href="../surah/alzalzalah.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">100</div>
+                    <h3>Al-'Adiyat</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Kuda Yang Berlari Kencang</span>
+                    <span>11 Ayat</span>
+                </div>
+                <a href="../surah/aladiyat.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">101</div>
+                    <h3>Al-Qari'ah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Hari Kiamat</span>
+                    <span>11 Ayat</span>
+                </div>
+                <a href="../surah/alqoriah.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">102</div>
+                    <h3>At-Takasur</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Bermegah-Megahan</span>
+                    <span>8 Ayat</span>
+                </div>
+                <a href="../surah/attakasur.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">103</div>
+                    <h3>Al-'Asr</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Waktu</span>
+                    <span>3 Ayat</span>
+                </div>
+                <a href="../surah/alasr.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">104</div>
+                    <h3>Al-Humazah</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pencela</span>
+                    <span>9 Ayat</span>
+                </div>
+                <a href="../surah/alhumazah.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">105</div>
+                    <h3>Al-Fil</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Gajah</span>
+                    <span>5 Ayat</span>
+                </div>
+                <a href="../surah/alfil.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">106</div>
+                    <h3>Quraisy</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Suku Quraisy</span>
+                    <span>4 Ayat</span>
+                </div>
+                <a href="../surah/alquraisy.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">107</div>
+                    <h3>Al-Ma'un</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Barang-Barang Yang Berguna</span>
+                    <span>7 Ayat</span>
+                </div>
+                <a href="../surah/almaun.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">108</div>
+                    <h3>Al-Kausar</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Karunia Yang Banyak</span>
+                    <span>3 Ayat</span>
+                </div>
+                <a href="../surah/alkausar.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">109</div>
+                    <h3>Al-Kafirun</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Orang-Orang Kafir</span>
+                    <span>6 Ayat</span>
+                </div>
+                <a href="../surah/alkafirun.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">110</div>
+                    <h3>An-Nasr</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Pertolongan</span>
+                    <span>3 Ayat</span>
+                </div>
+                <a href="../surah/annasr.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">111</div>
+                    <h3>Al-Lahab</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Gejolak Api</span>
+                    <span>5 Ayat</span>
+                </div>
+                <a href="../surah/allahab.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">112</div>
+                    <h3>Al-Ikhlas</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Ikhlas</span>
+                    <span>4 Ayat</span>
+                </div>
+                <a href="../surah/alikhlas.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">113</div>
+                    <h3>Al-Falaq</h3>
+                </div>
+                <div class="juz-info">
+                    <span>Waktu Subuh</span>
+                    <span>5 Ayat</span>
+                </div>
+                <a href="../surah/alfalaq.html" class="read-link">Baca Surah</a>
+            </div>
+            <div class="juz-card">
+                <div class="juz-header">
+                    <div class="juz-number">114</div>
+                    <h3>An-Nas</h3>
+                </div>
+                <a href="../surah/annas.html">
+                <div class="juz-info">
+                    <span>Manusia</span>
+                    <span>6 Ayat</span>
+                </div>
+                <a href="annas.html" class="read-link">Baca Surah</a>
+            </div>                                                                                    
+        </div>
+    </div>
+</body>
+</html>

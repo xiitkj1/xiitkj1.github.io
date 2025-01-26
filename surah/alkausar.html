@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surah Al-kausar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1E1E2E;
+            color: #FFFFFF;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 100%;
+            background-color: #29293D;
+            padding: 20px;
+            display: none;
+        }
+
+        .sidebar.active {
+            display: block;
+        }
+
+        .sidebar h1 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .sidebar .search {
+            margin-bottom: 20px;
+        }
+
+        .sidebar .search input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            background-color: #2F2F47;
+            color: white;
+        }
+
+        .sidebar .surah-list {
+        list-style-type: none;
+        padding: 0;
+        max-height: 600px;
+        overflow-y: auto;
+    }
+
+    .sidebar .surah-list::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .sidebar .surah-list::-webkit-scrollbar-thumb {
+        background-color: #3A3A57;
+        border-radius: 5px;
+    }
+
+    .sidebar .surah-list::-webkit-scrollbar-thumb:hover {
+        background-color: #4B4B6A;
+    }
+
+        .sidebar .surah-list li {
+            padding: 10px;
+            background-color: #2F2F47;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .sidebar .surah-list li:hover {
+            background-color: #3A3A57;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: #1E1E2E;
+            padding: 20px;
+        }
+
+        .content .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content .header h1 {
+            font-size: 28px;
+        }
+
+        .content .ayah {
+            background-color: #29293D;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content .ayah .arabic {
+            font-size: 24px;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .content .ayah .translation {
+            font-size: 16px;
+            color: #B0B0C0;
+        }
+
+        .toggle-button {
+            display: block;
+            background-color: #3A3A57;
+            color: white;
+            border: none;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        span{
+            color:#0dd7de;
+        }
+
+        .a1{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .sidebar {
+                width: 20%;
+                display: block;
+            }
+
+            .toggle-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="toggle-button" onclick="toggleSidebar()">Menu</button>
+        <div class="sidebar">
+            <h1><span>XII</span>TKJ 1</h1>
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Cari Surah..." oninput="filterSurahs()">
+            </div>
+            <ul class="surah-list" id="surahList">
+                <li><a href="alfatihah.html" class="a1">1. Al-Fatihah</a></li>
+                <li><a href="Al-baqarah.html" class="a1">2. Al-Baqarah</a></li>
+                <li>3. Ali 'Imran</li>
+                <li>4. An-Nisa'</li>
+                <li>5. Al-Ma'idah</li>
+                <li>6. Al-An'am</li>
+                <li>7. Al-A'raf</li>
+                <li>8. Al-Anfal</li>
+                <li>9. At-Tawbah</li>
+                <li>10. Yunus</li>
+                <li>11. Hud</li>
+                <li>12. Yusuf</li>
+                <li>13. Ar-Ra'd</li>
+                <li>14. Ibrahim</li>
+                <li>15. Al-Hijr</li>
+                <li>16. An-Nahl</li>
+                <li>17. Al-Isra'</li>
+                <li>18. Al-Kahf</li>
+                <li>19. Maryam</li>
+                <li>20. Ta-Ha</li>
+                <li>21. Al-Anbiya'</li>
+                <li>22. Al-Hajj</li>
+                <li>23. Al-Mu'minun</li>
+                <li>24. An-Nur</li>
+                <li>25. Al-Furqan</li>
+                <li>26. Ash-Shu'ara'</li>
+                <li>27. An-Naml</li>
+                <li>28. Al-Qasas</li>
+                <li>29. Al-Ankabut</li>
+                <li>30. Ar-Rum</li>
+                <li>31. Luqman</li>
+                <li>32. As-Sajdah</li>
+                <li>33. Al-Ahzab</li>
+                <li>34. Saba'</li>
+                <li>35. Fatir</li>
+                <li>36. Ya-Sin</li>
+                <li>37. As-Saffat</li>
+                <li>38. Sad</li>
+                <li>39. Az-Zumar</li>
+                <li>40. Ghafir</li>
+                <li>41. Fussilat</li>
+                <li>42. Ash-Shura</li>
+                <li>43. Az-Zukhruf</li>
+                <li>44. Ad-Dukhan</li>
+                <li>45. Al-Jathiya</li>
+                <li>46. Al-Ahqaf</li>
+                <li>47. Muhammad</li>
+                <li>48. Al-Fath</li>
+                <li>49. Al-Hujurat</li>
+                <li>50. Qaf</li>
+                <li>51. Adh-Dhariyat</li>
+                <li>52. At-Tur</li>
+                <li>53. An-Najm</li>
+                <li>54. Al-Qamar</li>
+                <li>55. Ar-Rahman</li>
+                <li>56. Al-Waqi'ah</li>
+                <li>57. Al-Hadid</li>
+                <li>58. Al-Mujadila</li>
+                <li>59. Al-Hashr</li>
+                <li>60. Al-Mumtahanah</li>
+                <li>61. As-Saff</li>
+                <li>62. Al-Jumu'ah</li>
+                <li>63. Al-Munafiqun</li>
+                <li>64. At-Taghabun</li>
+                <li>65. At-Talaq</li>
+                <li>66. At-Tahrim</li>
+                <li>67. Al-Mulk</li>
+                <li>68. Al-Qalam</li>
+                <li>69. Al-Haqqah</li>
+                <li>70. Al-Ma'arij</li>
+                <li>71. Nuh</li>
+                <li>72. Al-Jinn</li>
+                <li>73. Al-Muzzammil</li>
+                <li>74. Al-Muddaththir</li>
+                <li>75. Al-Qiyamah</li>
+                <li>76. Al-Insan</li>
+                <li>77. Al-Mursalat</li>
+                <li><a href="../surah/an-naba.html" class="a1">78. An-Naba'</li></a> 
+                <li><a href="../surah/annaziat.html" class="a1">79. An-Nazi'at</li></a> 
+                <li><a href="../surah/abbasa.html" class="a1">80. Ab-basa</li></a> 
+                <li><a href="../surah/attakwir.html" class="a1">81. At-Takwir</li></a> 
+                <li><a href="../surah/alinfitar.html" class="a1">82. Al-Infitar</li></a> 
+                <li><a href="../surah/almutaffifin.html" class="a1">83. Al-Mutaffifin</li></a> 
+                <li><a href="../surah/al-insyiqaq.html" class="a1">84. Al-Inshiqaq</li></a> 
+                <li><a href="../surah/alburuj.html" class="a1">85. Al-Buruj</li></a> 
+                <li><a href="../surah/attariq.html" class="a1">86. At-Tariq</li></a> 
+                <li><a href="../surah/al-ala.html" class="a1">87. Al-A'la</li></a> 
+                <li><a href="../surah/algasyiyah.html" class="a1">88. Al-Ghashiyah</li></a> 
+                <li><a href="../surah/alfajr.html" class="a1">89. Al-Fajr</li></a> 
+                <li><a href="../surah/albalad.html" class="a1">90. Al-Balad</li></a> 
+                <li><a href="../surah/assyam.html" class="a1">91. Ash-Shams</li></a> 
+                <li><a href="../surah/allail.html" class="a1">92. Al-Lail</li></a> 
+                <li><a href="../surah/adduha.html" class="a1">93. Ad-Duha</li></a> 
+                <li><a href="../surah/alinsyirah.html" class="a1">94. Al-Insyirah</li></a> 
+                <li><a href="../surah/attin.html" class="a1">95. At-Tin</li></a> 
+                <li><a href="../surah/alalaq.html" class="a1">96. Al-Alaq</li></a> 
+                <li><a href="../surah/alqadr" class="a1">97. Al-Qadr</li></a> 
+                <li><a href="../surah/albayyinah.html" class="a1">98. Al-Bayyinah</li></a> 
+                <li><a href="../surah/alzalzalah.html" class="a1">99. Az-Zalzalah</li></a> 
+                <li><a href="../surah/aladiyat.html" class="a1">100. Al-Adiyat</li></a> 
+                <li><a href="../surah/alqoriah.html" class="a1">101. Al-Qari'ah</li></a> 
+                <li><a href="../surah/attakasur.html" class="a1">102. At-Takasur</li></a> 
+                <li><a href="../surah/alasr.html" class="a1">103. Al-Asr</li></a> 
+                <li><a href="../surah/alhumazah.html" class="a1">104. Al-Humazah</li></a> 
+                <li><a href="../surah/alfil.html" class="a1">105. Al-Fil</li></a> 
+                <li><a href="../surah/alquraisy.html" class="a1">106. Quraysh</li></a> 
+                <li><a href="../surah/almaun.html" class="a1">107. Al-Ma'un</li></a> 
+                <li><a href="../surah/alkausar.html" class="a1">108. Al-Kausar</li></a> 
+                <li><a href="../surah/alkafirun.html" class="a1">109. Al-Kafirun</li></a> 
+                <li><a href="../surah/annasr.html" class="a1">110. An-Nasr</li></a> 
+                <li><a href="../surah/allahab.html" class="a1">111. Al-Masad</li></a> 
+                <li><a href="../surah/alikhlas.html" class="a1">112. Al-Ikhlas</li></a> 
+                <li><a href="../surah/alfalaq.html" class="a1">113. Al-Falaq</li></a> 
+                <li><a href="../surah/annas.html" class="a1">114. An-Nas</li></a>                           
+            </ul>
+        </div>
+        <div class="content">
+            <div class="header">
+                <h1>Surah Al-kausar</h1>
+            </div>
+            <div class="ayah">
+                <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+                <div class="translation">Dengan nama Allah Yang Maha Pengasih, Maha Penyayang.</div>
+            </div> 
+            <div class="ayah">
+                <div class="arabic">١. إِنَّآ أَعۡطَيۡنَٰكَ ٱلۡكَوۡثَرَ</div>
+                <div class="translation">1. Sungguh, Kami telah memberikan kepadamu (Muhammad) nikmat yang banyak,</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٢. فَصَلِّ لِرَبِّكَ وَٱنۡحَرۡ</div>
+                <div class="translation">2. maka laksanakanlah salat karena Tuhanmu, dan berkurbanlah.</div>
+            </div>
+            <div class="ayah">
+                <div class="arabic">٣. إِنَّ شَانِئَكَ هُوَ ٱلۡأَبۡتَرُ</div>
+                <div class="translation">3. Sungguh, orang-orang yang membencimu, dialah yang terputus (dari rahmat Allah).</div>
+            </div>
+            
+                                   
+        </div>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        function filterSurahs() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const surahList = document.getElementById('surahList');
+            const surahs = surahList.getElementsByTagName('li');
+
+            for (let i = 0; i < surahs.length; i++) {
+                const txtValue = surahs[i].textContent || surahs[i].innerText;
+                if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                    surahs[i].style.display = "";
+                } else {
+                    surahs[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

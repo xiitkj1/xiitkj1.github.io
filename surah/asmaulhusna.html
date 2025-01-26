@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmaul Husna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+           /* display: flex;*/
+           /* justify-content: space-between;*/
+           /* align-items: center;*/
+           text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+        }
+        .header select {
+            background-color: #1e1e1e;
+            color: white;
+            border: 1px solid #333;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .asmaul-husna {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .asmaul-husna-item {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            flex-direction: column;
+        }
+        .asmaul-husna-item .name {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .asmaul-husna-item .arabic {
+            font-size: 24px;
+            color: #00adb5;
+            margin-bottom: 10px;
+        }
+        .asmaul-husna-item .translation {
+            font-size: 16px;
+            color: #cccccc;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            .asmaul-husna-item .name {
+                font-size: 16px;
+            }
+            .asmaul-husna-item .arabic {
+                font-size: 20px;
+            }
+            .asmaul-husna-item .translation {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const select = document.querySelector(".header select");
+            const items = Array.from(document.querySelectorAll(".asmaul-husna-item"));
+            
+            select.addEventListener("change", () => {
+                const container = document.querySelector(".asmaul-husna");
+                const order = select.value;
+                
+                items.sort((a, b) => {
+                    const nameA = a.querySelector(".name").textContent;
+                    const nameB = b.querySelector(".name").textContent;
+                    return order === "ascending" ? nameA.localeCompare(nameB) : nameB.localeCompare(nameA);
+                });
+
+                container.innerHTML = "";
+                items.forEach(item => container.appendChild(item));
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Asmaul Husna</h1>
+            <a hidden>
+            <select>
+                <option value="ascending">Sortir Dengan: Menaik</option>
+                <option value="descending">Sortir Dengan: Menurun</option>
+            </select>
+        </a>
+        </div>
+
+        <div class="asmaul-husna">
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Rahman</div>
+                <div class="arabic">ٱلرَّحْمَٰنُ</div>
+                <div class="translation">Yang Maha Pengasih</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Rahim</div>
+                <div class="arabic">ٱلرَّحِيمُ</div>
+                <div class="translation">Yang Maha Penyayang</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Malik</div>
+                <div class="arabic">ٱلْمَلِكُ</div>
+                <div class="translation">Yang Maha Merajai</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Quddus</div>
+                <div class="arabic">ٱلْقُدُّوسُ</div>
+                <div class="translation">Yang Maha Suci</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">As-Salam</div>
+                <div class="arabic">ٱلسَّلَامُ</div>
+                <div class="translation">Yang Maha Memberi Kesejahteraan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mu'min</div>
+                <div class="arabic">ٱلْمُؤْمِنُ</div>
+                <div class="translation">Yang Maha Memberi Keamanan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muhaymin</div>
+                <div class="arabic">ٱلْمُهَيْمِنُ</div>
+                <div class="translation">Yang Maha Memelihara</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Aziz</div>
+                <div class="arabic">ٱلْعَزِيزُ</div>
+                <div class="translation">Yang Maha Perkasa</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Jabbar</div>
+                <div class="arabic">ٱلْجَبَّارُ</div>
+                <div class="translation">Yang Maha Memaksa</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mutakabbir</div>
+                <div class="arabic">ٱلْمُتَكَبِّرُ</div>
+                <div class="translation">Yang Maha Megah</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Khaliq</div>
+                <div class="arabic">ٱلْخَالِقُ</div>
+                <div class="translation">Yang Maha Pencipta</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Bari'</div>
+                <div class="arabic">ٱلْبَارِئُ</div>
+                <div class="translation">Yang Maha Membuat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Musawwir</div>
+                <div class="arabic">ٱلْمُصَوِّرُ</div>
+                <div class="translation">Yang Maha Membentuk</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Ghaffar</div>
+                <div class="arabic">ٱلْغَفَّارُ</div>
+                <div class="translation">Yang Maha Pengampun</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Qahhar</div>
+                <div class="arabic">ٱلْقَهَّارُ</div>
+                <div class="translation">Yang Maha Mengalahkan Segalanya</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wahhab</div>
+                <div class="arabic">ٱلْوَهَّابُ</div>
+                <div class="translation">Yang Maha Pemberi Karunia</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Razzaq</div>
+                <div class="arabic">ٱلرَّزَّاقُ</div>
+                <div class="translation">Yang Maha Pemberi Rezeki</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Fattah</div>
+                <div class="arabic">ٱلْفَتَّاحُ</div>
+                <div class="translation">Yang Maha Membukakan Rahmat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Alim</div>
+                <div class="arabic">ٱلْعَلِيمُ</div>
+                <div class="translation">Yang Maha Mengetahui</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Qabid</div>
+                <div class="arabic">ٱلْقَابِضُ</div>
+                <div class="translation">Yang Maha Menyempitkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Basit</div>
+                <div class="arabic">ٱلْبَاسِطُ</div>
+                <div class="translation">Yang Maha Melapangkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Khafid</div>
+                <div class="arabic">ٱلْخَافِضُ</div>
+                <div class="translation">Yang Maha Merendahkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Rafi'</div>
+                <div class="arabic">ٱلرَّافِعُ</div>
+                <div class="translation">Yang Maha Mengangkat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mu'izz</div>
+                <div class="arabic">ٱلْمُعِزُّ</div>
+                <div class="translation">Yang Maha Memuliakan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muzill</div>
+                <div class="arabic">ٱلْمُذِلُّ</div>
+                <div class="translation">Yang Maha Menghinakan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">As-Sami'</div>
+                <div class="arabic">ٱلسَّمِيعُ</div>
+                <div class="translation">Yang Maha Mendengar</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Basir</div>
+                <div class="arabic">ٱلْبَصِيرُ</div>
+                <div class="translation">Yang Maha Melihat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hakam</div>
+                <div class="arabic">ٱلْحَكَمُ</div>
+                <div class="translation">Yang Maha Menetapkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Adl</div>
+                <div class="arabic">ٱلْعَدْلُ</div>
+                <div class="translation">Yang Maha Adil</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Latif</div>
+                <div class="arabic">ٱللَّطِيفُ</div>
+                <div class="translation">Yang Maha Lembut</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Khabir</div>
+                <div class="arabic">ٱلْخَبِيرُ</div>
+                <div class="translation">Yang Maha Waspada</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Halim</div>
+                <div class="arabic">ٱلْحَلِيمُ</div>
+                <div class="translation">Yang Maha Penyantun</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Azim</div>
+                <div class="arabic">ٱلْعَظِيمُ</div>
+                <div class="translation">Yang Maha Agung</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Ghaffur</div>
+                <div class="arabic">ٱلْغَفُورُ</div>
+                <div class="translation">Yang Maha Pengampun</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Asy-Syakur</div>
+                <div class="arabic">ٱلشَّكُورُ</div>
+                <div class="translation">Yang Maha Berterima Kasih</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Aliyy</div>
+                <div class="arabic">ٱلْعَلِيُّ</div>
+                <div class="translation">Yang Maha Tinggi</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Kabir</div>
+                <div class="arabic">ٱلْكَبِيرُ</div>
+                <div class="translation">Yang Maha Besar</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hafiz</div>
+                <div class="arabic">ٱلْحَفِيظُ</div>
+                <div class="translation">Yang Maha Memelihara</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muqit</div>
+                <div class="arabic">ٱلْمُقِيتُ</div>
+                <div class="translation">Yang Maha Pemberi Kecukupan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hasib</div>
+                <div class="arabic">ٱلْحَسِيبُ</div>
+                <div class="translation">Yang Maha Membuat Perhitungan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Jalil</div>
+                <div class="arabic">ٱلْجَلِيلُ</div>
+                <div class="translation">Yang Maha Mulia</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Karim</div>
+                <div class="arabic">ٱلْكَرِيمُ</div>
+                <div class="translation">Yang Maha Pemurah</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Raqib</div>
+                <div class="arabic">ٱلرَّقِيبُ</div>
+                <div class="translation">Yang Maha Mengawasi</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mujib</div>
+                <div class="arabic">ٱلْمُجِيبُ</div>
+                <div class="translation">Yang Maha Mengabulkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wasi'</div>
+                <div class="arabic">ٱلْوَاسِعُ</div>
+                <div class="translation">Yang Maha Luas</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hakim</div>
+                <div class="arabic">ٱلْحَكِيمُ</div>
+                <div class="translation">Yang Maha Bijaksana</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wadud</div>
+                <div class="arabic">ٱلْوَدُودُ</div>
+                <div class="translation">Yang Maha Mengasihi</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Majid</div>
+                <div class="arabic">ٱلْمَجِيدُ</div>
+                <div class="translation">Yang Maha Mulia</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Ba'ith</div>
+                <div class="arabic">ٱلْبَاعِثُ</div>
+                <div class="translation">Yang Maha Membangkitkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Asy-Syahid</div>
+                <div class="arabic">ٱلشَّهِيدُ</div>
+                <div class="translation">Yang Maha Menyaksikan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Haqq</div>
+                <div class="arabic">ٱلْحَقُّ</div>
+                <div class="translation">Yang Maha Benar</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wakil</div>
+                <div class="arabic">ٱلْوَكِيلُ</div>
+                <div class="translation">Yang Maha Memelihara</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Qawiyy</div>
+                <div class="arabic">ٱلْقَوِيُّ</div>
+                <div class="translation">Yang Maha Kuat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Matin</div>
+                <div class="arabic">ٱلْمَتِينُ</div>
+                <div class="translation">Yang Maha Kokoh</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Waliyy</div>
+                <div class="arabic">ٱلْوَلِيُّ</div>
+                <div class="translation">Yang Maha Melindungi</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hamid</div>
+                <div class="arabic">ٱلْحَمِيدُ</div>
+                <div class="translation">Yang Maha Terpuji</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muhsi</div>
+                <div class="arabic">ٱلْمُحْصِي</div>
+                <div class="translation">Yang Maha Menghitung</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mubdi'</div>
+                <div class="arabic">ٱلْمُبْدِئُ</div>
+                <div class="translation">Yang Maha Memulai</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mu'id</div>
+                <div class="arabic">ٱلْمُعِيدُ</div>
+                <div class="translation">Yang Maha Mengembalikan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muhyi</div>
+                <div class="arabic">ٱلْمُحْيِي</div>
+                <div class="translation">Yang Maha Menghidupkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mumit</div>
+                <div class="arabic">ٱلْمُمِيتُ</div>
+                <div class="translation">Yang Maha Mematikan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hayy</div>
+                <div class="arabic">ٱلْحَيُّ</div>
+                <div class="translation">Yang Maha Hidup</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Qayyum</div>
+                <div class="arabic">ٱلْقَيُّومُ</div>
+                <div class="translation">Yang Maha Berdiri Sendiri</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wajid</div>
+                <div class="arabic">ٱلْوَاجِدُ</div>
+                <div class="translation">Yang Maha Menemukan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Majid</div>
+                <div class="arabic">ٱلْمَجِيدُ</div>
+                <div class="translation">Yang Maha Mulia</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wahid</div>
+                <div class="arabic">ٱلْوَاحِدُ</div>
+                <div class="translation">Yang Maha Esa</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Ahad</div>
+                <div class="arabic">ٱلْأَحَدُ</div>
+                <div class="translation">Yang Maha Tunggal</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">As-Samad</div>
+                <div class="arabic">ٱلصَّمَدُ</div>
+                <div class="translation">Yang Maha Dibutuhkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Qadir</div>
+                <div class="arabic">ٱلْقَادِرُ</div>
+                <div class="translation">Yang Maha Kuasa</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muqtadir</div>
+                <div class="arabic">ٱلْمُقْتَدِرُ</div>
+                <div class="translation">Yang Maha Menentukan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muqaddim</div>
+                <div class="arabic">ٱلْمُقَدِّمُ</div>
+                <div class="translation">Yang Maha Mendahulukan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mu'akhkhir</div>
+                <div class="arabic">ٱلْمُؤَخِّرُ</div>
+                <div class="translation">Yang Maha Mengakhirkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Awwal</div>
+                <div class="arabic">ٱلْأَوَّلُ</div>
+                <div class="translation">Yang Maha Awal</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Akhir</div>
+                <div class="arabic">ٱلْآخِرُ</div>
+                <div class="translation">Yang Maha Akhir</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Az-Zahir</div>
+                <div class="arabic">ٱلْظَّاهِرُ</div>
+                <div class="translation">Yang Maha Nyata</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Batin</div>
+                <div class="arabic">ٱلْبَاطِنُ</div>
+                <div class="translation">Yang Maha Tersembunyi</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Wali</div>
+                <div class="arabic">ٱلْوَالِي</div>
+                <div class="translation">Yang Maha Menguasai</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muta'ali</div>
+                <div class="arabic">ٱلْمُتَعَالِي</div>
+                <div class="translation">Yang Maha Tinggi</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Barr</div>
+                <div class="arabic">ٱلْبَرُّ</div>
+                <div class="translation">Yang Maha Pemberi Kebajikan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">At-Tawwab</div>
+                <div class="arabic">ٱلتَّوَّابُ</div>
+                <div class="translation">Yang Maha Penerima Taubat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muntaqim</div>
+                <div class="arabic">ٱلْمُنْتَقِمُ</div>
+                <div class="translation">Yang Maha Pemberi Balasan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Afuww</div>
+                <div class="arabic">ٱلْعَفُوُّ</div>
+                <div class="translation">Yang Maha Pemaaf</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Ra'uf</div>
+                <div class="arabic">ٱلرَّؤُوفُ</div>
+                <div class="translation">Yang Maha Pengasih</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Malikul-Mulk</div>
+                <div class="arabic">مَالِكُ ٱلْمُلْكُ</div>
+                <div class="translation">Yang Maha Penguasa Kerajaan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Dzul-Jalali Wal-Ikram</div>
+                <div class="arabic">ذُو ٱلْجَلَالِ وَٱلْإِكْرَامِ</div>
+                <div class="translation">Yang Maha Memiliki Keagungan dan Kemuliaan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Muqsit</div>
+                <div class="arabic">ٱلْمُقْسِطُ</div>
+                <div class="translation">Yang Maha Adil</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Jami'</div>
+                <div class="arabic">ٱلْجَامِعُ</div>
+                <div class="translation">Yang Maha Mengumpulkan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Ghaniyy</div>
+                <div class="arabic">ٱلْغَنِيُّ</div>
+                <div class="translation">Yang Maha Kaya</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mughni</div>
+                <div class="arabic">ٱلْمُغْنِي</div>
+                <div class="translation">Yang Maha Pemberi Kekayaan</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Mani'</div>
+                <div class="arabic">ٱلْمَانِعُ</div>
+                <div class="translation">Yang Maha Mencegah</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ad-Darr</div>
+                <div class="arabic">ٱلضَّارَّ</div>
+                <div class="translation">Yang Maha Memberi Derita</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">An-Nafi'</div>
+                <div class="arabic">ٱلنَّافِعُ</div>
+                <div class="translation">Yang Maha Memberi Manfaat</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">An-Nur</div>
+                <div class="arabic">ٱلنُّورُ</div>
+                <div class="translation">Yang Maha Cahaya</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Hadi</div>
+                <div class="arabic">ٱلْهَادِي</div>
+                <div class="translation">Yang Maha Pemberi Petunjuk</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Badi'</div>
+                <div class="arabic">ٱلْبَدِيعُ</div>
+                <div class="translation">Yang Maha Pencipta Yang Tiada Bandingannya</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Baqi</div>
+                <div class="arabic">ٱلْبَاقِي</div>
+                <div class="translation">Yang Maha Kekal</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Al-Warith</div>
+                <div class="arabic">ٱلْوَارِثُ</div>
+                <div class="translation">Yang Maha Pewaris</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">Ar-Rashid</div>
+                <div class="arabic">ٱلْرَّشِيدُ</div>
+                <div class="translation">Yang Maha Pandai</div>
+            </div>
+            <div class="asmaul-husna-item">
+                <div class="name">As-Sabur</div>
+                <div class="arabic">ٱلصَّبُورُ</div>
+                <div class="translation">Yang Maha Penyabar</div>
+            </div>                                       
+        </div>
+    </div>
+</body>
+</html>
