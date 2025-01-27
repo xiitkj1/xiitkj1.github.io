@@ -23,7 +23,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 430vh;
             color: #fff;
             animation: backgroundFade 10s infinite alternate;
         }
@@ -114,6 +114,12 @@
             animation: slideDown 1s ease-out;
         }
 
+        .rotate{
+            writing-mode: vertical-rl;
+            text-align: center;
+            font-size: 10vh;
+        }
+
         @keyframes slideDown {
             0% {
                 transform: translateY(-30px);
@@ -126,6 +132,17 @@
         }
 
         @media (max-width: 600px) {
+            body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 260vh;
+            color: #fff;
+            animation: backgroundFade 10s infinite alternate;
+        }
             thead th, tbody td {
                 font-size: 0.9rem;
                 padding: 10px;
@@ -137,7 +154,24 @@
             }
         }
 
+        .rotate{
+            writing-mode: vertical-rl;
+            text-align: center;
+            font-size: 5vh;
+        }
+
         @media (max-width: 400px) {
+            body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 260vh;
+            color: #fff;
+            animation: backgroundFade 10s infinite alternate;
+        }
             tbody td {
                 font-size: 0.8rem;
                 padding: 8px;
@@ -151,6 +185,12 @@
                 font-size: 1rem;
                 padding: 8px;
             }
+        }
+
+        .rotate{
+            writing-mode: vertical-rl;
+            text-align: center;
+            font-size: 5vh;
         }
     </style>
     <!--feather icons-->
@@ -175,8 +215,6 @@
     <!--about section start-->
         <div class="table-container">
             <div class="table-header">Jadwal Pelajaran</div>
-            <h2>coming soon</h2>
-            <a hidden>
             <table>
                 <thead>
                     <tr>
@@ -188,45 +226,299 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Senin</td>
-                        <td>07:00 - 08:30</td>
+                        <td rowspan="6" class="rotate">Senin</td>
+                        <td>08:00 - 09:10</td>
+                        <td>B. Indonesia</td>
+                        <td>Bu Tintin</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>09:10 - 09:45</td>
+                        <td>AIJ</td>
+                        <td>Pak Dendi</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>09:45 - 10:15</td>
+                        <td>Istirahat</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>10:15 - 10:50</td>
+                        <td>AIJ</td>
+                        <td>Pak Dendi</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>10:50 - 12:00</td>
                         <td>Matematika</td>
-                        <td>Pak Budi</td>
+                        <td>Bu Ranti</td>
                     </tr>
                     <tr>
-                        <td>Senin</td>
-                        <td>08:45 - 10:15</td>
-                        <td>Bahasa Inggris</td>
-                        <td>Bu Ani</td>
-                    </tr>
-                    <tr>
-                        <td>Selasa</td>
-                        <td>07:00 - 08:30</td>
-                        <td>Fisika</td>
-                        <td>Pak Agus</td>
-                    </tr>
-                    <tr>
-                        <td>Selasa</td>
-                        <td>08:45 - 10:15</td>
-                        <td>Kimia</td>
-                        <td>Bu Susi</td>
-                    </tr>
-                    <tr>
-                        <td>Rabu</td>
-                        <td>07:00 - 08:30</td>
-                        <td>Biologi</td>
-                        <td>Pak Joko</td>
-                    </tr>
-                    <tr>
-                        <td>Rabu</td>
-                        <td>08:45 - 10:15</td>
-                        <td>Sejarah</td>
-                        <td>Bu Rina</td>
+                        
+                        <td>12:00 - 12:30</td>
+                        <td>ISOMA</td>
+                        <td>-</td>
                     </tr>
                 </tbody>
             </table>
+            <br>
+            <div class="table-header">Jadwal Pelajaran</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hari</th>
+                        <th>Jam</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Guru</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="6" class="rotate">Selasa</td>
+                        <td>07:25 - 09:45</td>
+                        <td>TLJ</td>
+                        <td>Pak Ruslan</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>09:45 - 10:15</td>
+                        <td>Istirahat</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>10:15 - 10:50</td>
+                        <td>ASJ</td>
+                        <td>Pak Faris</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>10:50 - 12:00</td>
+                        <td>PJOK</td>
+                        <td>Pak Sulung</td>
+                    </tr>
+                    <tr>
+                        
+                        <td>12:00 - 12:30</td>
+                        <td>ISOMA</td>
+                        <td>-</td>
+                    </tr>
         </div>
-    </a>
+    </table>
+    <br>
+    <div class="table-header">Jadwal Pelajaran</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Mata Pelajaran</th>
+                <th>Guru</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6" class="rotate">Rabu</td>
+                <td>07:25 - 08:35</td>
+                <td>B. Sunda</td>
+                <td>Pak Dadang</td>
+            </tr>
+            <tr>
+                
+                <td>08:35 - 09:45</td>
+                <td>PPK</td>
+                <td>Bu Qoyim</td>
+            </tr>
+            <tr>
+                
+                <td>09:45 - 10:15</td>
+                <td>Istirahat</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                
+                <td>10:15 - 11:25</td>
+                <td>TLJ</td>
+                <td>Pak Ruslan</td>
+            </tr>
+            <tr>
+                
+                <td>11:25 - 12:00</td>
+                <td>PPK</td>
+                <td>Bu Qoyim</td>
+            </tr>
+            <tr>
+                
+                <td>12:00 - 12:30</td>
+                <td>ISOMA</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                
+                <td>12:30 - 13:40</td>
+                <td>ASJ</td>
+                <td>Pak Faris</td>
+            </tr>
+</div>
+</table>
+<br>
+<div class="table-header">Jadwal Pelajaran</div>
+<table>
+    <thead>
+        <tr>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6" class="rotate">Kamis</td>
+            <td>08:00 - 09:10</td>
+            <td>B. Jepang</td>
+            <td>Sopi Sensei</td>
+        </tr>
+        <tr>
+            
+            <td>09:10 - 09:45</td>
+            <td>B. Arab</td>
+            <td>Pak Adang</td>
+        </tr>
+        <tr>
+            
+            <td>09:45 - 10:15</td>
+            <td>Istirahat</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            
+            <td>10:15 - 10:50</td>
+            <td>B. Arab</td>
+            <td>Pak Adang</td>
+        </tr>
+        <tr>
+            
+            <td>10:50 - 11:25</td>
+            <td>BK</td>
+            <td>Pak Daiman</td>
+        </tr>
+        <tr>
+            
+            <td>11:25 - 12:00</td>
+            <td>ASJ</td>
+            <td>Pak Faris</td>
+        </tr>
+        <tr>
+            
+            <td>12:00 - 12:30</td>
+            <td>ISOMA</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            
+            <td>12:30 - 13:05</td>
+            <td>ASJ</td>
+            <td>Pak Faris</td>
+        </tr>
+        <tr>
+            
+            <td>13:05 - 14:15</td>
+            <td>AIJ</td>
+            <td>Pak Dendi</td>
+        </tr>
+</div>
+</table>
+<br>
+<div class="table-header">Jadwal Pelajaran</div>
+<table>
+    <thead>
+        <tr>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6" class="rotate">Jum'at</td>
+            <td>07:25 - 0:35</td>
+            <td>AIJ</td>
+            <td>Pak Dendi</td>
+        </tr>
+        <tr>
+            
+            <td>0:35 - 09:45</td>
+            <td>Matematika</td>
+            <td>Mrs. Sheny</td>
+        </tr>
+        <tr>
+            
+            <td>09:45 - 10:15</td>
+            <td>Istirahat</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            
+            <td>10:15 - 11:25</td>
+            <td>Matematika</td>
+            <td>Bu Ranti</td>
+        </tr>
+</div>
+</table>
+
+<br>
+<div class="table-header">Jadwal Pelajaran</div>
+<table>
+    <thead>
+        <tr>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Mata Pelajaran</th>
+            <th>Guru</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="6" class="rotate">Sabtu</td>
+            <td>07:25 - 0:35</td>
+            <td>PKN</td>
+            <td>Pak Asep</td>
+        </tr>
+        <tr>
+            
+            <td>0:35 - 09:45</td>
+            <td>PAI</td>
+            <td>Pak Fuad</td>
+        </tr>
+        <tr>
+            
+            <td>09:45 - 10:15</td>
+            <td>Istirahat</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            
+            <td>10:15 - 11:25</td>
+            <td>ASJ</td>
+            <td>Pak Faris</td>
+        </tr>
+        <tr>
+            
+            <td>11:25 - 12:00</td>
+            <td>WK</td>
+            <td>Pak Ruslan</td>
+        </tr>
+        <td>12:00 - 12:30</td>
+        <td>ISOMA</td>
+        <td>-</td>
+    </tr>
+</div>
+</table>
+        
   <script>
     feather.replace();
   </script>
