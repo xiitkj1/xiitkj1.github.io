@@ -1,9 +1,17 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juz</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XII TKJ 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="../gaya/bb.css" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -38,6 +46,23 @@
             color: #fff;
         }
 
+        .container13 .tabs13 a:hover {
+    color: #0dd7de;
+  }
+
+  .container13 .tabs13 a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .container13 .tabs13 a:hover::after {
+    transform: scaleX(0.6);
+  }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -63,6 +88,10 @@
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
+
+        .w3-row-padding img {
+        margin-bottom: 12px;
+      }
         .card {
             background-color: #2e2e42;
             border-radius: 10px;
@@ -121,30 +150,34 @@
     </style>
 </head>
 <body>
+    
     <div class="container13">
         <div class="tabs13">
             <a href="surah/surah.html">Surah</a>
             <a href="#juz" class="active13">Juz</a>
+            <a href="project baru/xitkj1.html">Kembali Ke Home</a>
         </div>
     <div class="container">
         <div class="header">
             <h1>Daftar Surah</h1>
+            <a hidden>
             <select>
                 <option>Sortir dengan: Menarik</option>
                 <option>Sortir dengan: Abjad</option>
             </select>
+        </a>
         </div>
         <div class="grid">
             <div class="card">
                 <div class="number">1</div>
                 <h2>Al-Fatihah</h2>
-                <p>Pembuka</p>
+                <p>Pembukaan</p>
                 <p>7 Ayat</p>
             </div>
             <div class="card">
                 <div class="number">2</div>
                 <h2>Al-Baqarah</h2>
-                <p>Sapi</p>
+                <p>Sapi Betina</p>
                 <p>286 Ayat</p>
             </div>
             <div class="card">
@@ -156,7 +189,7 @@
             <div class="card">
                 <div class="number">4</div>
                 <h2>An-Nisa'</h2>
-                <p>Perempuan</p>
+                <p>Wanita</p>
                 <p>176 Ayat</p>
             </div>
             <div class="card">
@@ -171,7 +204,654 @@
                 <p>Binatang Ternak</p>
                 <p>165 Ayat</p>
             </div>
-            <!-- Tambahkan kartu lainnya sesuai kebutuhan -->
+            <div class="card">
+                <div class="number">7</div>
+                <h2>Al-A'raf</h2>
+                <p>Tempat yang Tinggi</p>
+                <p>206 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">8</div>
+                <h2>Al-Anfal</h2>
+                <p>Harta Rampasan Perang</p>
+                <p>75 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">9</div>
+                <h2>At-Taubah</h2>
+                <p>Pengampunan</p>
+                <p>129 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">10</div>
+                <h2>Yunus</h2>
+                <p>Nabi Yunus</p>
+                <p>109 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">11</div>
+                <h2>Hud</h2>
+                <p>Nabi Hud</p>
+                <p>123 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">12</div>
+                <h2>Yusuf</h2>
+                <p>Nabi Yusuf</p>
+                <p>111 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">13</div>
+                <h2>Ar-Ra'd</h2>
+                <p>Guruh</p>
+                <p>43 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">14</div>
+                <h2>Ibrahim</h2>
+                <p>Nabi Ibrahim</p>
+                <p>52 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">15</div>
+                <h2>Al-Hijr</h2>
+                <p>Gunung Batu</p>
+                <p>99 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">16</div>
+                <h2>An-Nahl</h2>
+                <p>Lebah</p>
+                <p>128 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">17</div>
+                <h2>Al-Isra'</h2>
+                <p>Perjalanan Malam</p>
+                <p>111 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">18</div>
+                <h2>Al-Kahfi</h2>
+                <p>Gua</p>
+                <p>110 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">19</div>
+                <h2>Maryam</h2>
+                <p>Maryam</p>
+                <p>98 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">20</div>
+                <h2>Ta Ha</h2>
+                <p>Ta Ha</p>
+                <p>135 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">21</div>
+                <h2>Al-Anbiya'</h2>
+                <p>Para Nabi</p>
+                <p>112 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">22</div>
+                <h2>Al-Hajj</h2>
+                <p>Haji</p>
+                <p>78 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">23</div>
+                <h2>Al-Mu'minun</h2>
+                <p>Orang-Orang Mukmin</p>
+                <p>118 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">24</div>
+                <h2>An-Nur</h2>
+                <p>Cahaya</p>
+                <p>64 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">25</div>
+                <h2>Al-Furqan</h2>
+                <p>Pembeda</p>
+                <p>77 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">26</div>
+                <h2>Asy-Syu'ara'</h2>
+                <p>Penyair</p>
+                <p>227 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">27</div>
+                <h2>An-Naml</h2>
+                <p>Semut</p>
+                <p>93 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">28</div>
+                <h2>Al-Qasas</h2>
+                <p>Kisah-Kisah</p>
+                <p>88 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">29</div>
+                <h2>Al-'Ankabut</h2>
+                <p>Laba-Laba</p>
+                <p>69 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">30</div>
+                <h2>Ar-Rum</h2>
+                <p>Bangsa Romawi</p>
+                <p>60 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">31</div>
+                <h2>Luqman</h2>
+                <p>Luqman</p>
+                <p>34 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">32</div>
+                <h2>As-Sajdah</h2>
+                <p>Sujud</p>
+                <p>30 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">33</div>
+                <h2>Al-Ahzab</h2>
+                <p>Golongan yang Bersekutu</p>
+                <p>73 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">34</div>
+                <h2>Saba'</h2>
+                <p>Kaum Saba'</p>
+                <p>54 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">35</div>
+                <h2>Fatir</h2>
+                <p>Pencipta</p>
+                <p>45 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">36</div>
+                <h2>Ya-Sin</h2>
+                <p>Ya Sin</p>
+                <p>83 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">37</div>
+                <h2>As-Saffat</h2>
+                <p>Barisan-Barisan</p>
+                <p>182 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">38</div>
+                <h2>Sad</h2>
+                <p>Sad</p>
+                <p>88 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">39</div>
+                <h2>Az-Zumar</h2>
+                <p>Rombongan-Rombongan</p>
+                <p>75 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">40</div>
+                <h2>Ghafir</h2>
+                <p>Maha Pengampun</p>
+                <p>85 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">41</div>
+                <h2>Fussilat</h2>
+                <p>Yang Dijelaskan</p>
+                <p>54 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">42</div>
+                <h2>Asy-Syura</h2>
+                <p>Musyawarah</p>
+                <p>53 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">43</div>
+                <h2>Az-Zukhruf</h2>
+                <p>Perhiasan</p>
+                <p>89 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">44</div>
+                <h2>Ad-Dukhan</h2>
+                <p>Asap</p>
+                <p>59 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">45</div>
+                <h2>Al-Jasiyah</h2>
+                <p>Yang Berlutut</p>
+                <p>37 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">46</div>
+                <h2>Al-Ahqaf</h2>
+                <p>Bukit Pasir</p>
+                <p>35 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">47</div>
+                <h2>Muhammad</h2>
+                <p>Nabi Muhammad</p>
+                <p>38 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">48</div>
+                <h2>Al-Fath</h2>
+                <p>Kemenangan</p>
+                <p>29 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">49</div>
+                <h2>Al-Hujurat</h2>
+                <p>Kamar-Kamar</p>
+                <p>18 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">50</div>
+                <h2>Qaf</h2>
+                <p>Qaf</p>
+                <p>45 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">51</div>
+                <h2>Az-Zariyat</h2>
+                <p>Angin yang Menerbangkan</p>
+                <p>60 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">52</div>
+                <h2>At-Tur</h2>
+                <p>Gunung</p>
+                <p>49 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">53</div>
+                <h2>An-Najm</h2>
+                <p>Bintang</p>
+                <p>62 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">54</div>
+                <h2>Al-Qamar</h2>
+                <p>Bulan</p>
+                <p>55 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">55</div>
+                <h2>Ar-Rahman</h2>
+                <p>Yang Maha Pengasih</p>
+                <p>78 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">56</div>
+                <h2>Al-Waqi'ah</h2>
+                <p>Hari Kiamat</p>
+                <p>96 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">57</div>
+                <h2>Al-Hadid</h2>
+                <p>Besi</p>
+                <p>29 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">58</div>
+                <h2>Al-Mujadilah</h2>
+                <p>Wanita yang Mengajukan Gugatan</p>
+                <p>22 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">59</div>
+                <h2>Al-Hasyr</h2>
+                <p>Pengusiran</p>
+                <p>24 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">60</div>
+                <h2>Al-Mumtahanah</h2>
+                <p>Wanita yang Diuji</p>
+                <p>13 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">61</div>
+                <h2>As-Saff</h2>
+                <p>Barisan</p>
+                <p>14 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">62</div>
+                <h2>Al-Jumu'ah</h2>
+                <p>Hari Jumat</p>
+                <p>11 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">63</div>
+                <h2>Al-Munafiqun</h2>
+                <p>Orang-Orang Munafik</p>
+                <p>11 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">64</div>
+                <h2>At-Tagabun</h2>
+                <p>Hari Ditampakkan Kesalahan-Kesalahan</p>
+                <p>18 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">65</div>
+                <h2>At-Talaq</h2>
+                <p>Talak</p>
+                <p>12 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">66</div>
+                <h2>At-Tahrim</h2>
+                <p>Pengharaman</p>
+                <p>12 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">67</div>
+                <h2>Al-Mulk</h2>
+                <p>Kerajaan</p>
+                <p>30 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">68</div>
+                <h2>Al-Qalam</h2>
+                <p>Pena</p>
+                <p>52 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">69</div>
+                <h2>Al-Haqqah</h2>
+                <p>Kepastian</p>
+                <p>52 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">70</div>
+                <h2>Al-Ma'arij</h2>
+                <p>Tempat-Tempat Naik</p>
+                <p>44 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">71</div>
+                <h2>Nuh</h2>
+                <p>Nabi Nuh</p>
+                <p>28 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">72</div>
+                <h2>Al-Jinn</h2>
+                <p>Jin</p>
+                <p>28 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">73</div>
+                <h2>Al-Muzzammil</h2>
+                <p>Orang yang Berselimut</p>
+                <p>20 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">74</div>
+                <h2>Al-Muddassir</h2>
+                <p>Orang yang Berkemul</p>
+                <p>56 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">75</div>
+                <h2>Al-Qiyamah</h2>
+                <p>Hari Kiamat</p>
+                <p>40 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">76</div>
+                <h2>Al-Insan</h2>
+                <p>Manusia</p>
+                <p>31 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">77</div>
+                <h2>Al-Mursalat</h2>
+                <p>Malaikat yang Diutus</p>
+                <p>50 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">78</div>
+                <h2>An-Naba'</h2>
+                <p>Berita Besar</p>
+                <p>40 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">79</div>
+                <h2>An-Nazi'at</h2>
+                <p>Malaikat yang Mencabut</p>
+                <p>46 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">80</div>
+                <h2>'Abasa</h2>
+                <p>Ia Bermuka Masam</p>
+                <p>42 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">81</div>
+                <h2>At-Takwir</h2>
+                <p>Penggulungan</p>
+                <p>29 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">82</div>
+                <h2>Al-Infitar</h2>
+                <p>Terbelah</p>
+                <p>19 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">83</div>
+                <h2>Al-Mutaffifin</h2>
+                <p>Orang-Orang yang Curang</p>
+                <p>36 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">84</div>
+                <h2>Al-Insyiqaq</h2>
+                <p>Terbelah</p>
+                <p>25 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">85</div>
+                <h2>Al-Buruj</h2>
+                <p>Gugusan Bintang</p>
+                <p>22 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">86</div>
+                <h2>At-Tariq</h2>
+                <p>Bintang yang Datang di Malam Hari</p>
+                <p>17 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">87</div>
+                <h2>Al-A'la</h2>
+                <p>Yang Maha Tinggi</p>
+                <p>19 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">88</div>
+                <h2>Al-Gasyiyah</h2>
+                <p>Hari Pembalasan</p>
+                <p>26 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">89</div>
+                <h2>Al-Fajr</h2>
+                <p>Fajar</p>
+                <p>30 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">90</div>
+                <h2>Al-Balad</h2>
+                <p>Negeri</p>
+                <p>20 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">91</div>
+                <h2>Asy-Syams</h2>
+                <p>Matahari</p>
+                <p>15 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">92</div>
+                <h2>Al-Lail</h2>
+                <p>Malam</p>
+                <p>21 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">93</div>
+                <h2>Ad-Duha</h2>
+                <p>Waktu Dhuha</p>
+                <p>11 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">94</div>
+                <h2>Asy-Syarh</h2>
+                <p>Kelapangan</p>
+                <p>8 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">95</div>
+                <h2>At-Tin</h2>
+                <p>Buah Tin</p>
+                <p>8 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">96</div>
+                <h2>Al-'Alaq</h2>
+                <p>Segumpal Darah</p>
+                <p>19 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">97</div>
+                <h2>Al-Qadr</h2>
+                <p>Malam Kemuliaan</p>
+                <p>5 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">98</div>
+                <h2>Al-Bayyinah</h2>
+                <p>Bukti yang Nyata</p>
+                <p>8 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">99</div>
+                <h2>Az-Zalzalah</h2>
+                <p>Goncangan</p>
+                <p>8 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">100</div>
+                <h2>Al-'Adiyat</h2>
+                <p>Kuda yang Berlari Kencang</p>
+                <p>11 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">101</div>
+                <h2>Al-Qari'ah</h2>
+                <p>Hari Kiamat</p>
+                <p>11 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">102</div>
+                <h2>At-Takatsur</h2>
+                <p>Bermegah-Megahan</p>
+                <p>8 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">103</div>
+                <h2>Al-'Asr</h2>
+                <p>Masa</p>
+                <p>3 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">104</div>
+                <h2>Al-Humazah</h2>
+                <p>Pencela</p>
+                <p>9 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">105</div>
+                <h2>Al-Fil</h2>
+                <p>Gajah</p>
+                <p>5 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">106</div>
+                <h2>Quraisy</h2>
+                <p>Suku Quraisy</p>
+                <p>4 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">107</div>
+                <h2>Al-Ma'un</h2>
+                <p>Barang-Barang yang Berguna</p>
+                <p>7 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">108</div>
+                <h2>Al-Kausar</h2>
+                <p>Ni'mat yang Banyak</p>
+                <p>3 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">109</div>
+                <h2>Al-Kafirun</h2>
+                <p>Orang-Orang Kafir</p>
+                <p>6 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">110</div>
+                <h2>An-Nasr</h2>
+                <p>Pertolongan</p>
+                <p>3 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">111</div>
+                <h2>Al-Lahab</h2>
+                <p>Gejolak Api</p>
+                <p>5 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">112</div>
+                <h2>Al-Ikhlas</h2>
+                <p>Ikhlas</p>
+                <p>4 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">113</div>
+                <h2>Al-Falaq</h2>
+                <p>Waktu Subuh</p>
+                <p>5 Ayat</p>
+            </div>
+            <div class="card">
+                <div class="number">114</div>
+                <h2>An-Nas</h2>
+                <p>Manusia</p>
+                <p>6 Ayat</p>
+            </div>
         </div>
     </div>
 </body>
