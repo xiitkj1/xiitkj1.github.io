@@ -94,6 +94,23 @@
             font-weight: bold;
         }
 
+        .container .tabs a:hover {
+    color: #0dd7de;
+  }
+
+  .container .tabs a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .container .tabs a:hover::after {
+    transform: scaleX(0.6);
+  }
+
         @media (max-width: 768px) {
             .tabs {
                 flex-direction: column;
@@ -111,6 +128,7 @@
         <div class="tabs">
             <a href="#" class="active">Surah</a>
             <a href="../juz.html">Juz</a>
+            <a href="../project baru/xitkj1.html">Kembali Ke Home</a>
         </div>
 
         <div class="juz-container">
