@@ -110,13 +110,30 @@ function startVoiceRecognition() {
 }
 
 function speakText(text) {
-    let speech = new SpeechSynthesisUtterance(text);
-    speech.lang = "en-US";
-    let voices = window.speechSynthesis.getVoices();
-    speech.voice = voices.find(voice => voice.name.includes("Boy") || voice.name.includes("Teen")) || voices.find(voice => voice.name.includes("Natural")) || voices[0];
-    speech.rate = 1.1;
-    speech.pitch = 1.2;
-    window.speechSynthesis.speak(speech);
+    // Check for speech synthesis support
+    if ('speechSynthesis' in window) {
+        let speech = new SpeechSynthesisUtterance(text);
+        speech.lang = "en-US";
+
+        // Use available voices
+        let voices = window.speechSynthesis.getVoices();
+        speech.voice = voices.find(voice => voice.name.includes("Boy") || voice.name.includes("Teen")) || voices.find(voice => voice.name.includes("Natural")) || voices[0];
+        speech.rate = 1.1;
+        speech.pitch = 1.2;
+
+        // Delay to allow voices to load on mobile
+        setTimeout(() => {
+            window.speechSynthesis.speak(speech);
+        }, 100);
+
+        speech.onerror = function(event) {
+            console.error("Error occurred while trying to speak:", event);
+            alert("Sorry, I couldn't speak the message at the moment.");
+        };
+    } else {
+        console.error("Speech synthesis is not supported on this device.");
+        alert("Speech synthesis is not supported on this device.");
+    }
 }
 
 function saveChatHistory(userInput, aiResponse) {
