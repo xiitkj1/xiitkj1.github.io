@@ -9,7 +9,18 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("reminder-icon").addEventListener("click", handleReminder);
     document.getElementById("humor-icon").addEventListener("click", handleHumor);
     document.getElementById("microphone-icon").addEventListener("click", startVoiceRecognition);
+    document.getElementById("toggleThemeBtn").addEventListener("dblclick", disableTheme);
+    
+    // Tambahkan listener double click untuk menonaktifkan fitur
+    document.getElementById("reminder-icon").addEventListener("dblclick", disableReminder);
+    document.getElementById("humor-icon").addEventListener("dblclick", disableHumor);
+    document.getElementById("popup-cancel").addEventListener("click", closePopup);
+    document.getElementById("popup-confirm").addEventListener("click", confirmPopup);
 });
+
+let reminderEnabled = true;
+let humorEnabled = true;
+let themeEnabled = true;
 
 function handleKeyPress(event) {
     if (event.key === "Enter") {
@@ -161,6 +172,24 @@ function toggleTheme() {
     localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
 }
 
+function disableTheme() {
+    alert("Mode Gelap/Terang dinonaktifkan.");
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+function confirmPopup() {
+    let popupMessage = document.getElementById("popup-message").textContent;
+    if (popupMessage.includes("pengingat")) {
+        handleReminder();
+    } else if (popupMessage.includes("humor")) {
+        handleHumor();
+    }
+    closePopup();
+}
+
 function isInappropriate(text) {
     let bannedWords = ["badword1", "badword2", "18+content"];
     return bannedWords.some(word => text.toLowerCase().includes(word));
@@ -168,19 +197,26 @@ function isInappropriate(text) {
 
 // Fitur Pengingat Sederhana (Ikon lonceng)
 function handleReminder() {
-    let reminderText = prompt("Apa yang ingin Anda ingatkan?");
-    if (reminderText) {
-        setTimeout(() => alert("Pengingat: " + reminderText), 5000);
-        alert("Pengingat telah diset!");
+    if (reminderEnabled) {
+        document.getElementById("popup-message").textContent = "Apakah Anda ingin mengatur pengingat?";
+        document.getElementById("popup").style.display = "block";
     }
 }
 
 // Fitur Humor & Motivasi (Ikon emoji)
 function handleHumor() {
-    let randomChoice = Math.random();
-    if (randomChoice < 0.5) {
-        alert("Mengapa ilmuwan tidak mempercayai atom? Karena mereka membuat segalanya!");
-    } else {
-        alert("Percayalah pada dirimu sendiri! Setiap perjalanan besar dimulai dengan langkah pertama.");
+    if (humorEnabled) {
+        document.getElementById("popup-message").textContent = "Apakah Anda ingin mendengar humor atau motivasi?";
+        document.getElementById("popup").style.display = "block";
     }
+}
+
+function disableReminder() {
+    reminderEnabled = !reminderEnabled;
+    alert(`Pengingat ${reminderEnabled ? 'diaktifkan' : 'dinonaktifkan'}`);
+}
+
+function disableHumor() {
+    humorEnabled = !humorEnabled;
+    alert(`Humor & Motivasi ${humorEnabled ? 'diaktifkan' : 'dinonaktifkan'}`);
 }
