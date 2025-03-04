@@ -10,11 +10,14 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
     margin: 0;
+    padding: 0;
 }
 
 /* Container for chat */
 .container {
     text-align: center;
+    width: 100%;
+    padding: 20px;
 }
 
 /* Chat Box Styling */
@@ -149,4 +152,60 @@ body.dark-mode .chat-box {
 
 body.dark-mode .messages {
     background: #1e1e1e;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens with a width of 1200px or less (laptop screens) */
+@media (max-width: 1200px) {
+    .chat-box {
+        width: 80%; /* 80% width of the container */
+        height: 350px;
+    }
+    .input-box {
+        width: 80%; /* Adjust input box width */
+    }
+}
+
+/* For screens with a width of 768px or less (tablets) */
+@media (max-width: 768px) {
+    .chat-box {
+        width: 90%; /* 90% width of the container */
+        height: 350px;
+    }
+    .input-box {
+        width: 90%; /* Adjust input box width */
+    }
+    .icons {
+        gap: 10px;
+    }
+    .icon {
+        font-size: 18px;
+    }
+}
+
+/* For screens with a width of 480px or less (mobile phones) */
+@media (max-width: 480px) {
+    .chat-box {
+        width: 100%; /* Full width on small screens */
+        height: 300px;
+    }
+    .input-box {
+        width: 100%; /* Full width on small screens */
+        flex-direction: column;
+        align-items: stretch;
+    }
+    input {
+        width: 100%;
+    }
+    .send-button {
+        font-size: 16px;
+    }
+    .icons {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .icon {
+        font-size: 16px;
+    }
 }
