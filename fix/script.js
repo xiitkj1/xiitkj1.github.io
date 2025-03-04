@@ -105,7 +105,9 @@ function generateResponse(input) {
         "apa kabar bro": "Saya baik-baik aja, bro! Lo gimana? Lagi ngapain nih?",
         "hei bro, gimana kabarnya": "Gue baik-baik aja, bro! Lo gimana? Ada yang seru buat diobrolin?",
         "what's your favorite movie": "I don't have a favorite movie, but I think 'Inception' is an interesting one. What about you, what’s your favorite movie?",
-        "do you play games": "I don't play games, but I can totally chat about them! Do you have a favorite game?"
+        "do you play games": "I don't play games, but I can totally chat about them! Do you have a favorite game?",
+        "router a": "router A. 1. Address eth 2, 2.DHCP CLIENT, FIREWALL, OSPF, WEB PROXY, FIREWALL",
+"router b": "router B. 1. Address eth 2, 2.DHCP CLIENT, ROUTES, FIREWALL, OSPF, DHCP SERVER, WIRELESS,",
     };
     
 
@@ -461,26 +463,23 @@ function simulateTyping(element, text, callback) {
 function startVoiceRecognition() {
     let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
     recognition.lang = "en-US";
-    let waveIcon = document.getElementById("waveIcon");
-    waveIcon.style.display = "inline-block";
     recognition.start();
     
     recognition.onresult = function(event) {
         let transcript = event.results[0][0].transcript;
         document.getElementById("userInput").value = transcript;
-        waveIcon.style.display = "none";
-    };
-    
-    recognition.onend = function() {
-        waveIcon.style.display = "none";
+        sendMessage();
     };
 }
 
 function speakText(text) {
     // Check for speech synthesis support
     if ('speechSynthesis' in window) {
+        // Detect language using Intl API
+        const language = new Intl.Locale(navigator.language).language; // Deteksi bahasa sistem atau bisa menggunakan library deteksi bahasa lainnya
+
         let speech = new SpeechSynthesisUtterance(text);
-        speech.lang = "id-ID"; // Bahasa Indonesia
+        speech.lang = language; // Menyesuaikan bahasa yang terdeteksi
 
         // Use available voices
         let voices = window.speechSynthesis.getVoices();
@@ -488,20 +487,11 @@ function speakText(text) {
         speech.rate = 1.1;
         speech.pitch = 1.2;
 
-        // Delay to allow voices to load on mobile
-        setTimeout(() => {
-            window.speechSynthesis.speak(speech);
-        }, 100);
-
-        speech.onerror = function(event) {
-            console.error("Error occurred while trying to speak:", event);
-            alert("Sorry, I couldn't speak the message at the moment.");
-        };
-    } else {
-        console.error("Speech synthesis is not supported on this device.");
-        alert("Speech synthesis is not supported on this device.");
+        // Speak the text
+        window.speechSynthesis.speak(speech);
     }
 }
+
 
 function saveChatHistory(userInput, aiResponse) {
     let chatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
