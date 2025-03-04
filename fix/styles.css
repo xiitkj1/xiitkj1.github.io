@@ -1,194 +1,97 @@
-/* Reset margin dan padding untuk menghindari elemen yang tidak diinginkan */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-/* Gaya untuk Container Utama */
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
-
-/* Judul */
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-/* Kotak Chat */
-.chat-box {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
-    max-height: 400px;
-}
-
-.messages {
-    padding: 10px;
-    max-height: 300px;
-    overflow-y: auto;
-}
-
-/* Input Box dan Tombol Kirim */
-.input-box {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-input[type="text"] {
-    flex-grow: 1;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    outline: none;
-}
-
-input[type="text"]:focus {
-    border-color: #4CAF50;
-}
-
-.send-button {
-    background-color: #4CAF50;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.send-button i {
+    background-color: #121212;
     color: white;
-    font-size: 1.2em;
-}
-
-.send-button:hover {
-    background-color: #45a049;
-}
-
-/* Ikon-ikon */
-.icons {
-    margin-top: 15px;
-}
-
-.icon {
-    font-size: 1.5em;
-    margin: 0 10px;
-    cursor: pointer;
-}
-
-.icon:hover {
-    color: #4CAF50;
-}
-
-/* Pop-up untuk Pengingat atau Humor */
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
-
-.popup-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
+.container {
     text-align: center;
-    min-width: 250px;
 }
-
-.popup-btn {
-    padding: 10px 20px;
-    margin: 10px;
+.chat-box {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.messages::-webkit-scrollbar {
+    display: none;
+}
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: inline-block;
+}
+.user-message {
+    align-self: flex-end;
+    background: #0084ff;
+    color: white;
+    border-top-right-radius: 0;
+}
+.ai-message {
+    align-self: flex-start;
+    background: #333;
+    color: white;
+    border-top-left-radius: 0;
+}
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+input {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
     border: none;
-    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+.send-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+.icon {
+    font-size: 20px;
     cursor: pointer;
 }
-
-.popup-btn:hover {
-    background-color: #ddd;
-}
-
-#popup-cancel {
-    background-color: #f44336; /* Red for Cancel */
-    color: white;
-}
-
-#popup-confirm {
-    background-color: #4CAF50; /* Green for Confirm */
-    color: white;
-}
-
-/* Media Queries untuk Responsivitas */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-
-    h2 {
-        font-size: 1.2em;
-    }
-
-    .chat-box {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .input-box {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .send-button {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .icons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .icon {
-        font-size: 1.8em;
-    }
-}
-
-/* Media Queries untuk Mencegah Zoom pada Input di Mobile */
-@meta viewport {
-    content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no";
-}
-
-/* Mengatur Ukuran Input Agar Tidak Terjadi Zooming di Mobile */
-input[type="text"] {
-    font-size: 16px; /* Ukuran font yang lebih besar mencegah zoom */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+.wave-icon {
+    font-size: 20px;
+    color: #ff5252;
+    display: none;
 }
