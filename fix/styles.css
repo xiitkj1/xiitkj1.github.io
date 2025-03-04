@@ -1,0 +1,152 @@
+/* Body Styling */
+body {
+    background-color: #121212; /* Dark background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Container for chat */
+.container {
+    text-align: center;
+}
+
+/* Chat Box Styling */
+.chat-box {
+    background: #2a2a2a; /* Dark background for chat box */
+    padding: 20px;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Message Area */
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    max-height: 250px;
+}
+
+/* Hide the scrollbar */
+.messages::-webkit-scrollbar {
+    display: none;
+}
+
+/* Chat Bubble Styles */
+.chat-bubble {
+    max-width: 70%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: inline-block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Chat Bubble Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* User Message Styling */
+.user-message {
+    align-self: flex-end;
+    background: #0084ff; /* Blue for user messages */
+    color: white;
+    border-top-right-radius: 0;
+}
+
+/* AI Message Styling */
+.ai-message {
+    align-self: flex-start;
+    background: #333; /* Dark gray for AI messages */
+    color: white;
+    border-top-left-radius: 0;
+}
+
+/* Input Box Styling */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Input Field Styling */
+input {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+/* Send Button Styling */
+.send-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+/* Icon Area Styling */
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Individual Icon Styling */
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #0084ff; /* Hover effect with blue color */
+}
+
+/* Wave Icon Styling */
+.wave-icon {
+    font-size: 20px;
+    color: #ff5252;
+    display: none; /* Hidden by default */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .chat-box {
+    background: #2a2a2a;
+}
+
+body.dark-mode .messages {
+    background: #1e1e1e;
+}
