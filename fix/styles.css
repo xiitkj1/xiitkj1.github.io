@@ -1,6 +1,5 @@
-/* Body Styling */
 body {
-    background-color: #121212; /* Dark background */
+    background-color: #121212;
     color: white;
     display: flex;
     justify-content: center;
@@ -9,20 +8,12 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
 }
-
-/* Container for chat */
 .container {
     text-align: center;
-    width: 100%;
-    padding: 20px;
 }
-
-/* Chat Box Styling */
 .chat-box {
-    background: #2a2a2a; /* Dark background for chat box */
+    background: #2a2a2a;
     padding: 20px;
     border-radius: 15px;
     width: 600px;
@@ -32,8 +23,6 @@ body {
     flex-direction: column;
     justify-content: flex-end;
 }
-
-/* Message Area */
 .messages {
     flex-grow: 1;
     overflow-y: auto;
@@ -46,13 +35,9 @@ body {
     -ms-overflow-style: none;
     max-height: 250px;
 }
-
-/* Hide the scrollbar */
 .messages::-webkit-scrollbar {
     display: none;
 }
-
-/* Chat Bubble Styles */
 .chat-bubble {
     max-width: 70%;
     padding: 10px 15px;
@@ -62,30 +47,22 @@ body {
     display: inline-block;
     animation: fadeIn 0.3s ease-in-out;
 }
-
-/* Chat Bubble Animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
-
-/* User Message Styling */
 .user-message {
     align-self: flex-end;
-    background: #0084ff; /* Blue for user messages */
+    background: #0084ff;
     color: white;
     border-top-right-radius: 0;
 }
-
-/* AI Message Styling */
 .ai-message {
     align-self: flex-start;
-    background: #333; /* Dark gray for AI messages */
+    background: #333;
     color: white;
     border-top-left-radius: 0;
 }
-
-/* Input Box Styling */
 .input-box {
     display: flex;
     align-items: center;
@@ -94,8 +71,6 @@ body {
     border-radius: 10px;
     margin-top: 10px;
 }
-
-/* Input Field Styling */
 input {
     flex: 1;
     padding: 10px;
@@ -104,8 +79,6 @@ input {
     color: white;
     outline: none;
 }
-
-/* Send Button Styling */
 .send-button {
     background: transparent;
     border: none;
@@ -113,99 +86,18 @@ input {
     color: white;
     font-size: 18px;
 }
-
-/* Icon Area Styling */
 .icons {
     display: flex;
     justify-content: center;
     gap: 15px;
     margin-top: 10px;
 }
-
-/* Individual Icon Styling */
 .icon {
     font-size: 20px;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
-
-.icon:hover {
-    color: #0084ff; /* Hover effect with blue color */
-}
-
-/* Wave Icon Styling */
 .wave-icon {
     font-size: 20px;
     color: #ff5252;
-    display: none; /* Hidden by default */
-}
-
-/* Dark Mode Styles */
-body.dark-mode {
-    background-color: #121212;
-    color: white;
-}
-
-body.dark-mode .chat-box {
-    background: #2a2a2a;
-}
-
-body.dark-mode .messages {
-    background: #1e1e1e;
-}
-
-/* Media Queries for Responsiveness */
-
-/* For screens with a width of 1200px or less (laptop screens) */
-@media (max-width: 1200px) {
-    .chat-box {
-        width: 80%; /* 80% width of the container */
-        height: 350px;
-    }
-    .input-box {
-        width: 80%; /* Adjust input box width */
-    }
-}
-
-/* For screens with a width of 768px or less (tablets) */
-@media (max-width: 768px) {
-    .chat-box {
-        width: 90%; /* 90% width of the container */
-        height: 350px;
-    }
-    .input-box {
-        width: 90%; /* Adjust input box width */
-    }
-    .icons {
-        gap: 10px;
-    }
-    .icon {
-        font-size: 18px;
-    }
-}
-
-/* For screens with a width of 480px or less (mobile phones) */
-@media (max-width: 480px) {
-    .chat-box {
-        width: 100%; /* Full width on small screens */
-        height: 300px;
-    }
-    .input-box {
-        width: 100%; /* Full width on small screens */
-        flex-direction: column;
-        align-items: stretch;
-    }
-    input {
-        width: 100%;
-    }
-    .send-button {
-        font-size: 16px;
-    }
-    .icons {
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .icon {
-        font-size: 16px;
-    }
+    display: none;
 }
