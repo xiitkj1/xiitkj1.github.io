@@ -29,7 +29,7 @@
         <a href="jadwal pelajaran.html">Jadwal Pelajaran</a>
         <a href="jadwal_piket.html">Jadwal Piket</a>
         <a href="galeri.html">Galeri</a>
-        <a href="../fix/index.html">Chat AI</a>
+        <a href="../fix/fix/index.html">Chat AI</a>
         <a href="#Contact">Contact</a>
       </div>
 
