@@ -466,8 +466,8 @@ function generateResponse(input) {
       "Saya baik-baik saja, terima kasih! Bagaimana dengan kamu?";
   } else if (input.includes("siapa yang membuat kamu?") || input.includes("kamu dibuat oleh siapa")|| input.includes("kamu dibuat siapa")) {
     responseMessage = "Saya Dibuat oleh Muhamad Irpan";
-  }else if (input.includes("apa tujuan kamu dibuat?") || input.includes("kenapa kamu dibuat?")|| input.includes("buat apa kamu dibuat?")) {
-    responseMessage = "Tujuan saya dibuat adalah untuk membantunya dalam ujian di sekolah🗿";
+  }else if (input.includes("apa tujuan kamu dibuat?") || input.includes("kenapa kamu dibuat?")|| input.includes("alasan kamu dibuat?")) {
+    responseMessage = "Tujuan saya dibuat adalah untuk membantu muhamad irpan dalam ujian di sekolah🗿";
   }else if (input.includes("apa yang kamu bisa?") || input.includes("kamu bisa apa?")) {
     responseMessage = "Saya bisa melakukan semuanya, seperti menjawab semua soal ujian🗿";
   }else if (input.includes("kenapa kamu mau membantu saya") || input.includes("alasan kamu mau membantu saya")) {
