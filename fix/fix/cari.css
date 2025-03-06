@@ -1,0 +1,433 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+/* Kontainer */
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* Kotak Pencarian */
+/* Kotak Pencarian */
+.search-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px; /* Menambahkan jarak dari bawah kotak pencarian */
+    padding-bottom: 20px;  /* Memberikan padding bawah agar konten tidak terlalu rapat */
+    overflow-y: auto;  /* Membuat elemen ini dapat di-scroll secara vertikal */
+ overflow-y: auto;  /* Membuat elemen ini dapat di-scroll secara vertikal */
+}
+
+h2 {
+    margin-bottom: 20px;  /* Memberikan jarak antara judul dan kategori */
+}
+
+/* Input Pencarian */
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+/* Placeholder yang lebih kecil */
+.search-box input::placeholder {
+    font-size: 14px;
+}
+
+/* Menyembunyikan saran pencarian secara default */
+/* Hasil pencarian */
+#suggestions {
+    list-style: none;
+    padding: 0;
+    background-color: #111;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    z-index: 10;
+    display: none;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-bottom: 1px solid #222;
+}
+
+.search-item:hover {
+    background-color: #222;
+}
+
+.search-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.search-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-type {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Jika tidak ada hasil */
+.no-result {
+    padding: 15px;
+    text-align: center;
+    color: gray;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+}
+
+/* Grid Kategori */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px; /* Menambahkan jarak di bawah kategori */
+}
+/* Kotak Kategori */
+/* Kotak Kategori */
+/* Kotak Kategori */
+.category-box {
+    position: relative;
+    height: 220px; /* Ukuran box kategori */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Membuat teks berada di atas */
+    justify-content: space-between; /* Menjaga gambar di bawah dan teks di atas */
+    color: white;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    padding: 15px;
+    margin-bottom: 40px; /* Memberikan jarak antara box dan navbar */
+}
+/* Efek Hover */
+.category-box:hover {
+    transform: scale(1.05);
+}
+
+/* Teks Kategori */
+.category-text {
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
+    margin-bottom: 10px; /* Memberikan sedikit jarak antara teks dan gambar */
+}
+
+/* Gambar di dalam Kotak */
+/* Gambar dalam Kotak */
+.category-box img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.search-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #333;
+    color: white;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #333;
+}
+
+.search-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.search-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+
+.search-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.search-type {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.more-options,
+.add-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+.search-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-type {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.no-result {
+    text-align: center;
+    padding: 15px;
+    color: #aaa;
+}
+
+#playerScreen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c1c1c;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+#playerScreen img {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#songTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#songArtist {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.audio-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.audio-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* Navbar */
+.nav-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 18px;
+    z-index: 10; /* Menjaga navbar tetap di atas */
+}
+
+/* 📱 Responsif */
+
+/* --- Tablet --- */
+@media (max-width: 1024px) {
+    /* Kotak Pencarian */
+    .search-box input {
+        font-size: 14px;  /* Menyesuaikan ukuran font pada pencarian untuk tablet */
+    }
+
+    /* Grid Kategori */
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .category-box {
+        height: 200px;
+    }
+    .category-text {
+        font-size: 16px;
+    }
+    .category-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+/* Setiap item di navbar */
+.nav-bar span {
+    margin: 0 20px; /* Menambahkan jarak antar item menu */
+    font-size: 1rem;
+}
+}
+
+/* --- HP --- */
+@media (max-width: 768px) {
+    /* Kotak Pencarian */
+    .search-box input {
+        font-size: 13px;  /* Menyesuaikan ukuran font pada pencarian untuk HP */
+    }
+
+    /* Grid Kategori */
+    .category-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .category-box {
+        height: 180px;
+    }
+    .category-text {
+        font-size: 14px;
+    }
+    .category-box img {
+        width: 70px;
+        height: 70px;
+    }
+
+/* Setiap item di navbar */
+.nav-bar span {
+    margin: 0 20px; /* Menambahkan jarak antar item menu */
+    background-color: #000;
+}
+}
+
+/* --- HP Kecil --- */
+@media (max-width: 480px) {
+    /* Kotak Pencarian */
+    .search-box input {
+        font-size: 12px;  /* Menyesuaikan ukuran font pada pencarian untuk HP kecil */
+    }
+
+    /* Grid Kategori */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .category-box {
+        height: 160px;
+    }
+    .category-text {
+        font-size: 12px;
+    }
+    .category-box img {
+        width: 60px;
+        height: 60px;
+    }
+
+/* Setiap item di navbar */
+.nav-bar span {
+    margin: 0 20px; /* Menambahkan jarak antar item menu */
+}
+}
+

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian - Spotify Clone</title>
+    <link rel="stylesheet" href="cari.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Input Pencarian -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cari lagu, artis, atau album..." />
+            <button id="searchButton">🔍</button>
+        </div>
+
+        <!-- Kotak Saran Pencarian -->
+        <ul id="suggestions" class="hidden"></ul>
+
+        <!-- Tampilan Awal (Kategori) -->
+        <div id="searchInitial">
+            <h2>Jelajahi Semua</h2>
+            <div class="category-grid">
+                <div class="category-box" style="background-color: #1E3A8A;">
+                    <span class="category-text">Dibuat Untuk Kamu</span>
+                    <img class="rotated-img" src="WhatsApp Image 2025-03-06 at 10.21.16.jpeg" alt="Dibuat Untuk Kamu">
+                </div>
+                <div class="category-box" style="background-color: #4F772D;">
+                    <span class="category-text">Rilis Baru</span>
+                    <img class="rotated-img" src="WhatsApp Image 2025-03-06 at 10.21.16.jpeg" alt="Rilis Baru">
+                </div>
+                <div class="category-box" style="background-color: #1B4332;">
+                    <span class="category-text">Ramadan</span>
+                    <img class="rotated-img" src="WhatsApp Image 2025-03-06 at 10.21.16.jpeg" alt="Ramadan">
+                </div>
+                <div class="category-box" style="background-color: #3A506B;">
+                    <span class="category-text">Pop</span>
+                    <img class="rotated-img" src="WhatsApp Image 2025-03-06 at 10.21.16.jpeg" alt="Pop">
+                </div>
+                <div class="category-box" style="background-color: #781C68;">
+                    <span class="category-text">Indie</span>
+                    <img class="rotated-img" src="WhatsApp Image 2025-03-06 at 10.21.16.jpeg" alt="Indie">
+                </div>
+                <div class="category-box" style="background-color: #D62828;">
+                    <span class="category-text">Musik Indonesia</span>
+                    <img class="rotated-img" src="WhatsApp Image 2025-03-06 at 10.21.16.jpeg" alt="Musik Indonesia">
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Kategori -->
+        <div id="searchFilters" class="hidden">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="song">Lagu</button>
+            <button class="filter-btn" data-filter="playlist">Playlist</button>
+            <button class="filter-btn" data-filter="artist">Artis</button>
+            <button class="filter-btn" data-filter="album">Album</button>
+        </div>
+
+        <!-- Daftar Hasil Pencarian -->
+        <ul id="searchResults" class="hidden"></ul>
+
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-bar">
+        <span class="nav-item">🏠</span>
+        <span class="nav-item">🔍</span>
+        <span class="nav-item">📂</span>
+    </div>
+
+    <script src="cari.js" defer></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+    const searchResultsList = document.getElementById("searchResults");
+    const searchFilters = document.getElementById("searchFilters");
+    const categoryGrid = document.querySelector(".category-grid");
+
+    // Data hasil pencarian (bisa diambil dari API atau database jika diperlukan)
+    const searchResults = [
+        { name: "You're On Your Own, Kid", type: "Lagu • Taylor Swift", image: "midnights.jpg" },
+        { name: "That's So True", type: "Lagu • Gracie Abrams", image: "gracie.jpg" },
+        { name: "studying 🎧📖", type: "Playlist", image: "playlist.jpg" },
+        { name: "Style", type: "Lagu • Taylor Swift", image: "1989.jpg" },
+        { name: "Taylor Swift", type: "Artis", image: "taylor.jpg" },
+        { name: "The Archer", type: "Lagu • Taylor Swift", image: "lover.jpg" },
+        { name: "Daylight", type: "Lagu • Taylor Swift", image: "lover.jpg" },
+        { name: "About You", type: "Lagu • The 1975", image: "1975.jpg" }
+    ];
+
+    function performSearch() {
+        const query = searchInput.value.trim().toLowerCase();
+        searchResultsList.innerHTML = ""; // Kosongkan hasil sebelumnya
+
+        if (query !== "") {
+            categoryGrid.style.display = "none"; // Sembunyikan kategori awal
+            searchFilters.classList.remove("hidden"); // Tampilkan filter kategori
+
+            // Filter hasil berdasarkan input
+            const filteredResults = searchResults.filter(item =>
+                item.name.toLowerCase().includes(query)
+            );
+
+            if (filteredResults.length > 0) {
+                filteredResults.forEach(item => {
+                    const li = document.createElement("li");
+                    li.classList.add("search-item");
+
+                    li.innerHTML = `
+                        <img src="${item.image}" alt="${item.name}" class="search-img">
+                        <div class="search-info">
+                            <span class="search-name">${item.name}</span>
+                            <span class="search-type">${item.type}</span>
+                        </div>
+                        <button class="more-options">⋮</button>
+                        <button class="add-button">+</button>
+                    `;
+
+                    searchResultsList.appendChild(li);
+                });
+            } else {
+                searchResultsList.innerHTML = `<li class="no-result">Tidak ada hasil untuk "${query}"</li>`;
+            }
+
+            searchResultsList.style.display = "block"; // Tampilkan hasil
+        } else {
+            categoryGrid.style.display = "grid"; // Kembalikan kategori awal
+            searchResultsList.style.display = "none";
+            searchFilters.classList.add("hidden");
+        }
+    }
+
+    // Event saat tekan Enter
+    searchInput.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            performSearch();
+        }
+    });
+
+    // Event saat klik tombol cari
+    searchButton.addEventListener("click", function () {
+        performSearch();
+    });
+});
+
+    </script>
+
+</body>
+</html>
