@@ -455,6 +455,21 @@ function getMotivasi() {
   return motivasiList[randomIndex];
 }
 
+const now = new Date();
+const hours = now.getHours();
+const minutes = now.getMinutes();
+const day = now.toLocaleDateString('id-ID', { weekday: 'long' });
+const month = now.toLocaleDateString('id-ID', { month: 'long' });
+const year = now.getFullYear();
+
+if (input.includes("jam berapa sekarang?") || input.includes("pukul berapa")) {
+    responseMessage = `Sekarang pukul ${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+} else if (input.includes("hari apa sekarang?")) {
+    responseMessage = `Hari ini adalah hari ${day}`;
+} else if (input.includes("bulan apa sekarang?")) {
+    responseMessage = `Sekarang bulan ${month} tahun ${year}`;
+}
+
 // Fungsi untuk menangani pengetahuan umum
 function generateResponse(input) {
   input = input.toLowerCase().trim();
