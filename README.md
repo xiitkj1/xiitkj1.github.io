@@ -30,7 +30,7 @@
         <a href="jadwal_piket.html">Jadwal Piket</a>
         <a href="galeri.html">Galeri</a>
         <a href="../fix/fix/index.html">Chat AI</a>
-                <a href="../fix/fix/music.js">spotify</a>
+                <a href="../fix/fix/music.html">spotify</a>
         <a href="#Contact">Contact</a>
       </div>
 
