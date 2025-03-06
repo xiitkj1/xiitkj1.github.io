@@ -464,7 +464,11 @@ function generateResponse(input) {
   if (input.includes("apa kabar") || input.includes("how are you")) {
     responseMessage =
       "Saya baik-baik saja, terima kasih! Bagaimana dengan kamu?";
-  } else if (input.includes("selamat pagi") || input.includes("good morning")) {
+  } else if (input.includes("siapa yang membuat kamu") || input.includes("kamu dibuat oleh siapa")|| input.includes("kamu dibuat siapa")) {
+    responseMessage = "Selamat pagi! Semoga hari Anda menyenankan!";
+  }else if (input.includes("apa tujuan kamu dibuat?") || input.includes("kenapa kamu dibuat?")|| input.includes("buat apa kamu dibuat?")) {
+    responseMessage = "Selamat pagi! Semoga hari Anda menyenankan!";
+  }else if (input.includes("selamat pagi") || input.includes("good morning")) {
     responseMessage = "Selamat pagi! Semoga hari Anda menyenankan!";
   } else if (input.includes("selamat sore") || input.includes("good evening")) {
     responseMessage = "Selamat sore! Semoga harimu menyenankan!";
