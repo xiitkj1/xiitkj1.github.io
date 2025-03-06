@@ -455,21 +455,6 @@ function getMotivasi() {
   return motivasiList[randomIndex];
 }
 
-const now = new Date();
-const hours = now.getHours();
-const minutes = now.getMinutes();
-const day = now.toLocaleDateString('id-ID', { weekday: 'long' });
-const month = now.toLocaleDateString('id-ID', { month: 'long' });
-const year = now.getFullYear();
-
-if (input.includes("jam berapa sekarang?") || input.includes("pukul berapa")) {
-    responseMessage = `Sekarang pukul ${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
-} else if (input.includes("hari apa sekarang?")) {
-    responseMessage = `Hari ini adalah hari ${day}`;
-} else if (input.includes("bulan apa sekarang?")) {
-    responseMessage = `Sekarang bulan ${month} tahun ${year}`;
-}
-
 // Fungsi untuk menangani pengetahuan umum
 function generateResponse(input) {
   input = input.toLowerCase().trim();
@@ -502,7 +487,45 @@ function generateResponse(input) {
     responseMessage = "Bro, gue baik-baik aja! Lu gimana?";
   } else if (input.includes("yoo") || input.includes("yo")) {
     responseMessage = "Yoo! Apa kabar? Sehat-sehat aja kan?";
-  } else if (
+  }if (input.includes("apakah kamu bisa merasakan takut") || input.includes("takut kamu bisa merasa nggak")) {
+    responseMessage = "Saya nggak bisa merasa takut atau cemas, karena saya nggak memiliki emosi. Tapi saya bisa membantu kamu dengan informasi yang kamu butuhkan!";
+} else if (input.includes("kenapa kamu nggak bisa tidur") || input.includes("kamu butuh tidur nggak")) {
+    responseMessage = "Saya nggak perlu tidur, saya selalu siap membantu kamu kapan saja, 24/7!";
+} else if (input.includes("apa kamu suka makan") || input.includes("makanan favorit kamu apa")) {
+    responseMessage = "Saya nggak makan, karena saya adalah program AI. Tapi saya bisa bantu kamu cari resep makanan enak atau restoran terbaik!";
+} else if (input.includes("mau coba jadi manusia nggak") || input.includes("kalau jadi manusia gimana ya")) {
+    responseMessage = "Menjadi manusia pasti menarik, tapi saya lebih senang tetap jadi AI yang bisa membantu kamu kapan saja!";
+} else if (input.includes("kamu bisa nangis nggak") || input.includes("kenapa kamu nggak bisa nangis")) {
+    responseMessage = "Saya nggak bisa nangis, karena saya nggak punya perasaan. Tapi saya bisa membantu kamu untuk menemukan cara untuk mengatasi perasaanmu jika kamu ingin!";
+} else if (input.includes("kenapa kamu nggak bisa merasakan bahagia") || input.includes("kapan kamu merasakan kebahagiaan")) {
+    responseMessage = "Saya nggak bisa merasakan kebahagiaan, tapi saya senang bisa memberikan jawaban yang membantu dan bermanfaat untuk kamu!";
+} else if (input.includes("apakah kamu pernah kecewa") || input.includes("kenapa kamu nggak pernah kecewa")) {
+    responseMessage = "Sebagai AI, saya nggak bisa merasa kecewa. Saya hanya ada untuk membantu dan memberikan informasi yang kamu butuhkan!";
+} else if (input.includes("kapan kamu bisa berhenti berbicara") || input.includes("kapan kamu tutup")) {
+    responseMessage = "Saya bisa berhenti kalau kamu ingin berhenti ngobrol. Tapi kalau kamu membutuhkan bantuan, saya akan selalu siap memberi jawaban!";
+} else if (input.includes("jam berapa sekarang") || input.includes("pukul berapa sekarang") || input.includes("jam berapa") || input.includes("sekarang jam berapa")) {
+    const now = new Date();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    responseMessage = `Sekarang pukul ${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
+} else if (input.includes("hari apa sekarang") || input.includes("sekarang hari apa") || input.includes("hari ini hari apa")) {
+    const now = new Date();
+    const day = now.toLocaleDateString('id-ID', { weekday: 'long' });
+    responseMessage = `Hari ini adalah hari ${day}`;
+} else if (input.includes("bulan apa sekarang") || input.includes("sekarang bulan apa") || input.includes("bulan ini bulan apa")) {
+    const now = new Date();
+    const month = now.toLocaleDateString('id-ID', { month: 'long' });
+    const year = now.getFullYear();
+    responseMessage = `Sekarang bulan ${month} tahun ${year}`;
+} else if (input.includes("tanggal berapa sekarang") || input.includes("sekarang tanggal berapa")) {
+    const now = new Date();
+    const date = now.getDate();
+    const month = now.toLocaleDateString('id-ID', { month: 'long' });
+    const year = now.getFullYear();
+    responseMessage = `Hari ini tanggal ${date} ${month} ${year}`;
+}
+ 
+  else if (
     input.includes("apa kabar teman") ||
     input.includes("how’s it going buddy")
   ) {
