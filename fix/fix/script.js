@@ -2735,9 +2735,8 @@ else if (input.includes("seni rupa adalah") || input.includes("pengertian seni r
     responseMessage = "Lubang hitam adalah objek luar angkasa dengan gravitasi sangat kuat sehingga bahkan cahaya pun tidak bisa lepas darinya.";
 } else if (input.includes("supernova adalah") || input.includes("pengertian supernova") || input.includes("apa itu supernova") || input.includes("arti supernova")) {
     responseMessage = "Supernova adalah ledakan dahsyat yang terjadi ketika bintang besar kehabisan bahan bakar dan runtuh ke dalam dirinya sendiri.";
-} else if (input.includes("galaksi adalah") || in
 // ======== SENI & KEBUDAYAAN ========
-else if (input.includes("seni rupa adalah") || input.includes("pengertian seni rupa") || input.includes("apa itu seni rupa") || input.includes("arti seni rupa")) {
+}else if (input.includes("seni rupa adalah") || input.includes("pengertian seni rupa") || input.includes("apa itu seni rupa") || input.includes("arti seni rupa")) {
     responseMessage = "Seni rupa adalah cabang seni yang menciptakan karya dengan unsur visual, seperti lukisan, patung, dan desain grafis. Seni rupa dapat bersifat dua dimensi atau tiga dimensi.";
 } else if (input.includes("renaissance adalah") || input.includes("pengertian renaissance") || input.includes("apa itu renaissance") || input.includes("arti renaissance")) {
     responseMessage = "Renaissance adalah periode kebangkitan seni dan ilmu pengetahuan di Eropa pada abad ke-14 hingga ke-17, yang ditandai dengan tokoh-tokoh seperti Leonardo da Vinci dan Michelangelo.";
@@ -2931,7 +2930,7 @@ else if (input.includes("medis adalah") || input.includes("pengertian medis") ||
     responseMessage = "Planet adalah benda langit yang mengorbit bintang, memiliki massa cukup untuk berbentuk bulat, dan membersihkan orbitnya dari objek lain.";
 } else if (input.includes("tata surya adalah") || input.includes("pengertian tata surya") || input.includes("apa itu tata surya") || input.includes("arti tata surya")) {
     responseMessage = "Tata Surya adalah sistem yang terdiri dari matahari dan semua objek yang mengorbitnya, termasuk planet, bulan, asteroid, dan komet.";
-// ======== SEJARAH & PERADABAN ========
+}// ======== SEJARAH & PERADABAN ========
 else if (input.includes("sejarah adalah") || input.includes("pengertian sejarah") || input.includes("apa itu sejarah") || input.includes("arti sejarah")) {
     responseMessage = "Sejarah adalah ilmu yang mempelajari peristiwa masa lalu, termasuk asal-usul peradaban, peristiwa penting, dan pengaruhnya terhadap dunia saat ini.";
 } else if (input.includes("revolusi industri adalah") || input.includes("apa itu revolusi industri") || input.includes("pengertian revolusi industri")) {
@@ -3089,7 +3088,7 @@ else if (input.includes("gravitasi adalah") || input.includes("pengertian gravit
 } else if (input.includes("kecerdasan buatan adalah") || input.includes("pengertian kecerdasan buatan") || input.includes("apa itu kecerdasan buatan") || input.includes("arti kecerdasan buatan")) {
     responseMessage = "Kecerdasan buatan (AI) adalah cabang ilmu komputer yang berfokus pada pembuatan sistem yang dapat berpikir, belajar, dan mengambil keputusan seperti manusia.";
 
-else {
+}else {
     responseMessage =
       "Maaf, saya tidak mengerti pertanyaan itu. Bisa ulangi lagi?";
   }
