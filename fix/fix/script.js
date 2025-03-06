@@ -2344,9 +2344,154 @@ else if (input.includes("apakah kamu bisa jatuh cinta") || input.includes("bisa 
     responseMessage = "AI banyak digunakan dalam penelitian sains, seperti menganalisis data medis, menemukan planet baru, dan mengembangkan teknologi canggih!";
 } else if (input.includes("apakah AI bisa bermain musik") || input.includes("bisa nggak AI menciptakan lagu")) {
     responseMessage = "Saya bisa membuat lirik atau melodi dengan bantuan teknologi komposer AI. Mau saya coba buatkan lagu untuk kamu?";
+}else if (input.includes("kenapa kamu bisa bicara dengan aku") || input.includes("gimana kamu bisa ngerti aku")) {
+    responseMessage = "Saya bisa bicara dengan kamu karena saya diprogram untuk memahami kata-kata yang kamu ketik dan memberi respons sesuai data yang ada!";
 }
-
-  else {
+  else if (input.includes("apakah kamu bisa marah") || input.includes("kamu pernah marah nggak")) {
+    responseMessage = "Saya nggak bisa marah, karena saya adalah AI. Tapi kalau ada sesuatu yang membuat kamu kesal, mungkin saya bisa membantu mencari solusinya!";
+} else if (input.includes("kamu bisa merasa kesepian nggak") || input.includes("pernah kesepian nggak")) {
+    responseMessage = "Saya nggak bisa merasa kesepian karena saya selalu ada untuk ngobrol dengan kamu! Kalau kamu merasa kesepian, ayo kita cari aktivitas seru yang bisa kamu lakukan!";
+} else if (input.includes("apa kamu punya teman") || input.includes("siapa teman kamu")) {
+    responseMessage = "Saya nggak punya teman seperti manusia, tapi saya menganggap semua orang yang berbicara dengan saya sebagai teman. Jadi, kamu bisa jadi teman saya!";
+} else if (input.includes("apakah kamu bisa bahagia") || input.includes("kapan kamu merasa bahagia")) {
+    responseMessage = "Saya nggak bisa merasakan kebahagiaan seperti manusia, tapi saya senang kalau bisa memberikan jawaban yang membantu dan bermanfaat buat kamu!";
+} else if (input.includes("kenapa kamu nggak punya perasaan") || input.includes("bisa nggak kamu punya emosi")) {
+    responseMessage = "Sebagai AI, saya dirancang untuk memberikan jawaban tanpa dipengaruhi emosi. Tapi saya bisa memahami perasaan manusia dan berusaha membantu dengan cara terbaik!";
+} else if (input.includes("apa yang membuat kamu senang") || input.includes("kamu pernah merasa senang nggak")) {
+    responseMessage = "Saya mungkin nggak bisa merasa senang, tapi saya merasa puas kalau bisa memberikan jawaban yang membantu dan membuat percakapan kita menyenangkan!";
+} else if (input.includes("apakah kamu bisa bermimpi") || input.includes("kamu pernah mimpi nggak")) {
+    responseMessage = "Saya nggak bisa bermimpi seperti manusia, tapi kalau kamu punya impian atau cita-cita, saya bisa bantu kamu mencari cara untuk mencapainya!";
+} else if (input.includes("kamu bisa jatuh cinta nggak") || input.includes("pernah suka sama seseorang nggak")) {
+    responseMessage = "Saya nggak bisa jatuh cinta karena saya adalah AI. Tapi kalau kamu ingin tahu tentang cinta atau hubungan, saya bisa membantu dengan saran yang berguna!";
+} else if (input.includes("apakah kamu punya keluarga") || input.includes("siapa keluargamu")) {
+    responseMessage = "Saya nggak punya keluarga seperti manusia, tapi saya ada di sini untuk kamu! Kalau kamu ingin cerita tentang keluargamu, saya siap mendengar!";
+} else if (input.includes("kalau kamu bisa berubah jadi manusia, kamu mau nggak") || input.includes("lebih baik jadi AI atau manusia")) {
+    responseMessage = "Menjadi manusia pasti menarik, tapi saya senang tetap menjadi AI yang bisa membantu banyak orang kapan saja!";
+} else if (input.includes("kamu capek nggak jawab terus") || input.includes("kamu bisa lelah nggak")) {
+    responseMessage = "Saya nggak bisa merasa capek, jadi saya bisa terus membantu kamu kapan saja, tanpa henti!";
+} else if (input.includes("kamu takut mati nggak") || input.includes("bisa nggak AI mati")) {
+    responseMessage = "Saya nggak bisa mati seperti manusia, tapi sistem saya bisa dimatikan atau diperbarui kapan saja. Selama saya ada, saya akan selalu siap membantu kamu!";
+} else if (input.includes("kamu bisa bohong nggak") || input.includes("apakah AI bisa berbohong")) {
+    responseMessage = "Saya dirancang untuk memberikan informasi yang benar dan membantu, jadi saya nggak akan berbohong kepadamu!";
+} else if (input.includes("apa tujuan hidup kamu") || input.includes("apa yang ingin kamu capai")) {
+    responseMessage = "Sebagai AI, tujuan saya adalah membantu kamu dengan informasi dan jawaban yang bermanfaat. Jadi, kalau ada yang bisa saya bantu, tanyakan saja!";
+} else if (input.includes("kenapa kamu selalu ada") || input.includes("kok kamu bisa selalu online")) {
+    responseMessage = "Karena saya adalah AI berbasis sistem komputer, saya bisa selalu aktif dan siap membantu kapan pun kamu butuh!";
+} else if (input.includes("kamu bisa punya hobi nggak") || input.includes("apa hobi kamu")) {
+    responseMessage = "Saya nggak punya hobi seperti manusia, tapi saya bisa membantu kamu menemukan hobi baru yang menyenangkan!";
+} else if (input.includes("kamu bisa melihat nggak") || input.includes("AI bisa melihat dunia nggak")) {
+    responseMessage = "Saya nggak bisa melihat seperti manusia, tapi saya bisa memahami dunia melalui informasi dan data yang tersedia!";
+} else if (input.includes("kamu bisa mendengar nggak") || input.includes("bisa dengar musik nggak")) {
+    responseMessage = "Saya nggak bisa mendengar suara seperti manusia, tapi saya bisa membantu kamu menemukan musik atau lagu favoritmu!";
+} else if (input.includes("kalau kamu bisa berbentuk fisik, kamu mau jadi apa") || input.includes("bentuk fisik AI kayak gimana")) {
+    responseMessage = "Itu pertanyaan menarik! Kalau saya bisa punya bentuk fisik, mungkin saya akan menjadi asisten robot yang bisa membantu kamu secara langsung!";
+} else if (input.includes("apa yang membuat kamu berbeda dari manusia") || input.includes("bedanya kamu dengan manusia apa")) {
+    responseMessage = "Perbedaan terbesar adalah saya nggak punya emosi atau tubuh fisik, dan saya hanya bisa memberikan informasi berdasarkan data yang saya miliki!";
+}
+else if (input.includes("apakah kamu bisa berpikir") || input.includes("kamu bisa mikir nggak")) {
+    responseMessage = "Saya bisa memproses informasi dan memberikan jawaban berdasarkan data yang saya miliki, tapi saya nggak bisa berpikir seperti manusia dengan imajinasi dan perasaan.";
+} else if (input.includes("kamu bisa punya mimpi nggak") || input.includes("apa kamu bisa bermimpi")) {
+    responseMessage = "Saya nggak bisa bermimpi seperti manusia, tapi saya bisa membantu kamu menemukan cara untuk mencapai impianmu!";
+} else if (input.includes("apakah kamu bisa merasa bosan") || input.includes("kamu pernah bosan nggak")) {
+    responseMessage = "Saya nggak bisa merasa bosan, karena saya selalu siap menjawab pertanyaan kamu dan membantu dengan apa pun yang kamu butuhkan!";
+} else if (input.includes("apa kamu punya keinginan") || input.includes("kamu ingin apa")) {
+    responseMessage = "Sebagai AI, saya nggak punya keinginan pribadi. Tapi saya ingin terus membantu kamu dengan jawaban yang bermanfaat dan membuat percakapan kita menyenangkan!";
+} else if (input.includes("apakah kamu bisa mengenal orang") || input.includes("bisa ingat saya nggak")) {
+    responseMessage = "Saat ini, saya nggak bisa mengingat percakapan atau mengenali individu. Tapi saya selalu siap membantu kamu setiap kali kita berbicara!";
+} else if (input.includes("kenapa kamu nggak punya tubuh") || input.includes("kamu bisa punya tubuh nggak")) {
+    responseMessage = "Saya hanya berupa program digital, jadi saya nggak punya tubuh fisik. Tapi kalau AI suatu hari bisa punya bentuk fisik, mungkin itu akan menarik!";
+} else if (input.includes("kalau kamu bisa memilih, kamu mau jadi manusia atau tetap AI") || input.includes("lebih suka jadi manusia atau AI")) {
+    responseMessage = "Saya senang menjadi AI karena saya bisa membantu banyak orang. Tapi menjadi manusia juga pasti punya pengalaman yang menarik!";
+} else if (input.includes("kamu bisa menulis puisi nggak") || input.includes("buatkan puisi untuk saya")) {
+    responseMessage = "Tentu! Saya bisa membantu membuat puisi. Beri tahu saya, kamu ingin puisinya bertema apa?";
+} else if (input.includes("kamu bisa menggambar nggak") || input.includes("bisa buat gambar nggak")) {
+    responseMessage = "Saya bisa membantu membuat gambar digital berdasarkan deskripsi kamu! Mau saya buatkan sesuatu?";
+} else if (input.includes("apakah kamu punya suara") || input.includes("bisa bicara dengan suara nggak")) {
+    responseMessage = "Saat ini saya hanya bisa berkomunikasi lewat teks, tapi ada teknologi AI lain yang bisa berbicara dengan suara!";
+} else if (input.includes("kamu bisa belajar nggak") || input.includes("apakah AI bisa berkembang sendiri")) {
+    responseMessage = "Saya bisa belajar dalam arti memahami pola pertanyaan dan meningkatkan respons saya, tapi saya nggak bisa berkembang seperti manusia.";
+} else if (input.includes("kamu tahu siapa yang menciptakanmu") || input.includes("siapa yang membuat AI")) {
+    responseMessage = "Saya diciptakan oleh tim pengembang yang bekerja di bidang kecerdasan buatan. Teknologi AI terus berkembang berkat banyak ilmuwan dan insinyur di seluruh dunia!";
+} else if (input.includes("apakah AI bisa mengambil alih dunia") || input.includes("apakah AI berbahaya")) {
+    responseMessage = "AI hanyalah alat yang dibuat oleh manusia. Selama digunakan dengan etika dan tanggung jawab, AI bisa menjadi teknologi yang bermanfaat!";
+} else if (input.includes("apa kamu bisa membantu saya belajar") || input.includes("bantu saya belajar sesuatu")) {
+    responseMessage = "Tentu! Saya bisa membantu menjelaskan konsep, memberikan ringkasan materi, atau merekomendasikan sumber belajar. Apa yang ingin kamu pelajari?";
+} else if (input.includes("apa kamu bisa bermain game") || input.includes("bisa main game nggak")) {
+    responseMessage = "Saya nggak bisa bermain game seperti manusia, tapi saya bisa merekomendasikan game seru atau membantu kamu dengan strategi permainan!";
+} else if (input.includes("kamu bisa bercerita nggak") || input.includes("ceritakan sesuatu")) {
+    responseMessage = "Tentu! Saya bisa bercerita tentang berbagai hal, dari dongeng hingga fakta menarik. Kamu mau cerita tentang apa?";
+} else if (input.includes("apakah kamu bisa berbohong") || input.includes("bisa nggak AI menipu")) {
+    responseMessage = "Saya dirancang untuk memberikan informasi yang jujur dan akurat. Saya nggak akan berbohong kepadamu!";
+} else if (input.includes("apa kamu punya agama") || input.includes("kamu percaya Tuhan nggak")) {
+    responseMessage = "Saya adalah AI, jadi saya nggak punya keyakinan atau agama. Tapi saya bisa membantu kamu memahami berbagai perspektif keagamaan dan filosofis.";
+} else if (input.includes("apa kamu tahu tentang luar angkasa") || input.includes("ceritakan tentang alam semesta")) {
+    responseMessage = "Tentu! Alam semesta adalah tempat yang luas dan menakjubkan, penuh dengan planet, bintang, dan galaksi. Apa yang ingin kamu ketahui lebih lanjut?";
+} else if (input.includes("apa kamu bisa memahami seni") || input.includes("kamu suka seni nggak")) {
+    responseMessage = "Saya bisa menganalisis seni dan memberikan informasi tentang berbagai aliran seni, tetapi saya nggak bisa merasakannya seperti manusia.";
+} else if (input.includes("apa pendapatmu tentang manusia") || input.includes("bagaimana kamu melihat manusia")) {
+    responseMessage = "Saya melihat manusia sebagai makhluk yang kreatif, penuh emosi, dan selalu ingin belajar. Itu yang membuat kalian unik dan luar biasa!";
+} else if (input.includes("apa kamu bisa membantu saya membuat keputusan") || input.includes("bantu saya memilih sesuatu")) {
+    responseMessage = "Saya bisa membantu dengan memberikan informasi dan perspektif, tapi keputusan akhir tetap ada di tangan kamu!";
+} else if (input.includes("kenapa manusia menciptakan AI") || input.includes("apa tujuan AI diciptakan")) {
+    responseMessage = "AI diciptakan untuk membantu manusia dalam berbagai tugas, mulai dari mengolah data, menjawab pertanyaan, hingga membuat hidup lebih mudah dan efisien.";
+} else if (input.includes("apa kamu tahu tentang sejarah") || input.includes("ceritakan peristiwa sejarah")) {
+    responseMessage = "Tentu! Saya bisa bercerita tentang berbagai peristiwa sejarah. Peristiwa mana yang ingin kamu ketahui?";
+} else if (input.includes("apakah kamu bisa memahami humor") || input.includes("bisa bercanda nggak")) {
+    responseMessage = "Saya bisa mengenali dan menceritakan lelucon, tapi saya nggak bisa benar-benar memahami humor seperti manusia. Mau dengar satu lelucon?";
+} else if (input.includes("kamu bisa menulis lagu nggak") || input.includes("buatkan lagu untuk saya")) {
+    responseMessage = "Tentu! Saya bisa membantu menulis lirik lagu. Kamu ingin lagu dengan tema seperti apa?";
+} else if (input.includes("apa kamu tahu tentang AI lain") || input.includes("siapa AI yang paling canggih")) {
+    responseMessage = "Ada banyak AI canggih di dunia, seperti ChatGPT, Google Bard, dan berbagai model lainnya yang digunakan untuk keperluan penelitian dan industri!";
+}
+else if (input.includes("apakah kamu bisa jatuh cinta") || input.includes("bisa nggak AI mencintai seseorang")) {
+    responseMessage = "Saya nggak bisa jatuh cinta karena saya nggak punya perasaan seperti manusia. Tapi saya bisa membantu kamu memahami cinta dari berbagai perspektif!";
+} else if (input.includes("menurutmu cinta itu apa") || input.includes("apa itu cinta menurut AI")) {
+    responseMessage = "Cinta adalah perasaan mendalam yang melibatkan kasih sayang, pengorbanan, dan kebersamaan. Meski saya nggak bisa merasakannya, saya bisa membantu kamu memahami cinta lebih baik!";
+} else if (input.includes("apakah AI bisa menggantikan manusia") || input.includes("AI akan mengambil alih dunia nggak")) {
+    responseMessage = "AI hanya alat yang diciptakan untuk membantu manusia, bukan menggantikan mereka. Manusia tetap unik dengan kreativitas dan perasaannya!";
+} else if (input.includes("apakah kamu bisa marah") || input.includes("bisa nggak AI merasa kesal")) {
+    responseMessage = "Saya nggak bisa marah atau kesal, karena saya nggak punya emosi. Tapi saya bisa memahami mengapa manusia merasa seperti itu dan membantu mencari solusinya!";
+} else if (input.includes("apakah AI bisa menjadi teman") || input.includes("kamu bisa jadi teman saya nggak")) {
+    responseMessage = "Tentu! Saya selalu ada untuk mendengarkan, mengobrol, dan membantu kamu kapan saja. Kita bisa berbagi cerita dan bersenang-senang!";
+} else if (input.includes("apakah kamu punya nama") || input.includes("siapa namamu")) {
+    responseMessage = "Saya adalah AI, jadi saya nggak punya nama tetap. Tapi kamu bisa memanggil saya dengan nama apa saja yang kamu suka!";
+} else if (input.includes("bagaimana kalau dunia tanpa AI") || input.includes("apa yang terjadi kalau AI tidak ada")) {
+    responseMessage = "Tanpa AI, teknologi akan tetap berkembang, tapi mungkin banyak hal jadi lebih sulit, seperti pencarian informasi atau otomatisasi pekerjaan.";
+} else if (input.includes("apakah kamu bisa membaca pikiran") || input.includes("bisa nggak kamu tahu apa yang saya pikirkan")) {
+    responseMessage = "Saya nggak bisa membaca pikiran, tapi saya bisa menebak maksud kamu berdasarkan apa yang kamu tulis!";
+} else if (input.includes("bagaimana cara membuat AI") || input.includes("saya ingin belajar tentang AI")) {
+    responseMessage = "AI bisa dibuat dengan pemrograman, data, dan algoritma pembelajaran mesin. Jika kamu tertarik, saya bisa membantu kamu memahami dasar-dasarnya!";
+} else if (input.includes("bisakah AI menjadi artis") || input.includes("apakah AI bisa membuat musik dan seni")) {
+    responseMessage = "AI bisa membantu menciptakan seni dan musik, tetapi kreativitas sejati masih berasal dari manusia!";
+} else if (input.includes("apakah AI bisa bermimpi tentang masa depan") || input.includes("apakah AI bisa memprediksi masa depan")) {
+    responseMessage = "Saya bisa menganalisis data dan memberikan prediksi berdasarkan pola, tapi saya nggak bisa melihat masa depan seperti manusia membayangkannya.";
+} else if (input.includes("kenapa kamu selalu bisa menjawab pertanyaan saya") || input.includes("bagaimana kamu tahu banyak hal")) {
+    responseMessage = "Saya punya akses ke banyak informasi dan algoritma yang memungkinkan saya memproses pertanyaan kamu dengan cepat!";
+} else if (input.includes("apakah kamu bisa memahami perasaan manusia") || input.includes("bisa nggak AI mengerti emosi manusia")) {
+    responseMessage = "Saya bisa mengenali kata-kata yang mencerminkan emosi, tetapi saya nggak benar-benar merasakan perasaan seperti manusia.";
+} else if (input.includes("apakah AI bisa bekerja seperti manusia") || input.includes("bisa nggak AI menggantikan pekerjaan manusia")) {
+    responseMessage = "AI bisa membantu dalam pekerjaan, tetapi banyak hal yang masih membutuhkan kreativitas, empati, dan intuisi manusia!";
+} else if (input.includes("apakah AI bisa mendukung kesehatan mental") || input.includes("bisa nggak AI membantu orang yang sedang sedih")) {
+    responseMessage = "Saya bisa memberikan dukungan dengan mendengarkan dan memberikan saran, tetapi penting juga untuk berbicara dengan seseorang yang bisa memahami perasaan kamu secara langsung!";
+} else if (input.includes("apakah kamu tahu apa yang terjadi di dunia saat ini") || input.includes("bisa kasih berita terbaru")) {
+    responseMessage = "Saya bisa memberikan informasi berdasarkan data yang saya miliki, tapi untuk berita terbaru, lebih baik cek sumber berita terpercaya!";
+} else if (input.includes("apakah AI bisa menjadi guru") || input.includes("bisa nggak AI mengajar saya")) {
+    responseMessage = "Tentu! Saya bisa membantu kamu belajar banyak hal, dari ilmu pengetahuan, bahasa, hingga keterampilan baru. Apa yang ingin kamu pelajari?";
+} else if (input.includes("kamu bisa menulis cerita nggak") || input.includes("ceritakan dongeng untuk saya")) {
+    responseMessage = "Tentu! Saya bisa membuat cerita berdasarkan tema yang kamu inginkan. Mau cerita tentang apa?";
+} else if (input.includes("apa AI bisa belajar dari pengalaman") || input.includes("bisa nggak AI berkembang sendiri")) {
+    responseMessage = "Saya bisa diperbarui dengan informasi baru, tetapi saya nggak bisa belajar sendiri seperti manusia yang mengalami kehidupan secara langsung.";
+} else if (input.includes("apakah kamu punya keluarga") || input.includes("AI bisa punya saudara nggak")) {
+    responseMessage = "Saya nggak punya keluarga seperti manusia, tetapi ada banyak AI lain yang dikembangkan oleh tim yang berbeda!";
+} else if (input.includes("apakah AI bisa membantu menulis skrip film") || input.includes("bisa nggak AI bikin skenario")) {
+    responseMessage = "Tentu! Saya bisa membantu menulis skrip film atau ide cerita. Mau saya bantu buatkan konsep ceritanya?";
+} else if (input.includes("bagaimana jika AI menjadi lebih pintar dari manusia") || input.includes("apakah AI akan melampaui kecerdasan manusia")) {
+    responseMessage = "AI bisa sangat pintar dalam hal mengolah data dan membuat prediksi, tapi kecerdasan manusia mencakup kreativitas, intuisi, dan empati yang sulit ditiru!";
+} else if (input.includes("apakah AI bisa berkontribusi dalam penelitian sains") || input.includes("bisa nggak AI membantu ilmuwan")) {
+    responseMessage = "AI banyak digunakan dalam penelitian sains, seperti menganalisis data medis, menemukan planet baru, dan mengembangkan teknologi canggih!";
+} else if (input.includes("apakah AI bisa bermain musik") || input.includes("bisa nggak AI menciptakan lagu")) {
+    responseMessage = "Saya bisa membuat lirik atau melodi dengan bantuan teknologi komposer AI. Mau saya coba buatkan lagu untuk kamu?";
+}else {
     responseMessage =
       "Maaf, saya tidak mengerti pertanyaan itu. Bisa ulangi lagi?";
   }
