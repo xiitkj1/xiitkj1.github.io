@@ -2886,6 +2886,208 @@ else if (input.includes("medis adalah") || input.includes("pengertian medis") ||
 } else if (input.includes("kesenian adalah") || input.includes("pengertian kesenian") || input.includes("apa itu kesenian") || input.includes("arti kesenian")) {
     responseMessage = "Kesenian adalah ekspresi kreatif manusia dalam berbagai bentuk, seperti musik, tari, lukisan, teater, dan sastra.";
 
+// ======== SAINS & TEKNOLOGI ========
+     }else if (input.includes("sains adalah") || input.includes("pengertian sains") || input.includes("apa itu sains") || input.includes("arti sains")) {
+    responseMessage = "Sains adalah cabang pengetahuan yang mempelajari alam semesta melalui metode ilmiah, eksperimen, dan pengamatan untuk memahami hukum-hukum alam.";
+} else if (input.includes("fisika adalah") || input.includes("pengertian fisika") || input.includes("apa itu fisika") || input.includes("arti fisika")) {
+    responseMessage = "Fisika adalah cabang ilmu sains yang mempelajari sifat dan interaksi materi serta energi, mencakup konsep seperti gerak, listrik, magnetisme, dan mekanika kuantum.";
+} else if (input.includes("biologi adalah") || input.includes("pengertian biologi") || input.includes("apa itu biologi") || input.includes("arti biologi")) {
+    responseMessage = "Biologi adalah ilmu yang mempelajari makhluk hidup dan lingkungannya, termasuk anatomi, ekologi, evolusi, dan genetika.";
+} else if (input.includes("kimia adalah") || input.includes("pengertian kimia") || input.includes("apa itu kimia") || input.includes("arti kimia")) {
+    responseMessage = "Kimia adalah cabang ilmu yang mempelajari komposisi, struktur, sifat, dan perubahan materi, serta reaksi antara zat-zat kimia.";
+} else if (input.includes("robot adalah") || input.includes("pengertian robot") || input.includes("apa itu robot") || input.includes("arti robot")) {
+    responseMessage = "Robot adalah mesin yang dapat diprogram untuk melakukan tugas tertentu secara otomatis, sering digunakan dalam industri, kesehatan, dan eksplorasi luar angkasa.";
+} else if (input.includes("kecerdasan buatan adalah") || input.includes("pengertian kecerdasan buatan") || input.includes("apa itu kecerdasan buatan") || input.includes("arti kecerdasan buatan")) {
+    responseMessage = "Kecerdasan buatan (AI) adalah teknologi yang memungkinkan komputer dan mesin untuk berpikir dan belajar layaknya manusia, menggunakan algoritma dan data.";
+
+// ======== EKONOMI & BISNIS ========
+} else if (input.includes("ekonomi adalah") || input.includes("pengertian ekonomi") || input.includes("apa itu ekonomi") || input.includes("arti ekonomi")) {
+    responseMessage = "Ekonomi adalah ilmu yang mempelajari produksi, distribusi, dan konsumsi barang serta jasa dalam suatu sistem keuangan.";
+} else if (input.includes("inflasi adalah") || input.includes("pengertian inflasi") || input.includes("apa itu inflasi") || input.includes("arti inflasi")) {
+    responseMessage = "Inflasi adalah kenaikan harga barang dan jasa secara terus-menerus dalam suatu periode waktu, yang menyebabkan daya beli masyarakat menurun.";
+} else if (input.includes("investasi adalah") || input.includes("pengertian investasi") || input.includes("apa itu investasi") || input.includes("arti investasi")) {
+    responseMessage = "Investasi adalah penanaman modal atau aset dalam suatu instrumen keuangan dengan tujuan mendapatkan keuntungan di masa depan.";
+} else if (input.includes("pasar saham adalah") || input.includes("pengertian pasar saham") || input.includes("apa itu pasar saham") || input.includes("arti pasar saham")) {
+    responseMessage = "Pasar saham adalah tempat di mana investor dapat membeli dan menjual saham perusahaan publik untuk mendapatkan keuntungan dari perubahan harga saham.";
+
+// ======== HUKUM & POLITIK ========
+} else if (input.includes("hukum adalah") || input.includes("pengertian hukum") || input.includes("apa itu hukum") || input.includes("arti hukum")) {
+    responseMessage = "Hukum adalah sistem aturan yang dibuat oleh pemerintah atau lembaga tertentu untuk mengatur kehidupan masyarakat dan menegakkan keadilan.";
+} else if (input.includes("konstitusi adalah") || input.includes("pengertian konstitusi") || input.includes("apa itu konstitusi") || input.includes("arti konstitusi")) {
+    responseMessage = "Konstitusi adalah hukum dasar yang mengatur sistem pemerintahan dan hak-hak warga negara dalam suatu negara.";
+} else if (input.includes("demokrasi adalah") || input.includes("pengertian demokrasi") || input.includes("apa itu demokrasi") || input.includes("arti demokrasi")) {
+    responseMessage = "Demokrasi adalah sistem pemerintahan di mana kekuasaan berada di tangan rakyat, biasanya melalui pemilihan umum untuk memilih pemimpin.";
+} else if (input.includes("otoriter adalah") || input.includes("pengertian otoriter") || input.includes("apa itu otoriter") || input.includes("arti otoriter")) {
+    responseMessage = "Otoriter adalah sistem pemerintahan di mana kekuasaan terpusat pada satu orang atau kelompok tanpa adanya kebebasan bagi rakyat.";
+
+// ======== ASTRONOMI & LUAR ANGKASA ========
+} else if (input.includes("astronomi adalah") || input.includes("pengertian astronomi") || input.includes("apa itu astronomi") || input.includes("arti astronomi")) {
+    responseMessage = "Astronomi adalah ilmu yang mempelajari benda-benda langit seperti bintang, planet, galaksi, dan fenomena kosmik di luar angkasa.";
+} else if (input.includes("bintang adalah") || input.includes("pengertian bintang") || input.includes("apa itu bintang") || input.includes("arti bintang")) {
+    responseMessage = "Bintang adalah bola gas raksasa yang menghasilkan cahaya dan panas melalui reaksi nuklir, seperti matahari yang menjadi pusat tata surya kita.";
+} else if (input.includes("lubang hitam adalah") || input.includes("pengertian lubang hitam") || input.includes("apa itu lubang hitam") || input.includes("arti lubang hitam")) {
+    responseMessage = "Lubang hitam adalah wilayah di ruang angkasa dengan gravitasi sangat kuat yang bahkan cahaya pun tidak bisa keluar darinya.";
+} else if (input.includes("planet adalah") || input.includes("pengertian planet") || input.includes("apa itu planet") || input.includes("arti planet")) {
+    responseMessage = "Planet adalah benda langit yang mengorbit bintang, memiliki massa cukup untuk berbentuk bulat, dan membersihkan orbitnya dari objek lain.";
+} else if (input.includes("tata surya adalah") || input.includes("pengertian tata surya") || input.includes("apa itu tata surya") || input.includes("arti tata surya")) {
+    responseMessage = "Tata Surya adalah sistem yang terdiri dari matahari dan semua objek yang mengorbitnya, termasuk planet, bulan, asteroid, dan komet.";
+// ======== SEJARAH & PERADABAN ========
+else if (input.includes("sejarah adalah") || input.includes("pengertian sejarah") || input.includes("apa itu sejarah") || input.includes("arti sejarah")) {
+    responseMessage = "Sejarah adalah ilmu yang mempelajari peristiwa masa lalu, termasuk asal-usul peradaban, peristiwa penting, dan pengaruhnya terhadap dunia saat ini.";
+} else if (input.includes("revolusi industri adalah") || input.includes("apa itu revolusi industri") || input.includes("pengertian revolusi industri")) {
+    responseMessage = "Revolusi Industri adalah periode perubahan besar dalam cara produksi barang, yang dimulai pada abad ke-18 dengan munculnya mesin dan pabrik.";
+} else if (input.includes("perang dunia adalah") || input.includes("apa itu perang dunia") || input.includes("pengertian perang dunia")) {
+    responseMessage = "Perang Dunia adalah konflik global besar yang terjadi pada abad ke-20, yaitu Perang Dunia I (1914-1918) dan Perang Dunia II (1939-1945).";
+} else if (input.includes("kerajaan romawi adalah") || input.includes("apa itu kerajaan romawi") || input.includes("pengertian kerajaan romawi")) {
+    responseMessage = "Kerajaan Romawi adalah salah satu peradaban paling berpengaruh dalam sejarah dunia, yang berkembang dari kota Roma dan menjadi kekaisaran yang luas.";
+
+// ======== BUDAYA & SOSIAL ========
+} else if (input.includes("budaya adalah") || input.includes("pengertian budaya") || input.includes("apa itu budaya") || input.includes("arti budaya")) {
+    responseMessage = "Budaya adalah sekumpulan nilai, norma, adat istiadat, seni, dan kebiasaan yang diwariskan dalam suatu masyarakat.";
+} else if (input.includes("tradisi adalah") || input.includes("pengertian tradisi") || input.includes("apa itu tradisi") || input.includes("arti tradisi")) {
+    responseMessage = "Tradisi adalah kebiasaan atau praktik yang diwariskan dari generasi ke generasi dalam suatu kelompok masyarakat.";
+} else if (input.includes("bahasa adalah") || input.includes("pengertian bahasa") || input.includes("apa itu bahasa") || input.includes("arti bahasa")) {
+    responseMessage = "Bahasa adalah sistem komunikasi yang digunakan oleh manusia untuk berbicara, menulis, dan mengekspresikan pemikiran serta perasaan.";
+
+// ======== PSIKOLOGI & FILSAFAT ========
+} else if (input.includes("psikologi adalah") || input.includes("pengertian psikologi") || input.includes("apa itu psikologi") || input.includes("arti psikologi")) {
+    responseMessage = "Psikologi adalah ilmu yang mempelajari perilaku dan proses mental manusia, termasuk emosi, kepribadian, dan kognisi.";
+} else if (input.includes("filsafat adalah") || input.includes("pengertian filsafat") || input.includes("apa itu filsafat") || input.includes("arti filsafat")) {
+    responseMessage = "Filsafat adalah disiplin yang mempelajari makna hidup, keberadaan, etika, dan logika untuk mencari kebenaran dan kebijaksanaan.";
+} else if (input.includes("eksistensialisme adalah") || input.includes("pengertian eksistensialisme") || input.includes("apa itu eksistensialisme")) {
+    responseMessage = "Eksistensialisme adalah aliran filsafat yang menekankan kebebasan individu, tanggung jawab, dan pencarian makna hidup.";
+} else if (input.includes("kecemasan adalah") || input.includes("pengertian kecemasan") || input.includes("apa itu kecemasan") || input.includes("arti kecemasan")) {
+    responseMessage = "Kecemasan adalah perasaan khawatir atau ketakutan yang bisa dipicu oleh tekanan, stres, atau kondisi psikologis tertentu.";
+
+// ======== MITOLOGI & LEGENDA ========
+} else if (input.includes("mitologi adalah") || input.includes("pengertian mitologi") || input.includes("apa itu mitologi") || input.includes("arti mitologi")) {
+    responseMessage = "Mitologi adalah kumpulan cerita atau legenda yang menjelaskan asal-usul dunia, dewa-dewi, dan makhluk supernatural dalam berbagai budaya.";
+} else if (input.includes("zeus adalah") || input.includes("dewa zeus") || input.includes("siapa zeus")) {
+    responseMessage = "Zeus adalah dewa utama dalam mitologi Yunani, penguasa Gunung Olympus, dan dewa langit serta petir.";
+} else if (input.includes("thor adalah") || input.includes("dewa thor") || input.includes("siapa thor")) {
+    responseMessage = "Thor adalah dewa petir dalam mitologi Nordik, yang dikenal dengan palu Mjölnir dan perlindungannya terhadap umat manusia.";
+} else if (input.includes("naga adalah") || input.includes("pengertian naga") || input.includes("apa itu naga")) {
+    responseMessage = "Naga adalah makhluk legendaris yang muncul dalam berbagai budaya, sering digambarkan sebagai reptil raksasa bersayap dengan kemampuan bernapas api.";
+
+// ======== AGAMA & KEIMANAN ========
+} else if (input.includes("agama adalah") || input.includes("pengertian agama") || input.includes("apa itu agama") || input.includes("arti agama")) {
+    responseMessage = "Agama adalah sistem kepercayaan dan praktik spiritual yang menghubungkan manusia dengan kekuatan yang lebih tinggi.";
+} else if (input.includes("spiritualitas adalah") || input.includes("pengertian spiritualitas") || input.includes("apa itu spiritualitas")) {
+    responseMessage = "Spiritualitas adalah pencarian makna dan hubungan manusia dengan sesuatu yang lebih besar dari dirinya, sering dikaitkan dengan ketenangan batin.";
+} else if (input.includes("karma adalah") || input.includes("pengertian karma") || input.includes("apa itu karma")) {
+    responseMessage = "Karma adalah konsep dalam banyak agama yang menyatakan bahwa setiap tindakan akan membawa konsekuensi, baik atau buruk, di masa depan.";
+} else if (input.includes("reinkarnasi adalah") || input.includes("pengertian reinkarnasi") || input.includes("apa itu reinkarnasi")) {
+    responseMessage = "Reinkarnasi adalah kepercayaan bahwa jiwa akan terlahir kembali dalam kehidupan baru setelah kematian, berdasarkan tindakan dalam kehidupan sebelumnya.";
+}// ======== SEJARAH & PERADABAN ========
+else if (input.includes("sejarah adalah") || input.includes("pengertian sejarah") || input.includes("apa itu sejarah") || input.includes("arti sejarah")) {
+    responseMessage = "Sejarah adalah ilmu yang mempelajari peristiwa masa lalu berdasarkan bukti dan catatan yang ada, untuk memahami bagaimana peradaban berkembang.";
+} else if (input.includes("kerajaan adalah") || input.includes("pengertian kerajaan") || input.includes("apa itu kerajaan") || input.includes("arti kerajaan")) {
+    responseMessage = "Kerajaan adalah sistem pemerintahan yang dipimpin oleh seorang raja atau ratu, biasanya berdasarkan garis keturunan.";
+} else if (input.includes("imperium adalah") || input.includes("pengertian imperium") || input.includes("apa itu imperium") || input.includes("arti imperium")) {
+    responseMessage = "Imperium adalah kerajaan atau negara yang memiliki wilayah luas dan kekuasaan besar, sering kali mencakup beberapa wilayah atau bangsa.";
+} else if (input.includes("perang dunia adalah") || input.includes("pengertian perang dunia") || input.includes("apa itu perang dunia") || input.includes("arti perang dunia")) {
+    responseMessage = "Perang Dunia adalah konflik berskala global yang melibatkan banyak negara. Sejarah mencatat Perang Dunia I (1914-1918) dan Perang Dunia II (1939-1945) sebagai perang terbesar dalam sejarah manusia.";
+
+// ======== MITOLOGI & BUDAYA ========
+} else if (input.includes("mitologi adalah") || input.includes("pengertian mitologi") || input.includes("apa itu mitologi") || input.includes("arti mitologi")) {
+    responseMessage = "Mitologi adalah kumpulan cerita dan legenda dari suatu budaya yang menjelaskan asal-usul dunia, dewa-dewa, dan kejadian luar biasa.";
+} else if (input.includes("dewa adalah") || input.includes("pengertian dewa") || input.includes("apa itu dewa") || input.includes("arti dewa")) {
+    responseMessage = "Dewa adalah makhluk supranatural dalam berbagai kepercayaan yang dianggap memiliki kekuatan luar biasa dan mengatur aspek tertentu dari alam semesta.";
+} else if (input.includes("naga adalah") || input.includes("pengertian naga") || input.includes("apa itu naga") || input.includes("arti naga")) {
+    responseMessage = "Naga adalah makhluk legendaris dalam mitologi berbagai budaya, sering digambarkan sebagai reptil raksasa yang bisa terbang dan mengeluarkan api.";
+
+// ======== TEKNOLOGI MASA DEPAN ========
+} else if (input.includes("kecerdasan buatan masa depan") || input.includes("bagaimana AI berkembang") || input.includes("masa depan AI")) {
+    responseMessage = "Di masa depan, AI diperkirakan akan semakin canggih, dengan kemampuan yang lebih mendekati kecerdasan manusia, termasuk dalam bidang kesehatan, robotika, dan bahkan seni.";
+} else if (input.includes("mobil listrik adalah") || input.includes("pengertian mobil listrik") || input.includes("apa itu mobil listrik") || input.includes("arti mobil listrik")) {
+    responseMessage = "Mobil listrik adalah kendaraan yang menggunakan tenaga listrik sebagai sumber energinya, lebih ramah lingkungan dibandingkan mobil berbahan bakar fosil.";
+
+// ======== PSIKOLOGI & EMOSI ========
+} else if (input.includes("psikologi adalah") || input.includes("pengertian psikologi") || input.includes("apa itu psikologi") || input.includes("arti psikologi")) {
+    responseMessage = "Psikologi adalah ilmu yang mempelajari perilaku dan proses mental manusia, termasuk emosi, motivasi, dan interaksi sosial.";
+} else if (input.includes("emosi adalah") || input.includes("pengertian emosi") || input.includes("apa itu emosi") || input.includes("arti emosi")) {
+    responseMessage = "Emosi adalah reaksi psikologis yang muncul sebagai respons terhadap suatu situasi atau peristiwa, seperti kebahagiaan, kesedihan, dan kemarahan.";
+} else if (input.includes("stres adalah") || input.includes("pengertian stres") || input.includes("apa itu stres") || input.includes("arti stres")) {
+    responseMessage = "Stres adalah kondisi mental dan fisik yang muncul akibat tekanan atau tuntutan yang tinggi, sering kali menyebabkan kecemasan dan kelelahan.";
+
+// ======== TEORI KONSPIRASI ========
+} else if (input.includes("teori konspirasi adalah") || input.includes("pengertian teori konspirasi") || input.includes("apa itu teori konspirasi") || input.includes("arti teori konspirasi")) {
+    responseMessage = "Teori konspirasi adalah keyakinan bahwa suatu peristiwa besar terjadi karena rencana rahasia dari kelompok tertentu, meskipun sering kali tidak memiliki bukti yang kuat.";
+} else if (input.includes("illuminati adalah") || input.includes("pengertian illuminati") || input.includes("apa itu illuminati") || input.includes("arti illuminati")) {
+    responseMessage = "Illuminati adalah teori konspirasi yang menyatakan adanya kelompok rahasia yang mengendalikan dunia secara diam-diam melalui politik, ekonomi, dan media.";
+} else if (input.includes("area 51 adalah") || input.includes("pengertian area 51") || input.includes("apa itu area 51") || input.includes("arti area 51")) {
+    responseMessage = "Area 51 adalah pangkalan militer rahasia di Nevada, Amerika Serikat, yang sering dikaitkan dengan teori konspirasi tentang alien dan teknologi canggih.";
+
+// ======== OLAHRAGA ========
+} else if (input.includes("sepak bola adalah") || input.includes("pengertian sepak bola") || input.includes("apa itu sepak bola") || input.includes("arti sepak bola")) {
+    responseMessage = "Sepak bola adalah olahraga tim yang dimainkan oleh dua tim beranggotakan 11 orang, dengan tujuan mencetak gol ke gawang lawan.";
+} else if (input.includes("olimpiade adalah") || input.includes("pengertian olimpiade") || input.includes("apa itu olimpiade") || input.includes("arti olimpiade")) {
+    responseMessage = "Olimpiade adalah ajang olahraga internasional yang diselenggarakan setiap empat tahun sekali, diikuti oleh atlet dari berbagai negara di dunia.";
+
+// ======== MUSIK & SENI ========
+} else if (input.includes("musik adalah") || input.includes("pengertian musik") || input.includes("apa itu musik") || input.includes("arti musik")) {
+    responseMessage = "Musik adalah seni yang menggunakan bunyi dan ritme untuk menciptakan harmoni dan ekspresi emosional.";
+} else if (input.includes("seni adalah") || input.includes("pengertian seni") || input.includes("apa itu seni") || input.includes("arti seni")) {
+    responseMessage = "Seni adalah ekspresi kreatif manusia dalam berbagai bentuk, seperti lukisan, musik, tarian, dan teater.";
+
+// ======== GAME & HIBURAN ========
+} else if (input.includes("game adalah") || input.includes("pengertian game") || input.includes("apa itu game") || input.includes("arti game")) {
+    responseMessage = "Game adalah permainan interaktif yang bisa dimainkan untuk hiburan, edukasi, atau kompetisi, baik dalam bentuk video game maupun permainan tradisional.";
+} else if (input.includes("e-sports adalah") || input.includes("pengertian e-sports") || input.includes("apa itu e-sports") || input.includes("arti e-sports")) {
+    responseMessage = "E-Sports adalah kompetisi permainan video secara profesional, di mana pemain dan tim bertanding dalam berbagai game kompetitif.";
+}// ======== ILMU PENGETAHUAN ALAM ========
+else if (input.includes("gravitasi adalah") || input.includes("pengertian gravitasi") || input.includes("apa itu gravitasi") || input.includes("arti gravitasi")) {
+    responseMessage = "Gravitasi adalah gaya tarik-menarik yang terjadi antara semua benda yang memiliki massa. Contohnya, gravitasi Bumi membuat kita tetap berpijak di tanah.";
+} else if (input.includes("evolusi adalah") || input.includes("pengertian evolusi") || input.includes("apa itu evolusi") || input.includes("arti evolusi")) {
+    responseMessage = "Evolusi adalah proses perubahan makhluk hidup secara bertahap dari generasi ke generasi untuk beradaptasi dengan lingkungannya.";
+} else if (input.includes("fotosintesis adalah") || input.includes("pengertian fotosintesis") || input.includes("apa itu fotosintesis") || input.includes("arti fotosintesis")) {
+    responseMessage = "Fotosintesis adalah proses di mana tumbuhan menggunakan sinar matahari untuk mengubah karbon dioksida dan air menjadi makanan dan oksigen.";
+
+// ======== ASTRONOMI & LUAR ANGKASA ========
+} else if (input.includes("galaksi adalah") || input.includes("pengertian galaksi") || input.includes("apa itu galaksi") || input.includes("arti galaksi")) {
+    responseMessage = "Galaksi adalah kumpulan besar bintang, gas, debu, dan materi gelap yang terikat oleh gravitasi. Contohnya adalah galaksi Bima Sakti, tempat tata surya kita berada.";
+} else if (input.includes("lubang hitam adalah") || input.includes("pengertian lubang hitam") || input.includes("apa itu lubang hitam") || input.includes("arti lubang hitam")) {
+    responseMessage = "Lubang hitam adalah objek luar angkasa dengan gravitasi yang sangat kuat sehingga tidak ada cahaya atau benda yang bisa lolos darinya.";
+} else if (input.includes("bintang adalah") || input.includes("pengertian bintang") || input.includes("apa itu bintang") || input.includes("arti bintang")) {
+    responseMessage = "Bintang adalah bola gas raksasa yang bersinar karena reaksi nuklir di intinya, seperti Matahari yang merupakan bintang di tata surya kita.";
+
+// ======== POLITIK & SISTEM PEMERINTAHAN ========
+} else if (input.includes("demokrasi adalah") || input.includes("pengertian demokrasi") || input.includes("apa itu demokrasi") || input.includes("arti demokrasi")) {
+    responseMessage = "Demokrasi adalah sistem pemerintahan di mana rakyat memiliki hak untuk berpartisipasi dalam pengambilan keputusan politik, biasanya melalui pemilihan umum.";
+} else if (input.includes("monarki adalah") || input.includes("pengertian monarki") || input.includes("apa itu monarki") || input.includes("arti monarki")) {
+    responseMessage = "Monarki adalah sistem pemerintahan yang dipimpin oleh seorang raja atau ratu yang kekuasaannya bisa turun-temurun dalam suatu keluarga kerajaan.";
+} else if (input.includes("anarki adalah") || input.includes("pengertian anarki") || input.includes("apa itu anarki") || input.includes("arti anarki")) {
+    responseMessage = "Anarki adalah kondisi tanpa pemerintahan atau aturan yang terorganisir, di mana masyarakat mengatur diri mereka sendiri tanpa otoritas pusat.";
+
+// ======== KESEHATAN & GAYA HIDUP ========
+} else if (input.includes("vitamin adalah") || input.includes("pengertian vitamin") || input.includes("apa itu vitamin") || input.includes("arti vitamin")) {
+    responseMessage = "Vitamin adalah zat yang dibutuhkan tubuh dalam jumlah kecil untuk menjaga kesehatan dan menjalankan fungsi tubuh dengan baik.";
+} else if (input.includes("kalori adalah") || input.includes("pengertian kalori") || input.includes("apa itu kalori") || input.includes("arti kalori")) {
+    responseMessage = "Kalori adalah satuan energi yang digunakan untuk mengukur jumlah energi yang diperoleh dari makanan dan minuman.";
+} else if (input.includes("dehidrasi adalah") || input.includes("pengertian dehidrasi") || input.includes("apa itu dehidrasi") || input.includes("arti dehidrasi")) {
+    responseMessage = "Dehidrasi adalah kondisi ketika tubuh kehilangan lebih banyak cairan daripada yang dikonsumsi, yang dapat menyebabkan kelelahan dan gangguan kesehatan.";
+
+// ======== EKONOMI & BISNIS ========
+} else if (input.includes("ekonomi adalah") || input.includes("pengertian ekonomi") || input.includes("apa itu ekonomi") || input.includes("arti ekonomi")) {
+    responseMessage = "Ekonomi adalah ilmu yang mempelajari produksi, distribusi, dan konsumsi barang serta jasa dalam suatu masyarakat.";
+} else if (input.includes("inflasi adalah") || input.includes("pengertian inflasi") || input.includes("apa itu inflasi") || input.includes("arti inflasi")) {
+    responseMessage = "Inflasi adalah kenaikan harga barang dan jasa secara umum dalam jangka waktu tertentu, yang mengurangi daya beli uang.";
+} else if (input.includes("investasi adalah") || input.includes("pengertian investasi") || input.includes("apa itu investasi") || input.includes("arti investasi")) {
+    responseMessage = "Investasi adalah penanaman modal atau aset dengan harapan mendapatkan keuntungan di masa depan, seperti membeli saham atau properti.";
+
+// ======== FISIKA & KIMIA ========
+} else if (input.includes("reaksi kimia adalah") || input.includes("pengertian reaksi kimia") || input.includes("apa itu reaksi kimia") || input.includes("arti reaksi kimia")) {
+    responseMessage = "Reaksi kimia adalah proses di mana zat berubah menjadi zat baru dengan sifat yang berbeda melalui interaksi atom dan molekul.";
+} else if (input.includes("hukum newton adalah") || input.includes("pengertian hukum newton") || input.includes("apa itu hukum newton") || input.includes("arti hukum newton")) {
+    responseMessage = "Hukum Newton adalah tiga hukum dasar dalam fisika yang menjelaskan bagaimana benda bergerak dan berinteraksi dengan gaya.";
+
+// ======== TEKNOLOGI INFORMASI ========
+} else if (input.includes("internet adalah") || input.includes("pengertian internet") || input.includes("apa itu internet") || input.includes("arti internet")) {
+    responseMessage = "Internet adalah jaringan global yang menghubungkan komputer dan perangkat di seluruh dunia untuk bertukar informasi.";
+} else if (input.includes("sistem operasi adalah") || input.includes("pengertian sistem operasi") || input.includes("apa itu sistem operasi") || input.includes("arti sistem operasi")) {
+    responseMessage = "Sistem operasi adalah perangkat lunak yang mengelola perangkat keras komputer dan menyediakan layanan bagi program komputer lainnya.";
+} else if (input.includes("kecerdasan buatan adalah") || input.includes("pengertian kecerdasan buatan") || input.includes("apa itu kecerdasan buatan") || input.includes("arti kecerdasan buatan")) {
+    responseMessage = "Kecerdasan buatan (AI) adalah cabang ilmu komputer yang berfokus pada pembuatan sistem yang dapat berpikir, belajar, dan mengambil keputusan seperti manusia.";
 
 else {
     responseMessage =
