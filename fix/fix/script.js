@@ -3798,22 +3798,7 @@ else if (input.includes("apa itu imbuhan") || input.includes("pengertian imbuhan
 }
 else if (input.includes("apa itu noun") || input.includes("pengertian noun") || input.includes("contoh noun")) {
     responseMessage = "Noun (kata benda) adalah kata yang digunakan untuk menamai orang, tempat, benda, atau ide. Contoh: 'book' (buku), 'teacher' (guru), 'happiness' (kebahagiaan).";
-}else if (input.includes("apa itu asmaul husna") || input.includes("pengertian asmaul husna") || input.includes("asmaul husna adalah")) {
-    responseMessage = "Asmaul Husna adalah 99 nama indah Allah yang mencerminkan sifat-sifat-Nya yang sempurna, seperti Ar-Rahman (Maha Pengasih), Ar-Rahim (Maha Penyayang), dan Al-Malik (Maha Merajai).";
-} 
-else if (input.includes("berapa jumlah asmaul husna") || input.includes("asmaul husna ada berapa")) {
-    responseMessage = "Asmaul Husna terdiri dari 99 nama yang mencerminkan sifat-sifat Allah yang mulia.";
-} 
-else if (input.includes("sebutkan beberapa asmaul husna") || input.includes("contoh asmaul husna")) {
-    responseMessage = "Beberapa Asmaul Husna antara lain:\n1. Ar-Rahman (Maha Pengasih)\n2. Ar-Rahim (Maha Penyayang)\n3. Al-Malik (Maha Merajai)\n4. Al-Quddus (Maha Suci)\n5. As-Salam (Maha Pemberi Keselamatan).";
-} 
-else if (input.includes("apa manfaat menghafal asmaul husna") || input.includes("keutamaan asmaul husna")) {
-    responseMessage = "Menghafal dan memahami Asmaul Husna memiliki banyak manfaat, seperti mendekatkan diri kepada Allah, menenangkan hati, meningkatkan keimanan, serta menjadi doa yang mustajab.";
-} 
-else if (input.includes("bagaimana cara menghafal asmaul husna") || input.includes("tips menghafal asmaul husna")) {
-    responseMessage = "Beberapa cara menghafal Asmaul Husna:\n1. Menghafal sedikit demi sedikit setiap hari.\n2. Mendengarkan lantunan Asmaul Husna secara berulang.\n3. Memahami makna dari setiap nama.\n4. Menggunakan Asmaul Husna dalam doa dan dzikir sehari-hari.";
-} 
-
+}
 else {
     responseMessage =
       "Maaf, saya tidak mengerti pertanyaan itu. Bisa ulangi lagi?";
