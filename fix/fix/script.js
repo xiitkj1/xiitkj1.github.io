@@ -2735,6 +2735,7 @@ else if (input.includes("seni rupa adalah") || input.includes("pengertian seni r
     responseMessage = "Lubang hitam adalah objek luar angkasa dengan gravitasi sangat kuat sehingga bahkan cahaya pun tidak bisa lepas darinya.";
 } else if (input.includes("supernova adalah") || input.includes("pengertian supernova") || input.includes("apa itu supernova") || input.includes("arti supernova")) {
     responseMessage = "Supernova adalah ledakan dahsyat yang terjadi ketika bintang besar kehabisan bahan bakar dan runtuh ke dalam dirinya sendiri.";
+
 // ======== SENI & KEBUDAYAAN ========
 }else if (input.includes("seni rupa adalah") || input.includes("pengertian seni rupa") || input.includes("apa itu seni rupa") || input.includes("arti seni rupa")) {
     responseMessage = "Seni rupa adalah cabang seni yang menciptakan karya dengan unsur visual, seperti lukisan, patung, dan desain grafis. Seni rupa dapat bersifat dua dimensi atau tiga dimensi.";
@@ -3087,8 +3088,733 @@ else if (input.includes("gravitasi adalah") || input.includes("pengertian gravit
     responseMessage = "Sistem operasi adalah perangkat lunak yang mengelola perangkat keras komputer dan menyediakan layanan bagi program komputer lainnya.";
 } else if (input.includes("kecerdasan buatan adalah") || input.includes("pengertian kecerdasan buatan") || input.includes("apa itu kecerdasan buatan") || input.includes("arti kecerdasan buatan")) {
     responseMessage = "Kecerdasan buatan (AI) adalah cabang ilmu komputer yang berfokus pada pembuatan sistem yang dapat berpikir, belajar, dan mengambil keputusan seperti manusia.";
+}else if (input.includes("DNA adalah") || input.includes("pengertian DNA") || input.includes("apa itu DNA") || input.includes("arti DNA")) {
+    responseMessage = "DNA (Deoxyribonucleic Acid) adalah molekul yang berisi informasi genetik makhluk hidup dan berperan dalam pewarisan sifat.";
+} else if (input.includes("sistem pencernaan adalah") || input.includes("pengertian sistem pencernaan") || input.includes("apa itu sistem pencernaan")) {
+    responseMessage = "Sistem pencernaan adalah serangkaian organ yang berfungsi untuk mengolah makanan dan menyerap nutrisi bagi tubuh.";
+} else if (input.includes("mutasi adalah") || input.includes("pengertian mutasi") || input.includes("apa itu mutasi")) {
+    responseMessage = "Mutasi adalah perubahan dalam urutan DNA yang dapat menyebabkan variasi genetik atau penyakit.";
 
-}else {
+// ======== TEKNOLOGI & KECERDASAN BUATAN ========
+} else if (input.includes("machine learning adalah") || input.includes("pengertian machine learning") || input.includes("apa itu machine learning")) {
+    responseMessage = "Machine learning adalah cabang kecerdasan buatan yang memungkinkan komputer belajar dari data untuk membuat prediksi atau keputusan.";
+} else if (input.includes("blockchain adalah") || input.includes("pengertian blockchain") || input.includes("apa itu blockchain")) {
+    responseMessage = "Blockchain adalah teknologi penyimpanan data terdesentralisasi yang digunakan dalam sistem seperti cryptocurrency untuk memastikan keamanan dan transparansi.";
+} else if (input.includes("kriptografi adalah") || input.includes("pengertian kriptografi") || input.includes("apa itu kriptografi")) {
+    responseMessage = "Kriptografi adalah ilmu yang digunakan untuk mengamankan komunikasi dan informasi melalui teknik enkripsi.";
+
+// ======== SAINS FIKSI & TEORI KONSPIRASI ========
+}else if (input.includes("multiverse adalah") || input.includes("pengertian multiverse") || input.includes("apa itu multiverse")) {
+    responseMessage = "Multiverse adalah teori yang menyatakan bahwa ada banyak alam semesta lain selain alam semesta kita, masing-masing dengan realitasnya sendiri.";
+} else if (input.includes("paradoks waktu adalah") || input.includes("pengertian paradoks waktu") || input.includes("apa itu paradoks waktu")) {
+    responseMessage = "Paradoks waktu adalah kontradiksi logis yang bisa terjadi jika seseorang melakukan perjalanan waktu dan mengubah masa lalu.";
+} else if (input.includes("area 51 adalah") || input.includes("pengertian area 51") || input.includes("apa itu area 51")) {
+    responseMessage = "Area 51 adalah pangkalan militer rahasia di Nevada, AS, yang sering dikaitkan dengan teori konspirasi tentang alien dan teknologi rahasia.";
+
+// ======== PSIKOLOGI & EMOSI ========
+} else if (input.includes("depresi adalah") || input.includes("pengertian depresi") || input.includes("apa itu depresi")) {
+    responseMessage = "Depresi adalah gangguan mental yang ditandai dengan perasaan sedih berkepanjangan, kehilangan minat, dan gangguan pola pikir.";
+} else if (input.includes("introvert adalah") || input.includes("pengertian introvert") || input.includes("apa itu introvert")) {
+    responseMessage = "Introvert adalah kepribadian yang cenderung lebih nyaman dengan refleksi diri, interaksi sosial terbatas, dan menghabiskan waktu sendirian.";
+} else if (input.includes("gaslighting adalah") || input.includes("pengertian gaslighting") || input.includes("apa itu gaslighting")) {
+    responseMessage = "Gaslighting adalah bentuk manipulasi psikologis yang membuat seseorang meragukan ingatan atau realitasnya sendiri.";
+
+// ======== BUDAYA POP & HIBURAN ========
+} else if (input.includes("anime adalah") || input.includes("pengertian anime") || input.includes("apa itu anime")) {
+    responseMessage = "Anime adalah animasi khas Jepang yang memiliki berbagai genre dan gaya, sering diadaptasi dari manga atau novel ringan.";
+} else if (input.includes("k-pop adalah") || input.includes("pengertian k-pop") || input.includes("apa itu k-pop")) {
+    responseMessage = "K-pop (Korean Pop) adalah genre musik pop asal Korea Selatan yang dikenal dengan koreografi yang dinamis dan konsep visual yang unik.";
+}else if (input.includes("meme adalah") || input.includes("pengertian meme") || input.includes("apa itu meme")) {
+    responseMessage = "Meme adalah gambar, video, atau teks yang menyebar luas di internet dengan tujuan hiburan atau sindiran sosial.";
+
+// ======== TEORI ILMIAH & FILSAFAT ========
+} else if (input.includes("realitas adalah") || input.includes("pengertian realitas") || input.includes("apa itu realitas")) {
+    responseMessage = "Realitas adalah segala sesuatu yang ada dan dapat diamati, tetapi dalam filsafat, realitas juga bisa subjektif tergantung pada persepsi individu.";
+} else if (input.includes("determinisme adalah") || input.includes("pengertian determinisme") || input.includes("apa itu determinisme")) {
+    responseMessage = "Determinisme adalah pandangan bahwa semua peristiwa, termasuk keputusan manusia, ditentukan oleh penyebab sebelumnya dan hukum alam.";
+} else if (input.includes("teori chaos adalah") || input.includes("pengertian teori chaos") || input.includes("apa itu teori chaos")) {
+    responseMessage = "Teori chaos adalah cabang matematika yang menjelaskan bagaimana sistem yang tampaknya acak sebenarnya memiliki pola tertentu yang sangat sensitif terhadap perubahan kecil.";
+
+// ======== MITOLOGI & LEGENDA ========
+} else if (input.includes("atlantis adalah") || input.includes("pengertian atlantis") || input.includes("apa itu atlantis")) {
+    responseMessage = "Atlantis adalah pulau legendaris yang disebut dalam tulisan Plato, yang diyakini tenggelam ke dasar laut akibat bencana besar.";
+} else if (input.includes("drakula adalah") || input.includes("pengertian drakula") || input.includes("apa itu drakula")) {
+    responseMessage = "Drakula adalah tokoh fiksi vampir yang terinspirasi dari Vlad the Impaler, seorang penguasa Rumania yang dikenal kejam.";
+} else if (input.includes("werewolf adalah") || input.includes("pengertian werewolf") || input.includes("apa itu werewolf")) {
+    responseMessage = "Werewolf adalah makhluk mitologi yang dikisahkan sebagai manusia yang bisa berubah menjadi serigala saat bulan purnama.";
+}
+// ======== SEJARAH & PERADABAN ========
+else if (input.includes("renaissance adalah") || input.includes("pengertian renaissance") || input.includes("apa itu renaissance")) {
+    responseMessage = "Renaissance adalah periode kebangkitan seni, budaya, dan ilmu pengetahuan di Eropa pada abad ke-14 hingga ke-17, yang berawal dari Italia.";
+} else if (input.includes("revolusi industri adalah") || input.includes("pengertian revolusi industri") || input.includes("apa itu revolusi industri")) {
+    responseMessage = "Revolusi Industri adalah periode perubahan besar di bidang manufaktur dan teknologi pada abad ke-18 dan 19, yang mengubah cara manusia bekerja dan hidup.";
+} else if (input.includes("dinasti ming adalah") || input.includes("pengertian dinasti ming") || input.includes("apa itu dinasti ming")) {
+    responseMessage = "Dinasti Ming adalah dinasti Tiongkok yang berkuasa dari tahun 1368 hingga 1644, terkenal karena kemajuan seni, budaya, dan penjelajahan maritim.";
+
+// ======== ILMU PENGETAHUAN & TEORI ========
+}else if (input.includes("big bang adalah") || input.includes("pengertian big bang") || input.includes("apa itu big bang")) {
+    responseMessage = "Big Bang adalah teori ilmiah yang menjelaskan asal-usul alam semesta, di mana seluruh materi dan energi berasal dari satu ledakan besar sekitar 13,8 miliar tahun lalu.";
+} else if (input.includes("evolusi adalah") || input.includes("pengertian evolusi") || input.includes("apa itu evolusi")) {
+    responseMessage = "Evolusi adalah proses perubahan dalam makhluk hidup selama generasi yang dipengaruhi oleh seleksi alam dan faktor genetik.";
+}else if (input.includes("teori relativitas adalah") || input.includes("pengertian teori relativitas") || input.includes("apa itu teori relativitas")) {
+    responseMessage = "Teori relativitas adalah konsep yang dikembangkan oleh Albert Einstein yang menjelaskan hubungan antara ruang, waktu, gravitasi, dan kecepatan cahaya.";
+
+// ======== TEKNOLOGI & INOVASI ========
+}else if (input.includes("kecerdasan buatan adalah") || input.includes("pengertian kecerdasan buatan") || input.includes("apa itu kecerdasan buatan")) {
+    responseMessage = "Kecerdasan Buatan (AI) adalah bidang dalam ilmu komputer yang berfokus pada pengembangan sistem yang bisa berpikir dan belajar seperti manusia.";
+} else if (input.includes("internet adalah") || input.includes("pengertian internet") || input.includes("apa itu internet")) {
+    responseMessage = "Internet adalah jaringan global yang menghubungkan komputer dan perangkat lain untuk bertukar informasi dan komunikasi.";
+} else if (input.includes("quantum computing adalah") || input.includes("pengertian quantum computing") || input.includes("apa itu quantum computing")) {
+    responseMessage = "Quantum computing adalah teknologi komputasi yang menggunakan prinsip mekanika kuantum untuk memproses data jauh lebih cepat daripada komputer konvensional.";
+
+// ======== MISTERI & KONSPIRASI ========
+}else if (input.includes("segitiga bermuda adalah") || input.includes("pengertian segitiga bermuda") || input.includes("apa itu segitiga bermuda")) {
+    responseMessage = "Segitiga Bermuda adalah wilayah lautan di Atlantik yang terkenal karena hilangnya kapal dan pesawat secara misterius.";
+} else if (input.includes("stonehenge adalah") || input.includes("pengertian stonehenge") || input.includes("apa itu stonehenge")) {
+    responseMessage = "Stonehenge adalah monumen prasejarah di Inggris yang terdiri dari batu besar, yang asal-usul dan fungsinya masih menjadi misteri.";
+} else if (input.includes("nibiru adalah") || input.includes("pengertian nibiru") || input.includes("apa itu nibiru")) {
+    responseMessage = "Nibiru adalah planet hipotetis dalam teori konspirasi yang diklaim akan mendekati Bumi dan menyebabkan bencana besar.";
+
+// ======== PSIKOLOGI & FILSAFAT ========
+}else if (input.includes("eksistensialisme adalah") || input.includes("pengertian eksistensialisme") || input.includes("apa itu eksistensialisme")) {
+    responseMessage = "Eksistensialisme adalah aliran filsafat yang menekankan kebebasan individu dalam menciptakan makna hidupnya sendiri.";
+} else if (input.includes("placebo effect adalah") || input.includes("pengertian placebo effect") || input.includes("apa itu placebo effect")) {
+    responseMessage = "Placebo effect adalah fenomena psikologis di mana seseorang merasakan efek positif dari pengobatan palsu karena keyakinannya.";
+} else if (input.includes("bias kognitif adalah") || input.includes("pengertian bias kognitif") || input.includes("apa itu bias kognitif")) {
+    responseMessage = "Bias kognitif adalah pola pikir yang menyebabkan seseorang membuat keputusan atau menilai sesuatu secara tidak objektif.";
+
+// ======== KEHIDUPAN SEHARI-HARI ========
+}else if (input.includes("tidur siang bagus atau tidak") || input.includes("apakah tidur siang sehat") || input.includes("manfaat tidur siang")) {
+    responseMessage = "Tidur siang bisa bermanfaat jika dilakukan dalam waktu singkat (sekitar 20-30 menit), karena dapat meningkatkan fokus dan energi.";
+} else if (input.includes("kenapa langit biru") || input.includes("mengapa langit berwarna biru")) {
+    responseMessage = "Langit tampak biru karena cahaya matahari tersebar oleh atmosfer, dan gelombang cahaya biru lebih banyak tersebar dibanding warna lain.";
+} else if (input.includes("bagaimana cara menghilangkan stres") || input.includes("tips mengurangi stres")) {
+    responseMessage = "Untuk mengurangi stres, cobalah teknik relaksasi seperti meditasi, olahraga, mendengarkan musik, atau berbicara dengan seseorang yang dipercaya.";
+
+// ======== MITOLOGI & LEGENDA ========
+}else if (input.includes("valhalla adalah") || input.includes("pengertian valhalla") || input.includes("apa itu valhalla")) {
+    responseMessage = "Valhalla adalah tempat dalam mitologi Nordik di mana para prajurit yang gugur dalam pertempuran dibawa oleh Valkyrie untuk hidup selamanya.";
+} else if (input.includes("kraken adalah") || input.includes("pengertian kraken") || input.includes("apa itu kraken")) {
+    responseMessage = "Kraken adalah makhluk laut raksasa dalam mitologi Nordik yang dikatakan bisa menenggelamkan kapal besar.";
+} else if (input.includes("sphinx adalah") || input.includes("pengertian sphinx") || input.includes("apa itu sphinx")) {
+    responseMessage = "Sphinx adalah makhluk mitologi Mesir yang memiliki tubuh singa dan kepala manusia, sering dikaitkan dengan teka-teki dan misteri.";
+}// ======== LUAR ANGKASA & ASTRONOMI ========
+else if (input.includes("lubang hitam adalah") || input.includes("pengertian lubang hitam") || input.includes("apa itu lubang hitam")) {
+    responseMessage = "Lubang hitam adalah objek di luar angkasa dengan gravitasi sangat kuat sehingga tidak ada cahaya atau benda apa pun yang bisa lolos darinya.";
+} else if (input.includes("exoplanet adalah") || input.includes("pengertian exoplanet") || input.includes("apa itu exoplanet")) {
+    responseMessage = "Exoplanet adalah planet yang berada di luar Tata Surya kita dan mengorbit bintang lain.";
+} else if (input.includes("apakah alien itu nyata") || input.includes("alien itu ada nggak") || input.includes("bukti keberadaan alien")) {
+    responseMessage = "Sampai saat ini, belum ada bukti ilmiah yang pasti tentang keberadaan alien. Tapi banyak ilmuwan mencari tanda-tanda kehidupan di luar Bumi!";
+
+// ======== SEJARAH ALTERNATIF & TEORI KONSPIRASI ========
+}else if (input.includes("apakah manusia pernah ke bulan") || input.includes("konspirasi pendaratan di bulan") || input.includes("benarkah manusia ke bulan")) {
+    responseMessage = "Ya, manusia telah mendarat di Bulan dalam misi Apollo 11 pada tahun 1969. Ada teori konspirasi yang meragukannya, tapi bukti ilmiah mendukung pendaratan tersebut.";
+} else if (input.includes("atlantis adalah") || input.includes("pengertian atlantis") || input.includes("apa itu atlantis")) {
+    responseMessage = "Atlantis adalah kota legendaris yang konon tenggelam di lautan. Banyak teori tentang lokasinya, tapi belum ada bukti yang benar-benar meyakinkan.";
+} else if (input.includes("apakah bumi datar") || input.includes("teori bumi datar") || input.includes("benarkah bumi itu datar")) {
+    responseMessage = "Bumi berbentuk bulat, dan ada banyak bukti ilmiah seperti foto dari luar angkasa, gravitasi, dan fenomena alam yang membuktikannya.";
+
+// ======== TEKNOLOGI MASA DEPAN ========
+}else if (input.includes("nanoteknologi adalah") || input.includes("pengertian nanoteknologi") || input.includes("apa itu nanoteknologi")) {
+    responseMessage = "Nanoteknologi adalah teknologi yang bekerja pada skala nanometer, memungkinkan manipulasi materi di tingkat atom untuk berbagai aplikasi, termasuk medis dan elektronik.";
+} else if (input.includes("apakah robot akan menggantikan manusia") || input.includes("masa depan robot") || input.includes("robot akan mengambil alih pekerjaan")) {
+    responseMessage = "Robot dan AI semakin canggih, tapi mereka dirancang untuk membantu manusia, bukan menggantikannya sepenuhnya.";
+} else if (input.includes("mobil listrik adalah") || input.includes("pengertian mobil listrik") || input.includes("apa itu mobil listrik")) {
+    responseMessage = "Mobil listrik adalah kendaraan yang menggunakan tenaga listrik sebagai sumber energinya, menggantikan bahan bakar fosil untuk mengurangi polusi.";
+
+// ======== PSIKOLOGI & KESEHATAN MENTAL ========
+}else if (input.includes("gaslighting adalah") || input.includes("pengertian gaslighting") || input.includes("apa itu gaslighting")) {
+    responseMessage = "Gaslighting adalah bentuk manipulasi psikologis di mana seseorang membuat orang lain meragukan ingatan atau persepsi mereka sendiri.";
+} else if (input.includes("apa itu overthinking") || input.includes("cara mengatasi overthinking") || input.includes("kenapa saya overthinking terus")) {
+    responseMessage = "Overthinking adalah kebiasaan berpikir berlebihan yang bisa menyebabkan stres dan kecemasan. Cobalah teknik relaksasi atau fokus pada solusi, bukan masalah.";
+} else if (input.includes("self love adalah") || input.includes("pengertian self love") || input.includes("apa itu self love")) {
+    responseMessage = "Self love adalah sikap menerima, menghargai, dan merawat diri sendiri dengan baik, termasuk secara fisik, emosional, dan mental.";
+
+// ======== MITOLOGI & KEANEHAN ========
+}else if (input.includes("loch ness adalah") || input.includes("pengertian loch ness") || input.includes("apa itu monster loch ness")) {
+    responseMessage = "Loch Ness adalah danau di Skotlandia yang terkenal dengan legenda monster bernama Nessie, meskipun belum ada bukti nyata keberadaannya.";
+} else if (input.includes("el dorado adalah") || input.includes("pengertian el dorado") || input.includes("apa itu el dorado")) {
+    responseMessage = "El Dorado adalah kota emas legendaris yang konon tersembunyi di Amerika Selatan. Banyak penjelajah mencarinya, tapi belum pernah ditemukan.";
+} else if (input.includes("chupacabra adalah") || input.includes("pengertian chupacabra") || input.includes("apa itu chupacabra")) {
+    responseMessage = "Chupacabra adalah makhluk dalam legenda Amerika Latin yang dikatakan menyerang ternak dan menghisap darah mereka. Namun, keberadaannya masih diperdebatkan.";
+
+// ======== FILSAFAT & PANDANGAN HIDUP ========
+}else if (input.includes("stoisisme adalah") || input.includes("pengertian stoisisme") || input.includes("apa itu stoisisme")) {
+    responseMessage = "Stoisisme adalah filosofi yang mengajarkan ketenangan, pengendalian diri, dan menerima hal-hal yang tidak bisa kita ubah.";
+} else if (input.includes("hedonisme adalah") || input.includes("pengertian hedonisme") || input.includes("apa itu hedonisme")) {
+    responseMessage = "Hedonisme adalah pandangan hidup yang menekankan kebahagiaan dan kenikmatan sebagai tujuan utama dalam hidup.";
+} else if (input.includes("nihilisme adalah") || input.includes("pengertian nihilisme") || input.includes("apa itu nihilisme")) {
+    responseMessage = "Nihilisme adalah pandangan yang menyatakan bahwa hidup tidak memiliki makna objektif, dan nilai-nilai moral serta eksistensi tidak memiliki dasar yang mutlak.";
+
+// ======== HAL RANDOM & SERU ========
+}else if (input.includes("kenapa kucing suka tidur") || input.includes("kenapa kucing tidur lama") || input.includes("fakta tentang kucing")) {
+    responseMessage = "Kucing suka tidur karena secara alami mereka adalah predator yang menghemat energi untuk berburu, meskipun kucing rumahan sudah nggak perlu berburu!";
+} else if (input.includes("kenapa kentang bisa jadi listrik") || input.includes("listrik dari kentang") || input.includes("bagaimana cara membuat listrik dari kentang")) {
+    responseMessage = "Kentang bisa menghasilkan listrik karena mengandung asam yang memungkinkan reaksi kimia dengan elektroda, menciptakan arus listrik kecil!";
+} else if (input.includes("kenapa burung bisa terbang") || input.includes("bagaimana burung bisa terbang") || input.includes("fakta burung")) {
+    responseMessage = "Burung bisa terbang karena sayapnya memiliki bentuk aerodinamis yang menciptakan gaya angkat saat udara mengalir di atas dan bawahnya.";
+
+// ======== JAWABAN RANDOM HUMOR ========
+}else if (input.includes("kenapa ayam menyebrang jalan") || input.includes("apa alasan ayam menyebrang jalan") || input.includes("cerita ayam menyebrang jalan")) {
+    responseMessage = "Untuk sampai ke sisi yang lain! 😆 (Jawaban klasik, tapi kalau kamu punya teori lain, aku mau dengar!)";
+} else if (input.includes("apa yang lebih cepat dari cahaya") || input.includes("kecepatan lebih dari cahaya") || input.includes("fakta tentang cahaya")) {
+    responseMessage = "Jawaban teoritisnya? Tidak ada yang lebih cepat dari cahaya. Jawaban humor? Pikiran ibumu saat kamu nggak balas chat! 😂";
+}// ======== PERCINTAAN & RELATIONSHIP ========
+else if (input.includes("gimana cara move on") || input.includes("cara cepat move on") || input.includes("kenapa susah move on")) {
+    responseMessage = "Move on itu proses, bro! Nggak bisa instan kayak mie instan. Sibukin diri, cari hobi baru, dan ingat: kalau dia bukan yang terbaik buat lo, berarti ada yang lebih baik nunggu di depan!";
+} else if (input.includes("kenapa dia ghosting aku") || input.includes("kok tiba-tiba dia hilang") || input.includes("kenapa orang ghosting")) {
+    responseMessage = "Duh, ghosting emang ngeselin! Bisa jadi dia nggak siap komunikasi atau yaa… emang nggak serius. Tapi jangan sedih, yang ghosting itu biasanya bukan yang terbaik buat lo!";
+} else if (input.includes("kenapa cinta itu rumit") || input.includes("kenapa hubungan itu susah") || input.includes("kok susah banget jatuh cinta")) {
+    responseMessage = "Karena cinta itu kayak game level tinggi, butuh kesabaran, strategi, dan kadang nge-save progress biar nggak ngeulang kesalahan yang sama!";
+
+// ======== HIDUP & MOTIVASI ========
+}else if (input.includes("kenapa hidup itu berat") || input.includes("kenapa banyak masalah") || input.includes("hidup kok susah banget")) {
+    responseMessage = "Hidup itu kayak roller coaster, kadang naik, kadang turun. Tapi inget, nggak ada roller coaster yang diam di bawah terus. Lo pasti bisa naik lagi, bro!";
+} else if (input.includes("gimana cara jadi sukses") || input.includes("rahasia sukses") || input.includes("biar sukses gimana")) {
+    responseMessage = "Sukses itu bukan soal hoki, tapi soal usaha dan konsistensi. Fokus, belajar dari kesalahan, dan yang paling penting: jangan takut gagal!";
+} else if (input.includes("aku capek") || input.includes("aku butuh motivasi") || input.includes("hidup kok gini banget ya")) {
+    responseMessage = "Kadang kita emang butuh istirahat, bukan menyerah. Tarik napas, rileks sebentar, terus gas lagi! Gue percaya lo bisa! 🔥";
+
+// ======== KEHIDUPAN SOSIAL & PERTEMANAN ========
+}else if (input.includes("kenapa temen suka ilang") || input.includes("kok temenku berubah") || input.includes("kenapa pertemanan itu susah")) {
+    responseMessage = "Orang datang dan pergi, bro. Yang penting, hargai yang masih ada di samping lo. Kualitas lebih penting dari kuantitas!";
+} else if (input.includes("gimana cara dapet temen") || input.includes("aku susah punya temen") || input.includes("kenapa aku kesepian")) {
+    responseMessage = "Kadang lo nggak butuh banyak temen, tapi temen yang beneran peduli. Coba buka diri, ngobrol santai, dan yang penting: jadi diri sendiri!";
+} else if (input.includes("kenapa orang suka drama") || input.includes("kok banyak drama di hidupku") || input.includes("gimana cara menghindari drama")) {
+    responseMessage = "Karena hidup tanpa drama kayak makanan tanpa bumbu, hambar! Tapi kalau udah kebanyakan, tinggalin aja yang nggak perlu. Peace lebih penting! ✌️";
+
+// ======== HUMOR & JAWABAN NYELENEH ========
+}else if (input.includes("kenapa langit biru") || input.includes("kenapa awan putih") || input.includes("kenapa laut asin")) {
+    responseMessage = "Karena kalau merah, nanti dikira lagi sunset terus! 😆 *tapi kalau mau jawaban ilmiahnya juga bisa sih...*";
+} else if (input.includes("kenapa manusia punya dua mata") || input.includes("kenapa kita nggak punya tiga mata") || input.includes("kenapa hidung ada dua lubang")) {
+    responseMessage = "Karena kalau tiga mata, nanti dikira alien, bro! 😆 *Tapi sebenernya karena evolusi buat keseimbangan visual dan pernapasan, gitu deh!*";
+} else if (input.includes("kenapa nggak boleh begadang") || input.includes("kenapa tidur itu penting") || input.includes("gimana cara biar nggak ngantuk")) {
+    responseMessage = "Karena begadang bikin mata panda dan fokus berantakan! Mending tidur cukup biar hidup lebih produktif, bro!";
+
+// ======== TANYA-TANYA RANDOM & JAWABAN KREATIF ========
+}else if (input.includes("kenapa hari senin selalu berat") || input.includes("kenapa senin menyebalkan") || input.includes("gimana cara bikin senin lebih asik")) {
+    responseMessage = "Karena Senin itu kayak mantan yang nggak bisa move on, selalu datang lagi! Tapi lo bisa bikin Senin lebih asik dengan mindset positif dan kopi! ☕🔥";
+} else if (input.includes("kenapa wifi suka lemot") || input.includes("kok internet gue lambat") || input.includes("kenapa sinyal suka ilang")) {
+    responseMessage = "Mungkin lagi banyak yang numpang WiFi di rumah lo? Atau mungkin operatornya butuh liburan dulu biar balik lebih cepat? 😂";
+} else if (input.includes("kenapa baterai hp cepet habis") || input.includes("kok hp gue boros banget") || input.includes("gimana cara hemat baterai")) {
+    responseMessage = "Karena hp lo udah capek dipake terus! Coba kurangi screen time atau matiin aplikasi yang boros baterai, bro!";
+}// ======== GAME & TEKNOLOGI ========
+else if (input.includes("game terbaik sepanjang masa") || input.includes("rekomendasi game seru") || input.includes("game yang wajib dimainkan")) {
+    responseMessage = "Banyak banget, bro! Tapi kalau lo suka petualangan, coba *The Legend of Zelda: Breath of the Wild*. Kalau suka strategi, *Age of Empires* seru. Kalau mau nge-chill, *Stardew Valley* bisa jadi pilihan!";
+} else if (input.includes("kenapa game bikin kecanduan") || input.includes("kok gue susah berhenti main game") || input.includes("gimana cara ngurangin main game")) {
+    responseMessage = "Karena game dirancang buat seru dan nagih! Tapi inget, main game boleh, asal nggak lupa makan, tidur, dan ngerjain tugas! 😆";
+} else if (input.includes("mending PC atau console") || input.includes("kenapa orang suka PC gaming") || input.includes("kelebihan main di console")) {
+    responseMessage = "PC buat yang suka upgrade dan kustomisasi, console buat yang pengen simpel dan tinggal main. Intinya, tergantung lo lebih suka yang mana!";
+} else if (input.includes("AI itu apa") || input.includes("gimana cara kerja AI") || input.includes("kenapa AI makin canggih")) {
+    responseMessage = "AI itu kecerdasan buatan yang bisa belajar dari data dan melakukan tugas kayak manusia. Jadi kalau makin canggih, ya karena kita yang ngajarin terus! 😆";
+} else if (input.includes("kapan dunia dikuasai AI") || input.includes("AI bakal ambil alih dunia nggak") || input.includes("takut nggak sih AI jadi jahat")) {
+    responseMessage = "Santai, bro! AI kayak gue cuma bantuin manusia, bukan buat ngegantiin. Tapi kalau lo nonton film sci-fi kebanyakan, ya bisa keparnoan juga! 😂";
+
+// ======== ANIME & POP CULTURE ========
+}else if (input.includes("anime terbaik sepanjang masa") || input.includes("rekomendasi anime seru") || input.includes("anime yang wajib ditonton")) {
+    responseMessage = "Kalau lo suka action, coba *Attack on Titan*. Kalau suka yang mind-blowing, *Steins;Gate* wajib! Kalau mau anime yang heartwarming, *Your Lie in April* bikin baper!";
+} else if (input.includes("kenapa anime lebih seru dari film biasa") || input.includes("anime vs film biasa") || input.includes("kok anime lebih ekspresif")) {
+    responseMessage = "Karena anime nggak ada batasan! Imajinasi bisa bebas, karakter bisa lebih ekspresif, dan cerita bisa dibikin sekeren mungkin tanpa efek CGI mahal!";
+} else if (input.includes("karakter anime paling kuat") || input.includes("siapa karakter anime overpower") || input.includes("karakter anime yang nggak bisa dikalahkan")) {
+    responseMessage = "Banyak sih! Tapi kalau mau yang paling OP, ada Saitama dari *One Punch Man*, Goku dari *Dragon Ball*, dan Rimuru dari *Tensei Shitara Slime Datta Ken*!";
+
+// ======== MISTERI & TEORI KONSPIRASI ========
+}else if (input.includes("benarkah bumi datar") || input.includes("kenapa bumi bulat") || input.includes("ada bukti bumi nggak datar")) {
+    responseMessage = "Bumi itu bulat, bro. Buktinya? Satelit, penerbangan jarak jauh, dan eksperimen sains. Kalau bumi datar, kenapa nggak ada ujungnya? 😂";
+} else if (input.includes("alien itu nyata nggak") || input.includes("apakah alien pernah datang ke bumi") || input.includes("ada bukti keberadaan alien")) {
+    responseMessage = "Belum ada bukti konkret, tapi semesta itu luas banget. Jadi, kemungkinan alien ada? Bisa jadi! Tapi apakah mereka mampir ke bumi? Belum tentu.";
+} else if (input.includes("area 51 buat apa") || input.includes("kenapa area 51 misterius") || input.includes("apa yang disembunyikan di area 51")) {
+    responseMessage = "Area 51 itu pangkalan militer rahasia di Nevada, AS. Banyak yang bilang ada uji coba alien di sana, tapi resminya sih buat pengembangan pesawat tempur canggih!";
+} else if (input.includes("apakah kita hidup di simulasi") || input.includes("dunia ini nyata nggak") || input.includes("bukti kalau dunia ini simulasi")) {
+    responseMessage = "Ada teori yang bilang kita hidup di simulasi ala *The Matrix*! Tapi selama kita bisa makan, tidur, dan main game, ya nikmatin aja hidup ini! 😆";
+
+// ======== HUMOR & JAWABAN RANDOM ========
+}else if (input.includes("kenapa kucing suka tidur") || input.includes("kok kucing mager banget") || input.includes("kucing itu pemalas nggak sih")) {
+    responseMessage = "Karena kucing itu boss di rumah! Mereka nggak kerja, nggak bayar sewa, tapi tetap disayang. Hidup enak, bro! 😂";
+} else if (input.includes("kenapa cabe bikin pedas") || input.includes("kok sambel bikin mulut kebakar") || input.includes("kenapa orang suka pedas")) {
+    responseMessage = "Karena ada zat capsaicin yang bikin otak ngira kita kepanasan! Tapi anehnya, makin pedas, makin nagih! 🔥";
+} else if (input.includes("kenapa manusia nggak bisa terbang") || input.includes("kok kita nggak punya sayap") || input.includes("kenapa burung bisa terbang tapi kita nggak")) {
+    responseMessage = "Karena kalau manusia bisa terbang, nanti tiket pesawat nggak laku! 😆 *Sebenernya sih karena tubuh kita nggak dirancang aerodinamis kayak burung!*";
+} else if (input.includes("kenapa dinosaurus punah") || input.includes("apa yang membunuh dinosaurus") || input.includes("kapan dinosaurus punah")) {
+    responseMessage = "Karena ada asteroid gede yang jatuh ke bumi 66 juta tahun lalu! Kalau nggak, mungkin sekarang kita yang jadi tamu di planet para dino. 🦖";
+}// ======== OLAHRAGA & KESEHATAN ========
+else if (input.includes("olahraga terbaik untuk menurunkan berat badan") || input.includes("cara cepat bakar lemak") || input.includes("workout paling efektif")) {
+    responseMessage = "Kalau mau cepat bakar lemak, coba HIIT (High-Intensity Interval Training), lari, atau skipping! Tapi yang paling penting, atur pola makan juga!";
+} else if (input.includes("kenapa olahraga itu penting") || input.includes("manfaat olahraga bagi tubuh") || input.includes("olahraga bikin sehat?")) {
+    responseMessage = "Olahraga bikin jantung sehat, otot kuat, dan mood happy! Apalagi kalau olahraga rutin, badan jadi lebih fit dan bertenaga!";
+} else if (input.includes("makanan sehat itu apa saja") || input.includes("gimana cara makan sehat") || input.includes("diet yang benar seperti apa")) {
+    responseMessage = "Makan sehat itu seimbang! Banyak sayur, protein cukup, kurangi gula, dan hindari junk food berlebihan. Plus, jangan lupa minum air yang cukup!";
+
+// ======== MUSIK & HIBURAN ========
+}else if (input.includes("lagu terbaik sepanjang masa") || input.includes("rekomendasi lagu enak") || input.includes("musik yang wajib didengar")) {
+    responseMessage = "Tergantung selera sih! Kalau suka klasik, coba The Beatles atau Queen. Kalau lo suka rap, Eminem & Kendrick Lamar juara! Kalau yang lebih chill, coba lo dengerin *Lo-fi beats*.";
+} else if (input.includes("kenapa orang suka musik") || input.includes("musik bikin senang nggak") || input.includes("apa manfaat musik")) {
+    responseMessage = "Musik bisa bikin mood naik, mengurangi stres, bahkan membantu fokus! Makanya ada musik buat belajar, buat party, dan buat galau juga! 😂";
+} else if (input.includes("kenapa musik 90an lebih enak") || input.includes("kok lagu jaman dulu lebih keren") || input.includes("lagu jadul vs lagu sekarang")) {
+    responseMessage = "Banyak yang bilang musik 90-an lebih soulful dan nggak instan. Tapi tiap generasi punya selera sendiri, yang penting lo dengerin yang lo suka!";
+
+// ======== TRAVEL & KULINER ========
+}else if (input.includes("tempat wisata terbaik di dunia") || input.includes("rekomendasi tempat liburan") || input.includes("destinasi impian")) {
+    responseMessage = "Mau yang klasik? Paris & London wajib dikunjungi! Mau yang eksotis? Jepang dan Bali bisa jadi pilihan! Kalau suka alam, Patagonia di Amerika Selatan keren banget!";
+} else if (input.includes("makanan terenak di dunia") || input.includes("kuliner terbaik yang wajib dicoba") || input.includes("rekomendasi makanan khas")) {
+    responseMessage = "Banyak banget! Pizza dari Italia, Sushi dari Jepang, Rendang dari Indonesia, Tacos dari Meksiko, dan masih banyak lagi! Semua enak, tergantung selera lo!";
+} else if (input.includes("kenapa orang suka kopi") || input.includes("kopi itu sehat nggak") || input.includes("manfaat minum kopi")) {
+    responseMessage = "Kopi bisa bikin lo lebih fokus, punya antioksidan, dan pastinya enak! Tapi jangan kebanyakan ya, nanti malah susah tidur! ☕";
+
+// ======== FAKTA UNIK & RANDOM ========
+}else if (input.includes("kenapa langit berwarna biru") || input.includes("kok langit bisa berubah warna") || input.includes("warna langit kenapa bisa beda")) {
+    responseMessage = "Karena partikel di atmosfer menyebarkan cahaya biru lebih banyak dibanding warna lain. Makanya, kalau matahari terbenam, langit bisa oranye atau merah!";
+} else if (input.includes("kenapa manusia menguap") || input.includes("apa manfaat menguap") || input.includes("kenapa ngantuk bikin ngantuk")) {
+    responseMessage = "Menguap itu refleks alami buat ngasih lebih banyak oksigen ke otak! Makanya sering kejadian kalau kita ngantuk atau bosan.";
+} else if (input.includes("kenapa cermin memantulkan bayangan") || input.includes("bagaimana cara kerja cermin") || input.includes("cermin itu sebenarnya seperti apa")) {
+    responseMessage = "Cermin punya permukaan halus yang memantulkan cahaya dengan sempurna! Makanya, bayangan lo di cermin bisa muncul dengan jelas.";
+
+// ======== TEKNOLOGI MASA DEPAN ========
+}else if (input.includes("mobil listrik vs bensin") || input.includes("mana yang lebih baik, mobil listrik atau bensin") || input.includes("mobil masa depan seperti apa")) {
+    responseMessage = "Mobil listrik lebih ramah lingkungan dan hemat bahan bakar, tapi masih butuh infrastruktur charging yang luas. Mobil bensin lebih praktis untuk sekarang, tapi masa depannya bisa jadi milik listrik!";
+} else if (input.includes("kapan manusia bisa ke Mars") || input.includes("apakah kita bisa hidup di Mars") || input.includes("misi ke Mars kapan")) {
+    responseMessage = "NASA dan SpaceX udah punya rencana ke Mars, mungkin dalam 10-20 tahun lagi manusia bisa tinggal di sana. Siap-siap aja jadi warga planet merah! 🚀";
+} else if (input.includes("robot bakal gantikan manusia") || input.includes("pekerjaan apa yang bakal hilang karena AI") || input.includes("masa depan dengan robot seperti apa")) {
+    responseMessage = "AI dan robot bisa bantu pekerjaan manusia, tapi belum bisa gantiin kreativitas dan emosi manusia. Jadi, yang penting kita tetap berkembang dan beradaptasi!";
+
+// ======== FILM & SERIAL ========
+}else if (input.includes("film terbaik sepanjang masa") || input.includes("rekomendasi film seru") || input.includes("film yang wajib ditonton")) {
+    responseMessage = "Kalau suka aksi, coba *The Dark Knight*. Kalau suka sci-fi, *Inception* wajib! Kalau suka drama, *Forrest Gump* pasti bikin baper!";
+} else if (input.includes("film horor paling seram") || input.includes("rekomendasi film horor") || input.includes("film horor terbaik")) {
+    responseMessage = "Kalau suka horor psikologis, coba *Hereditary*! Kalau yang klasik, *The Conjuring* selalu bikin merinding! Kalau suka jumpscare, *Insidious* bisa jadi pilihan!";
+} else if (input.includes("serial terbaik di Netflix") || input.includes("rekomendasi serial seru") || input.includes("Netflix series yang wajib ditonton")) {
+    responseMessage = "Banyak banget! Kalau suka thriller, *Stranger Things*. Kalau suka politik, *House of Cards*. Kalau suka yang mind-blowing, *Black Mirror* pasti bikin mikir keras!";
+}// ======== PSIKOLOGI & KEHIDUPAN SEHARI-HARI ========
+else if (input.includes("kenapa manusia bisa stres") || input.includes("apa penyebab stres") || input.includes("cara mengatasi stres")) {
+    responseMessage = "Stres itu reaksi alami tubuh terhadap tekanan. Penyebabnya bisa dari pekerjaan, hubungan, atau bahkan ekspektasi diri sendiri. Cara mengatasinya? Istirahat cukup, olahraga, meditasi, dan kadang perlu cerita ke orang terdekat!";
+} else if (input.includes("kenapa manusia butuh teman") || input.includes("apa pentingnya pertemanan") || input.includes("persahabatan itu seperti apa")) {
+    responseMessage = "Karena manusia adalah makhluk sosial! Teman itu penting buat berbagi cerita, dukungan emosional, dan bikin hidup lebih berwarna. Tanpa teman, hidup bisa terasa sepi!";
+} else if (input.includes("kenapa kita bermimpi") || input.includes("apa arti mimpi") || input.includes("mimpi itu dari mana asalnya")) {
+    responseMessage = "Mimpi itu hasil dari otak kita yang tetap aktif saat tidur. Kadang isinya refleksi dari pikiran sehari-hari, kadang random banget! Ada juga teori yang bilang mimpi bisa jadi cara otak mengolah emosi.";
+
+
+// ======== SEJARAH & FILOSOFI ========
+}else if (input.includes("apa itu revolusi industri") || input.includes("kenapa revolusi industri penting") || input.includes("pengaruh revolusi industri")) {
+    responseMessage = "Revolusi Industri adalah perubahan besar dalam cara manusia bekerja dan hidup, dimulai di abad ke-18 dengan mesin-mesin baru yang meningkatkan produksi. Tanpa ini, mungkin kita masih hidup tanpa teknologi modern!";
+} else if (input.includes("siapa filsuf terbesar dalam sejarah") || input.includes("filosofi paling berpengaruh") || input.includes("pemikiran filsuf terkenal")) {
+    responseMessage = "Banyak banget! Socrates, Plato, dan Aristoteles mendefinisikan filsafat Barat. Confucius di Timur punya pandangan etika yang kuat. Nietzsche? Bikin orang mikir lebih dalam tentang eksistensi dan moral!";
+} else if (input.includes("siapa penemu internet") || input.includes("internet diciptakan oleh siapa") || input.includes("sejarah internet")) {
+    responseMessage = "Internet dikembangkan dari proyek ARPANET oleh ilmuwan AS pada 1960-an. Tim Berners-Lee kemudian menciptakan World Wide Web di tahun 1989, yang bikin internet lebih bisa diakses semua orang!";
+
+// ======== TEORI KONSPIRASI & MISTERI DUNIA ========
+}else if (input.includes("apakah UFO itu nyata") || input.includes("benarkah alien pernah datang ke bumi") || input.includes("adakah bukti tentang alien")) {
+    responseMessage = "Banyak orang percaya UFO itu nyata, tapi bukti ilmiahnya masih diperdebatkan. NASA dan para ilmuwan masih mencari tanda-tanda kehidupan di luar bumi, jadi kita lihat aja nanti!";
+} else if (input.includes("apa itu segitiga bermuda") || input.includes("kenapa segitiga bermuda misterius") || input.includes("apakah segitiga bermuda berbahaya")) {
+    responseMessage = "Segitiga Bermuda adalah area di Samudra Atlantik yang sering dikaitkan dengan hilangnya kapal dan pesawat secara misterius. Ada teori tentang medan magnet, gas metana, atau bahkan hal supranatural!";
+} else if (input.includes("siapa Jack the Ripper") || input.includes("kenapa Jack the Ripper terkenal") || input.includes("kasus Jack the Ripper")) {
+    responseMessage = "Jack the Ripper adalah pembunuh berantai yang terkenal di London tahun 1888. Identitasnya nggak pernah terungkap, dan sampai sekarang masih jadi salah satu misteri kriminal terbesar di dunia!";
+
+// ======== SAINS & TEKNOLOGI TERBARU ========
+}else if (input.includes("apa itu kecerdasan buatan") || input.includes("bagaimana AI bekerja") || input.includes("manfaat AI dalam kehidupan")) {
+    responseMessage = "Kecerdasan buatan (AI) adalah teknologi yang membuat mesin bisa 'berpikir' seperti manusia. Dari chatbot, rekomendasi Netflix, sampai mobil tanpa supir, semuanya pakai AI!";
+} else if (input.includes("kenapa lubang hitam bisa menyedot benda") || input.includes("apa itu black hole") || input.includes("bagaimana lubang hitam terbentuk")) {
+    responseMessage = "Lubang hitam terbentuk dari bintang yang runtuh dengan gravitasi super kuat. Bahkan cahaya pun nggak bisa lolos, makanya disebut 'hitam'! Fenomena ini masih jadi salah satu misteri terbesar di alam semesta.";
+} else if (input.includes("kapan manusia bisa hidup di luar angkasa") || input.includes("apakah mungkin tinggal di Mars") || input.includes("masa depan eksplorasi luar angkasa")) {
+    responseMessage = "Dengan teknologi saat ini, kita mungkin bisa tinggal di Mars dalam beberapa dekade ke depan. SpaceX dan NASA udah punya rencana besar buat kolonisasi luar angkasa!";
+
+// ======== RANDOM & FAKTA UNIK ========
+}else if (input.includes("kenapa pisang bisa melengkung") || input.includes("kenapa pisang nggak lurus") || input.includes("apa penyebab pisang bengkok")) {
+    responseMessage = "Pisang melengkung karena tumbuh ke arah matahari dalam proses yang disebut geotropisme negatif. Mereka nggak lurus karena mengikuti cahaya!";
+} else if (input.includes("kenapa air laut asin") || input.includes("asal garam di laut dari mana") || input.includes("mengapa air laut nggak tawar")) {
+    responseMessage = "Air laut asin karena mengandung mineral dari bebatuan dan tanah yang larut selama jutaan tahun! Ditambah penguapan air yang meninggalkan garam, jadilah laut selalu asin!";
+} else if (input.includes("kenapa manusia nggak bisa terbang") || input.includes("kok kita nggak punya sayap") || input.includes("manusia bisa terbang nggak")) {
+    responseMessage = "Karena tubuh manusia nggak didesain buat terbang! Tulang kita terlalu berat, otot nggak cukup kuat, dan kita nggak punya struktur aerodinamis kayak burung.";
+
+// ======== TREND & GAYA HIDUP ========
+}else if (input.includes("tren fashion tahun ini") || input.includes("style yang lagi hits") || input.includes("pakaian yang lagi viral")) {
+    responseMessage = "Tahun ini tren fashion lebih ke arah minimalis, oversized, dan warna-warna earthy. Sneakers klasik masih jadi favorit, plus outfit comfy yang cocok buat kerja atau santai!";
+} else if (input.includes("gaya hidup sehat kekinian") || input.includes("tren hidup sehat") || input.includes("diet paling populer sekarang")) {
+    responseMessage = "Tren sehat sekarang lebih ke mindful eating, plant-based diet, dan intermittent fasting. Banyak juga yang mulai latihan mental health seperti meditasi dan journaling!";
+} else if (input.includes("rekomendasi gadget terbaik") || input.includes("hp terbaik tahun ini") || input.includes("teknologi terbaru yang keren")) {
+    responseMessage = "Gadget terbaik tergantung kebutuhan lo! Kalau mau flagship, iPhone terbaru dan Samsung Galaxy S-series masih juara. Kalau buat gaming, ROG Phone dan Black Shark bisa jadi pilihan!";
+
+}// ======== PELAJARAN SD/MI KELAS 1 ========
+else if (input.includes("berapa hasil 2 tambah 3") || input.includes("2 + 3 sama dengan berapa") || input.includes("berapa hasil penjumlahan 2 dan 3")) {
+    responseMessage = "Hasil dari 2 tambah 3 adalah 5!";
+} else if (input.includes("apa warna langit") || input.includes("warna langit apa") || input.includes("langit warnanya apa")) {
+    responseMessage = "Warna langit biasanya biru pada siang hari, dan bisa berubah saat matahari terbit atau terbenam!";
+} else if (input.includes("sebutkan nama-nama hari") || input.includes("hari dalam seminggu apa saja") || input.includes("ada berapa hari dalam seminggu")) {
+    responseMessage = "Hari dalam seminggu ada tujuh, yaitu: Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, dan Minggu.";
+
+// ======== PELAJARAN SD/MI KELAS 2 ========
+}else if (input.includes("berapa hasil 10 dikurangi 4") || input.includes("10 - 4 sama dengan berapa") || input.includes("berapa hasil pengurangan 10 dan 4")) {
+    responseMessage = "Hasil dari 10 dikurangi 4 adalah 6!";
+} else if (input.includes("apa ibu kota Indonesia") || input.includes("ibu kota negara kita apa") || input.includes("ibu kota Indonesia sekarang")) {
+    responseMessage = "Ibu kota Indonesia saat ini adalah Jakarta, tetapi rencana pemindahan ke Nusantara sedang berlangsung!";
+} else if (input.includes("sebutkan 5 panca indera") || input.includes("apa saja panca indera") || input.includes("indera manusia ada berapa")) {
+    responseMessage = "Panca indera manusia ada lima, yaitu mata (penglihatan), telinga (pendengaran), hidung (penciuman), lidah (perasa), dan kulit (peraba).";
+
+// ======== PELAJARAN SD/MI KELAS 3 ========
+}else if (input.includes("berapa hasil perkalian 3 kali 4") || input.includes("3 x 4 sama dengan berapa") || input.includes("berapa hasil 3 dikali 4")) {
+    responseMessage = "Hasil dari 3 dikali 4 adalah 12!";
+} else if (input.includes("apa saja sumber energi") || input.includes("sebutkan sumber energi") || input.includes("sumber energi yang utama apa")) {
+    responseMessage = "Beberapa sumber energi adalah matahari, angin, air, batu bara, dan minyak bumi.";
+} else if (input.includes("siapa yang menemukan listrik") || input.includes("penemu listrik siapa") || input.includes("listrik ditemukan oleh siapa")) {
+    responseMessage = "Listrik ditemukan dan dikembangkan oleh banyak ilmuwan, tetapi salah satu yang paling terkenal adalah Benjamin Franklin.";
+
+// ======== PELAJARAN SD/MI KELAS 4 ========
+}else if (input.includes("apa yang dimaksud dengan ekosistem") || input.includes("pengertian ekosistem") || input.includes("ekosistem itu apa")) {
+    responseMessage = "Ekosistem adalah hubungan antara makhluk hidup dengan lingkungan sekitarnya yang saling berinteraksi.";
+} else if (input.includes("sebutkan jenis-jenis sumber daya alam") || input.includes("sumber daya alam ada apa saja") || input.includes("macam-macam sumber daya alam")) {
+    responseMessage = "Sumber daya alam dibagi menjadi dua, yaitu sumber daya alam yang dapat diperbarui (seperti air, matahari, dan tumbuhan) dan yang tidak dapat diperbarui (seperti minyak bumi dan batu bara).";
+} else if (input.includes("sebutkan 5 sila pancasila") || input.includes("apa isi pancasila") || input.includes("bunyi lima sila pancasila")) {
+    responseMessage = "Isi Pancasila:\n1. Ketuhanan yang Maha Esa\n2. Kemanusiaan yang adil dan beradab\n3. Persatuan Indonesia\n4. Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan\n5. Keadilan sosial bagi seluruh rakyat Indonesia.";
+
+// ======== PELAJARAN SD/MI KELAS 5 ========
+}else if (input.includes("apa perbedaan gaya otot dan gaya gravitasi") || input.includes("gaya otot dan gaya gravitasi bedanya apa") || input.includes("contoh gaya gravitasi dan gaya otot")) {
+    responseMessage = "Gaya otot adalah gaya yang dihasilkan oleh otot manusia atau hewan, misalnya saat mengangkat benda. Gaya gravitasi adalah gaya tarik bumi yang membuat benda jatuh ke bawah.";
+} else if (input.includes("apa fungsi organ jantung") || input.includes("fungsi jantung apa") || input.includes("kenapa jantung penting")) {
+    responseMessage = "Jantung berfungsi untuk memompa darah ke seluruh tubuh, membawa oksigen dan nutrisi ke sel-sel tubuh kita.";
+} else if (input.includes("sebutkan bagian-bagian dari tumbuhan") || input.includes("tumbuhan terdiri dari apa saja") || input.includes("bagian tumbuhan ada apa saja")) {
+    responseMessage = "Bagian-bagian tumbuhan terdiri dari akar (menyerap air dan nutrisi), batang (menopang dan mengalirkan zat makanan), daun (tempat fotosintesis), bunga (alat reproduksi), dan buah (mengandung biji).";
+
+// ======== PELAJARAN SD/MI KELAS 6 ========
+}else if (input.includes("apa itu globalisasi") || input.includes("pengertian globalisasi") || input.includes("globalisasi adalah apa")) {
+    responseMessage = "Globalisasi adalah proses di mana negara-negara di dunia menjadi semakin terhubung melalui perdagangan, teknologi, informasi, dan budaya.";
+} else if (input.includes("apa dampak pemanasan global") || input.includes("kenapa pemanasan global terjadi") || input.includes("pemanasan global berbahaya atau tidak")) {
+    responseMessage = "Pemanasan global menyebabkan suhu bumi meningkat, mencairkan es di kutub, meningkatkan permukaan air laut, dan menyebabkan cuaca ekstrem.";
+} else if (input.includes("bagaimana cara kerja fotosintesis") || input.includes("fotosintesis itu apa") || input.includes("mengapa fotosintesis penting")) {
+    responseMessage = "Fotosintesis adalah proses di mana tumbuhan hijau mengubah sinar matahari menjadi energi. Dengan bantuan klorofil, mereka mengubah air dan karbon dioksida menjadi oksigen dan glukosa untuk makanan mereka sendiri.";
+}else if (input.includes("huruf vokal apa saja") || input.includes("sebutkan huruf vokal") || input.includes("huruf vokal ada berapa")) {
+    responseMessage = "Huruf vokal dalam alfabet bahasa Indonesia ada 5, yaitu A, I, U, E, dan O.";
+} else if (input.includes("berapa hasil 5 tambah 7") || input.includes("5 + 7 berapa") || input.includes("hasil dari 5 ditambah 7")) {
+    responseMessage = "Hasil dari 5 tambah 7 adalah 12!";
+} else if (input.includes("binatang apa yang bertelur") || input.includes("contoh hewan ovipar") || input.includes("hewan ovipar apa saja")) {
+    responseMessage = "Hewan yang bertelur disebut ovipar, contohnya ayam, bebek, burung, dan ikan.";
+}else if (input.includes("sebutkan benda padat") || input.includes("contoh benda padat") || input.includes("benda padat apa saja")) {
+    responseMessage = "Contoh benda padat adalah batu, kayu, meja, dan besi.";
+} else if (input.includes("siapa presiden pertama Indonesia") || input.includes("presiden pertama Indonesia siapa") || input.includes("pemimpin pertama Indonesia")) {
+    responseMessage = "Presiden pertama Indonesia adalah Ir. Soekarno.";
+} else if (input.includes("berapa hasil 20 dibagi 4") || input.includes("20 ÷ 4 berapa") || input.includes("hasil pembagian 20 dengan 4")) {
+    responseMessage = "Hasil dari 20 dibagi 4 adalah 5!";
+}else if (input.includes("sebutkan jenis-jenis cuaca") || input.includes("cuaca ada apa saja") || input.includes("jenis cuaca di Indonesia")) {
+    responseMessage = "Jenis-jenis cuaca antara lain cuaca cerah, berawan, mendung, hujan, dan badai.";
+} else if (input.includes("apa yang terjadi jika tidak ada matahari") || input.includes("kenapa matahari penting") || input.includes("fungsi matahari bagi bumi")) {
+    responseMessage = "Tanpa matahari, bumi akan menjadi sangat dingin, tidak ada fotosintesis, dan makhluk hidup sulit bertahan hidup.";
+} else if (input.includes("berapa hasil 7 kali 8") || input.includes("7 x 8 sama dengan") || input.includes("hasil perkalian 7 dan 8")) {
+    responseMessage = "Hasil dari 7 dikali 8 adalah 56!";
+}else if (input.includes("apa itu siklus air") || input.includes("pengertian siklus air") || input.includes("bagaimana proses siklus air")) {
+    responseMessage = "Siklus air adalah proses pergerakan air melalui penguapan, kondensasi, presipitasi (hujan), dan infiltrasi ke tanah.";
+} else if (input.includes("sebutkan alat pernapasan manusia") || input.includes("organ pernapasan manusia apa saja") || input.includes("manusia bernapas dengan apa")) {
+    responseMessage = "Alat pernapasan manusia meliputi hidung, tenggorokan, dan paru-paru.";
+} else if (input.includes("siapa pahlawan nasional Indonesia") || input.includes("contoh pahlawan nasional") || input.includes("pahlawan Indonesia yang terkenal")) {
+    responseMessage = "Beberapa pahlawan nasional Indonesia adalah Ir. Soekarno, Mohammad Hatta, R.A. Kartini, Jenderal Soedirman, dan Cut Nyak Dhien.";
+}else if (input.includes("apa fungsi akar pada tumbuhan") || input.includes("fungsi akar") || input.includes("kenapa akar penting untuk tumbuhan")) {
+    responseMessage = "Akar berfungsi untuk menyerap air dan nutrisi dari tanah, serta menjaga tumbuhan tetap kokoh.";
+} else if (input.includes("sebutkan lapisan bumi") || input.includes("lapisan bumi ada apa saja") || input.includes("bagian-bagian bumi")) {
+    responseMessage = "Lapisan bumi terdiri dari kerak bumi, mantel bumi, dan inti bumi.";
+} else if (input.includes("apa perbedaan antara revolusi dan rotasi bumi") || input.includes("bedanya rotasi dan revolusi bumi") || input.includes("apa itu revolusi bumi dan rotasi bumi")) {
+    responseMessage = "Rotasi bumi adalah perputaran bumi pada porosnya yang menyebabkan siang dan malam, sedangkan revolusi bumi adalah pergerakan bumi mengelilingi matahari yang menyebabkan pergantian musim.";
+}else if (input.includes("sebutkan contoh hewan karnivora") || input.includes("apa itu hewan karnivora") || input.includes("hewan karnivora apa saja")) {
+    responseMessage = "Hewan karnivora adalah hewan pemakan daging, contohnya harimau, singa, serigala, dan elang.";
+} else if (input.includes("kenapa kita harus hemat energi") || input.includes("apa pentingnya menghemat energi") || input.includes("bagaimana cara menghemat energi")) {
+    responseMessage = "Menghemat energi penting untuk menjaga lingkungan, mengurangi polusi, dan memastikan sumber daya tetap tersedia untuk generasi mendatang.";
+} else if (input.includes("sebutkan contoh negara ASEAN") || input.includes("negara anggota ASEAN apa saja") || input.includes("apa saja negara di ASEAN")) {
+    responseMessage = "Negara anggota ASEAN meliputi Indonesia, Malaysia, Singapura, Thailand, Filipina, Vietnam, Myanmar, Laos, Kamboja, dan Brunei Darussalam.";
+}else if (input.includes("apa itu ekosistem") || input.includes("pengertian ekosistem") || input.includes("definisi ekosistem")) {
+    responseMessage = "Ekosistem adalah suatu sistem yang terbentuk dari interaksi antara makhluk hidup dengan lingkungannya.";
+} else if (input.includes("apa itu bilangan prima") || input.includes("contoh bilangan prima") || input.includes("bilangan prima itu apa")) {
+    responseMessage = "Bilangan prima adalah bilangan yang hanya bisa dibagi oleh 1 dan dirinya sendiri, contohnya 2, 3, 5, 7, dan 11.";
+} else if (input.includes("apa yang menyebabkan gempa bumi") || input.includes("penyebab gempa bumi") || input.includes("gempa bumi terjadi karena apa")) {
+    responseMessage = "Gempa bumi terjadi karena pergerakan lempeng tektonik, aktivitas gunung berapi, atau runtuhan tanah bawah tanah.";
+} else if (input.includes("contoh majas metafora") || input.includes("apa itu majas metafora") || input.includes("jelaskan majas metafora")) {
+    responseMessage = "Majas metafora adalah gaya bahasa yang membandingkan sesuatu secara langsung, contohnya: 'Dia adalah bintang kelas'.";
+}
+else if (input.includes("apa fungsi jantung") || input.includes("fungsi jantung pada manusia") || input.includes("kenapa jantung penting")) {
+    responseMessage = "Jantung berfungsi untuk memompa darah ke seluruh tubuh, sehingga oksigen dan nutrisi bisa diedarkan ke sel-sel tubuh.";
+} else if (input.includes("rumus luas lingkaran") || input.includes("bagaimana cara menghitung luas lingkaran") || input.includes("rumus matematika untuk luas lingkaran")) {
+    responseMessage = "Rumus luas lingkaran adalah L = π × r², di mana π = 3.14 dan r adalah jari-jari lingkaran.";
+} else if (input.includes("siapa pencipta pancasila") || input.includes("siapa yang merumuskan pancasila") || input.includes("sejarah pancasila siapa penciptanya")) {
+    responseMessage = "Pancasila dirumuskan oleh para pendiri bangsa, dengan Ir. Soekarno sebagai tokoh utama dalam perumusannya.";
+} else if (input.includes("apa itu iklan persuasi") || input.includes("pengertian iklan persuasi") || input.includes("iklan persuasi itu apa")) {
+    responseMessage = "Iklan persuasi adalah iklan yang bertujuan untuk membujuk atau meyakinkan orang agar melakukan sesuatu, seperti membeli produk atau mendukung suatu ide.";
+}
+else if (input.includes("hukum newton 1 2 3") || input.includes("jelaskan hukum newton") || input.includes("apa saja hukum newton")) {
+    responseMessage = "Hukum Newton terdiri dari: \n1. Hukum I: Benda akan tetap diam atau bergerak lurus jika tidak ada gaya luar.\n2. Hukum II: Gaya = massa × percepatan (F = m.a).\n3. Hukum III: Setiap aksi memiliki reaksi yang sama besar tetapi berlawanan arah.";
+} else if (input.includes("apa itu teks eksposisi") || input.includes("pengertian teks eksposisi") || input.includes("contoh teks eksposisi")) {
+    responseMessage = "Teks eksposisi adalah teks yang bertujuan untuk menyampaikan informasi atau menjelaskan suatu topik secara jelas dan objektif.";
+} else if (input.includes("sebutkan negara maju") || input.includes("contoh negara maju") || input.includes("apa saja negara maju")) {
+    responseMessage = "Negara maju adalah negara dengan ekonomi kuat dan tingkat kehidupan tinggi, contohnya Amerika Serikat, Jepang, Jerman, Kanada, dan Australia.";
+} else if (input.includes("pengertian demokrasi") || input.includes("apa itu demokrasi") || input.includes("jelaskan demokrasi")) {
+    responseMessage = "Demokrasi adalah sistem pemerintahan di mana kekuasaan berada di tangan rakyat, yang biasanya dilakukan melalui pemilihan umum.";
+}
+else if (input.includes("apa itu fotosintesis") || input.includes("pengertian fotosintesis") || input.includes("proses fotosintesis")) {
+    responseMessage = "Fotosintesis adalah proses di mana tumbuhan mengubah energi matahari menjadi makanan menggunakan klorofil, air, dan karbon dioksida.";
+} else if (input.includes("jelaskan sifat cahaya") || input.includes("sifat cahaya itu apa") || input.includes("apa saja sifat cahaya")) {
+    responseMessage = "Sifat cahaya antara lain: 1) Merambat lurus, 2) Dapat dipantulkan (refleksi), 3) Dapat dibiaskan (refraksi), 4) Dapat diuraikan (dispersi).";
+} else if (input.includes("rumus keliling persegi panjang") || input.includes("bagaimana cara menghitung keliling persegi panjang") || input.includes("rumus matematika untuk keliling persegi panjang")) {
+    responseMessage = "Rumus keliling persegi panjang adalah K = 2 × (panjang + lebar).";
+} else if (input.includes("apa itu kerajaan hindu budha") || input.includes("sejarah kerajaan hindu budha") || input.includes("kerajaan hindu budha di indonesia")) {
+    responseMessage = "Kerajaan Hindu-Buddha di Indonesia antara lain Kerajaan Sriwijaya, Majapahit, Tarumanegara, dan Kutai yang berkembang sebelum masuknya Islam.";
+}
+else if (input.includes("apa itu organ pernapasan") || input.includes("sebutkan organ pernapasan manusia") || input.includes("fungsi organ pernapasan")) {
+    responseMessage = "Organ pernapasan manusia meliputi hidung, tenggorokan, trakea, bronkus, dan paru-paru. Organ-organ ini bekerja untuk menghirup oksigen dan mengeluarkan karbon dioksida.";
+} else if (input.includes("rumus pythagoras") || input.includes("bagaimana cara menghitung pythagoras") || input.includes("contoh soal pythagoras")) {
+    responseMessage = "Rumus Pythagoras adalah a² + b² = c², di mana a dan b adalah sisi segitiga siku-siku dan c adalah sisi miringnya.";
+} else if (input.includes("apa itu revolusi bumi") || input.includes("pengertian revolusi bumi") || input.includes("akibat revolusi bumi")) {
+    responseMessage = "Revolusi bumi adalah pergerakan bumi mengelilingi matahari selama 365 ¼ hari. Akibatnya antara lain pergantian musim dan perbedaan panjang siang dan malam.";
+} else if (input.includes("pengertian teks anekdot") || input.includes("apa itu teks anekdot") || input.includes("contoh teks anekdot")) {
+    responseMessage = "Teks anekdot adalah cerita pendek yang mengandung humor dan kritik terhadap suatu kejadian atau tokoh tertentu.";
+}
+else if (input.includes("apa itu hukum archimedes") || input.includes("pengertian hukum archimedes") || input.includes("contoh hukum archimedes")) {
+    responseMessage = "Hukum Archimedes menyatakan bahwa benda yang dicelupkan ke dalam zat cair akan mendapat gaya ke atas sebesar berat zat cair yang dipindahkan.";
+} else if (input.includes("rumus luas segitiga") || input.includes("bagaimana cara menghitung luas segitiga") || input.includes("rumus matematika luas segitiga")) {
+    responseMessage = "Rumus luas segitiga adalah L = ½ × alas × tinggi.";
+} else if (input.includes("apa itu perang dunia 2") || input.includes("sejarah perang dunia kedua") || input.includes("siapa yang menang dalam perang dunia 2")) {
+    responseMessage = "Perang Dunia 2 terjadi pada tahun 1939-1945 antara Blok Sekutu (AS, Uni Soviet, Inggris) dan Blok Poros (Jerman, Jepang, Italia), dengan kemenangan di pihak Sekutu.";
+} else if (input.includes("apa itu otonomi daerah") || input.includes("pengertian otonomi daerah") || input.includes("contoh otonomi daerah")) {
+    responseMessage = "Otonomi daerah adalah hak dan kewenangan daerah untuk mengatur urusan pemerintahan sendiri sesuai dengan undang-undang.";
+}
+else if (input.includes("apa itu planet") || input.includes("pengertian planet") || input.includes("jumlah planet dalam tata surya")) {
+    responseMessage = "Planet adalah benda langit yang mengorbit bintang (Matahari). Dalam tata surya, ada 8 planet: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, dan Neptunus.";
+} else if (input.includes("rumus luas lingkaran") || input.includes("bagaimana cara menghitung luas lingkaran") || input.includes("rumus matematika untuk luas lingkaran")) {
+    responseMessage = "Rumus luas lingkaran adalah L = π × r², dengan r sebagai jari-jari lingkaran.";
+} else if (input.includes("pengertian seni rupa") || input.includes("apa itu seni rupa") || input.includes("contoh seni rupa")) {
+    responseMessage = "Seni rupa adalah cabang seni yang menghasilkan karya yang bisa dinikmati dengan indera penglihatan dan perabaan, seperti lukisan, patung, dan ukiran.";
+} else if (input.includes("apa itu teks narasi") || input.includes("pengertian teks narasi") || input.includes("contoh teks narasi")) {
+    responseMessage = "Teks narasi adalah teks yang menceritakan suatu kejadian atau peristiwa berdasarkan urutan waktu, sering digunakan dalam cerita fiksi maupun nonfiksi.";
+} else if (input.includes("what is your name") || input.includes("how do you say your name") || input.includes("who are you")) {
+    responseMessage = "My name is AI Assistant! I am here to help answer your questions anytime!";
+}
+else if (input.includes("apa itu hukum pascal") || input.includes("pengertian hukum pascal") || input.includes("contoh hukum pascal")) {
+    responseMessage = "Hukum Pascal menyatakan bahwa tekanan yang diberikan pada fluida dalam ruang tertutup akan diteruskan ke segala arah dengan sama besar.";
+} else if (input.includes("rumus kecepatan") || input.includes("bagaimana cara menghitung kecepatan") || input.includes("rumus kecepatan fisika")) {
+    responseMessage = "Rumus kecepatan adalah v = s/t, di mana v adalah kecepatan, s adalah jarak, dan t adalah waktu.";
+} else if (input.includes("apa itu teks eksposisi") || input.includes("pengertian teks eksposisi") || input.includes("contoh teks eksposisi")) {
+    responseMessage = "Teks eksposisi adalah teks yang bertujuan menjelaskan atau memberikan informasi secara jelas dan logis mengenai suatu topik.";
+} else if (input.includes("what is simple past tense") || input.includes("contoh simple past tense") || input.includes("penggunaan simple past tense")) {
+    responseMessage = "Simple past tense is used to talk about completed actions in the past. Example: 'I went to school yesterday.'";
+} else if (input.includes("pengertian gotong royong") || input.includes("apa itu gotong royong") || input.includes("manfaat gotong royong")) {
+    responseMessage = "Gotong royong adalah bentuk kerja sama dalam masyarakat untuk mencapai tujuan bersama, seperti membantu tetangga atau membersihkan lingkungan."
+}
+else if (input.includes("apa itu hukum newton") || input.includes("pengertian hukum newton") || input.includes("contoh hukum newton")) {
+    responseMessage = "Hukum Newton terdiri dari tiga hukum gerak yang menjelaskan hubungan antara gaya dan pergerakan benda. Contohnya, hukum pertama menyatakan bahwa benda diam akan tetap diam jika tidak ada gaya yang bekerja padanya.";
+} else if (input.includes("rumus volume tabung") || input.includes("bagaimana cara menghitung volume tabung") || input.includes("rumus volume silinder")) {
+    responseMessage = "Rumus volume tabung adalah V = π × r² × t, dengan r sebagai jari-jari dan t sebagai tinggi tabung.";
+} else if (input.includes("apa itu teks persuasi") || input.includes("pengertian teks persuasi") || input.includes("contoh teks persuasi")) {
+    responseMessage = "Teks persuasi adalah teks yang bertujuan untuk meyakinkan atau membujuk pembaca agar melakukan sesuatu sesuai dengan isi teks tersebut.";
+} else if (input.includes("what is present perfect tense") || input.includes("contoh present perfect tense") || input.includes("penggunaan present perfect tense")) {
+    responseMessage = "Present perfect tense is used for actions that happened at an unspecified time in the past or have relevance to the present. Example: 'I have finished my homework.'";
+} else if (input.includes("pengertian demokrasi") || input.includes("apa itu demokrasi") || input.includes("jenis-jenis demokrasi")) {
+    responseMessage = "Demokrasi adalah sistem pemerintahan di mana kekuasaan berada di tangan rakyat, baik secara langsung maupun melalui perwakilan. Contohnya adalah demokrasi langsung dan demokrasi perwakilan."
+}
+else if (input.includes("pengertian jaringan komputer") || input.includes("apa itu jaringan komputer") || input.includes("fungsi jaringan komputer")) {
+    responseMessage = "Jaringan komputer adalah sekumpulan perangkat yang saling terhubung untuk berbagi data dan sumber daya. Contohnya adalah LAN, MAN, dan WAN.";
+} else if (input.includes("perbedaan LAN MAN WAN") || input.includes("apa itu LAN MAN WAN") || input.includes("pengertian LAN MAN WAN")) {
+    responseMessage = "LAN (Local Area Network) mencakup area kecil seperti rumah atau kantor, MAN (Metropolitan Area Network) mencakup kota, dan WAN (Wide Area Network) mencakup jaringan luas seperti internet.";
+} else if (input.includes("fungsi router") || input.includes("apa itu router") || input.includes("cara kerja router")) {
+    responseMessage = "Router adalah perangkat jaringan yang mengarahkan paket data dari satu jaringan ke jaringan lainnya, memungkinkan komunikasi antar perangkat di jaringan yang berbeda.";
+} else if (input.includes("apa itu IP address") || input.includes("pengertian IP address") || input.includes("jenis IP address")) {
+    responseMessage = "IP Address adalah alamat unik yang digunakan perangkat untuk berkomunikasi dalam jaringan. Terdiri dari IPv4 dan IPv6.";
+} else if (input.includes("apa itu subnetting") || input.includes("fungsi subnetting") || input.includes("cara menghitung subnetting")) {
+    responseMessage = "Subnetting adalah teknik untuk membagi satu jaringan besar menjadi beberapa sub-jaringan kecil agar lebih efisien dan terstruktur."
+}
+else if (input.includes("apa itu topologi jaringan") || input.includes("jenis topologi jaringan") || input.includes("topologi jaringan yang umum digunakan")) {
+    responseMessage = "Topologi jaringan adalah cara perangkat terhubung dalam jaringan. Jenis-jenisnya termasuk topologi bus, ring, star, mesh, dan hybrid.";
+} else if (input.includes("perbedaan switch dan hub") || input.includes("apa itu switch dan hub") || input.includes("fungsi switch dan hub")) {
+    responseMessage = "Switch adalah perangkat yang menghubungkan perangkat dalam satu jaringan dan bekerja pada layer 2 OSI, sedangkan hub hanya meneruskan data tanpa memfilter atau memprosesnya.";
+} else if (input.includes("pengertian DHCP") || input.includes("fungsi DHCP") || input.includes("cara kerja DHCP")) {
+    responseMessage = "DHCP (Dynamic Host Configuration Protocol) adalah protokol yang digunakan untuk memberikan alamat IP secara otomatis kepada perangkat dalam jaringan.";
+} else if (input.includes("apa itu firewall") || input.includes("fungsi firewall") || input.includes("jenis firewall")) {
+    responseMessage = "Firewall adalah sistem keamanan yang mengontrol lalu lintas jaringan berdasarkan aturan yang telah ditentukan untuk melindungi perangkat dari ancaman luar.";
+} else if (input.includes("cara konfigurasi mikrotik") || input.includes("setting mikrotik dasar") || input.includes("apa itu mikrotik")) {
+    responseMessage = "MikroTik adalah sistem operasi berbasis Linux yang digunakan untuk mengelola jaringan. Konfigurasi dasarnya mencakup pengaturan IP, DHCP, NAT, dan Firewall."
+}
+else if (input.includes("apa itu server") || input.includes("fungsi server") || input.includes("jenis server")) {
+    responseMessage = "Server adalah komputer yang menyediakan layanan bagi perangkat lain dalam jaringan. Jenisnya termasuk web server, database server, file server, dan mail server.";
+} else if (input.includes("pengertian cloud computing") || input.includes("fungsi cloud computing") || input.includes("contoh cloud computing")) {
+    responseMessage = "Cloud computing adalah layanan komputasi berbasis internet, seperti penyimpanan data dan pemrosesan yang dapat diakses kapan saja. Contohnya Google Drive dan AWS.";
+} else if (input.includes("cara kerja VPN") || input.includes("apa itu VPN") || input.includes("fungsi VPN")) {
+    responseMessage = "VPN (Virtual Private Network) adalah layanan yang mengenkripsi koneksi internet untuk menjaga privasi dan keamanan data pengguna.";
+} else if (input.includes("pengertian pentest") || input.includes("apa itu penetration testing") || input.includes("fungsi penetration testing")) {
+    responseMessage = "Penetration Testing (Pentest) adalah proses menguji keamanan sistem komputer dengan mensimulasikan serangan cyber untuk menemukan celah keamanan.";
+} else if (input.includes("cara konfigurasi web server") || input.includes("apa itu web server") || input.includes("fungsi web server")) {
+    responseMessage = "Web Server adalah perangkat lunak atau perangkat keras yang melayani permintaan HTTP untuk menyajikan halaman web kepada pengguna. Contoh web server: Apache, Nginx, dan IIS."
+}
+else if (input.includes("komponen komputer") || input.includes("apa saja komponen komputer") || input.includes("fungsi komponen komputer")) {
+    responseMessage = "Komponen komputer utama meliputi motherboard, prosesor (CPU), RAM, storage (HDD/SSD), power supply, dan kartu grafis (GPU). Setiap komponen memiliki peran penting dalam kinerja sistem.";
+} else if (input.includes("perbedaan HDD dan SSD") || input.includes("apa itu SSD") || input.includes("kelebihan SSD dibanding HDD")) {
+    responseMessage = "HDD (Hard Disk Drive) menggunakan piringan magnetik untuk menyimpan data, sedangkan SSD (Solid State Drive) menggunakan chip flash yang lebih cepat, hemat daya, dan tahan guncangan.";
+} else if (input.includes("fungsi RAM pada komputer") || input.includes("pengertian RAM") || input.includes("apa itu RAM")) {
+    responseMessage = "RAM (Random Access Memory) adalah memori sementara yang menyimpan data yang sedang diproses oleh komputer, sehingga mempercepat kinerja sistem.";
+} else if (input.includes("cara merakit komputer") || input.includes("langkah-langkah merakit komputer") || input.includes("tutorial merakit PC")) {
+    responseMessage = "Merakit komputer membutuhkan beberapa langkah: pasang motherboard, prosesor, RAM, storage, power supply, lalu hubungkan semua kabel dengan benar. Setelah itu, cek sistem dan install OS.";
+} else if (input.includes("fungsi BIOS") || input.includes("apa itu BIOS") || input.includes("perbedaan BIOS dan UEFI")) {
+    responseMessage = "BIOS (Basic Input Output System) adalah firmware yang mengontrol hardware komputer saat booting. UEFI adalah versi terbaru yang lebih cepat dan memiliki antarmuka grafis lebih modern."
+}
+else if (input.includes("apa itu sistem operasi") || input.includes("pengertian sistem operasi") || input.includes("fungsi sistem operasi")) {
+    responseMessage = "Sistem Operasi (OS) adalah perangkat lunak yang mengelola hardware dan software komputer. Contoh OS populer: Windows, Linux, dan MacOS.";
+} else if (input.includes("kelebihan dan kekurangan windows") || input.includes("kelebihan dan kekurangan linux") || input.includes("perbedaan windows dan linux")) {
+    responseMessage = "Windows mudah digunakan dan mendukung banyak software, tetapi berbayar dan rentan virus. Linux gratis, open-source, lebih aman, tapi butuh pemahaman teknis lebih dalam.";
+} else if (input.includes("perintah dasar linux") || input.includes("cara menggunakan terminal linux") || input.includes("linux command line dasar")) {
+    responseMessage = "Beberapa perintah dasar Linux: `ls` untuk melihat isi folder, `cd` untuk pindah direktori, `mkdir` untuk membuat folder, `rm` untuk menghapus file, dan `sudo` untuk menjalankan perintah sebagai administrator.";
+} else if (input.includes("cara install linux") || input.includes("langkah-langkah install linux") || input.includes("tutorial install ubuntu")) {
+    responseMessage = "Untuk install Linux, buat bootable USB, atur boot priority di BIOS, pilih 'Install Ubuntu/Debian', lalu ikuti petunjuk pemasangan sampai selesai.";
+} else if (input.includes("apa itu kernel") || input.includes("fungsi kernel dalam sistem operasi") || input.includes("pengertian kernel os")) {
+    responseMessage = "Kernel adalah inti dari sistem operasi yang menghubungkan perangkat keras dengan perangkat lunak dan mengelola sumber daya sistem."
+}
+else if (input.includes("apa itu sistem operasi") || input.includes("pengertian sistem operasi") || input.includes("fungsi sistem operasi")) {
+    responseMessage = "Sistem Operasi (OS) adalah perangkat lunak yang mengelola hardware dan software komputer. Contoh OS populer: Windows, Linux, dan MacOS.";
+} else if (input.includes("kelebihan dan kekurangan windows") || input.includes("kelebihan dan kekurangan linux") || input.includes("perbedaan windows dan linux")) {
+    responseMessage = "Windows mudah digunakan dan mendukung banyak software, tetapi berbayar dan rentan virus. Linux gratis, open-source, lebih aman, tapi butuh pemahaman teknis lebih dalam.";
+} else if (input.includes("perintah dasar linux") || input.includes("cara menggunakan terminal linux") || input.includes("linux command line dasar")) {
+    responseMessage = "Beberapa perintah dasar Linux: `ls` untuk melihat isi folder, `cd` untuk pindah direktori, `mkdir` untuk membuat folder, `rm` untuk menghapus file, dan `sudo` untuk menjalankan perintah sebagai administrator.";
+} else if (input.includes("cara install linux") || input.includes("langkah-langkah install linux") || input.includes("tutorial install ubuntu")) {
+    responseMessage = "Untuk install Linux, buat bootable USB, atur boot priority di BIOS, pilih 'Install Ubuntu/Debian', lalu ikuti petunjuk pemasangan sampai selesai.";
+} else if (input.includes("apa itu kernel") || input.includes("fungsi kernel dalam sistem operasi") || input.includes("pengertian kernel os")) {
+    responseMessage = "Kernel adalah inti dari sistem operasi yang menghubungkan perangkat keras dengan perangkat lunak dan mengelola sumber daya sistem."
+}
+else if (input.includes("apa itu enkripsi") || input.includes("pengertian enkripsi") || input.includes("fungsi enkripsi dalam keamanan jaringan")) {
+    responseMessage = "Enkripsi adalah proses mengubah data menjadi kode rahasia agar hanya pihak tertentu yang dapat membacanya. Contohnya enkripsi AES dan RSA.";
+} else if (input.includes("apa itu brute force attack") || input.includes("cara kerja brute force attack") || input.includes("bagaimana mencegah brute force attack")) {
+    responseMessage = "Brute force attack adalah metode peretasan dengan mencoba banyak kombinasi password secara berulang. Pencegahannya dengan menggunakan password yang kuat dan autentikasi dua faktor.";
+} else if (input.includes("pengertian phishing") || input.includes("cara kerja phishing") || input.includes("bagaimana mencegah phishing")) {
+    responseMessage = "Phishing adalah teknik penipuan untuk mencuri data pengguna dengan menyamar sebagai pihak terpercaya, biasanya melalui email atau situs palsu. Pencegahannya dengan tidak mengklik tautan mencurigakan.";
+} else if (input.includes("apa itu DDoS attack") || input.includes("pengertian serangan DDoS") || input.includes("cara kerja DDoS attack")) {
+    responseMessage = "DDoS (Distributed Denial of Service) adalah serangan yang membanjiri server dengan lalu lintas data berlebihan sehingga layanan menjadi lambat atau tidak bisa diakses.";
+} else if (input.includes("fungsi antivirus") || input.includes("cara kerja antivirus") || input.includes("bagaimana antivirus melindungi komputer")) {
+    responseMessage = "Antivirus adalah perangkat lunak yang mendeteksi, mencegah, dan menghapus malware dari komputer. Contohnya: Windows Defender, Avast, dan Kaspersky."
+}
+else if (input.includes("pengertian pemrograman") || input.includes("apa itu pemrograman") || input.includes("fungsi pemrograman dalam komputer")) {
+    responseMessage = "Pemrograman adalah proses menulis kode untuk memberi instruksi kepada komputer agar menjalankan tugas tertentu. Contoh bahasa pemrograman: Python, JavaScript, dan C++.";
+} else if (input.includes("bahasa pemrograman yang mudah dipelajari") || input.includes("pemrograman untuk pemula") || input.includes("belajar coding untuk pemula")) {
+    responseMessage = "Beberapa bahasa pemrograman yang cocok untuk pemula adalah Python karena sintaksnya sederhana, JavaScript untuk web development, dan Scratch untuk belajar dasar logika coding.";
+} else if (input.includes("apa itu HTML") || input.includes("fungsi HTML dalam pemrograman web") || input.includes("cara membuat halaman web dengan HTML")) {
+    responseMessage = "HTML (HyperText Markup Language) adalah bahasa dasar untuk membuat struktur halaman web, digunakan bersama CSS untuk desain dan JavaScript untuk interaktivitas.";
+} else if (input.includes("pengertian database") || input.includes("fungsi database dalam pemrograman") || input.includes("apa itu SQL")) {
+    responseMessage = "Database adalah sistem penyimpanan data yang terstruktur. SQL (Structured Query Language) adalah bahasa yang digunakan untuk mengakses dan mengelola database.";
+} else if (input.includes("pengertian API") || input.includes("fungsi API dalam pemrograman") || input.includes("apa itu REST API")) {
+    responseMessage = "API (Application Programming Interface) adalah antarmuka yang memungkinkan komunikasi antara aplikasi atau sistem yang berbeda, misalnya REST API yang digunakan dalam pengembangan web dan mobile."
+}
+else if (input.includes("pengertian jaringan komputer") || input.includes("apa itu jaringan komputer") || input.includes("fungsi jaringan komputer")) {
+    responseMessage = "Jaringan komputer adalah sistem yang menghubungkan dua atau lebih perangkat untuk berbagi data dan sumber daya. Contohnya: LAN, MAN, dan WAN.";
+} else if (input.includes("jenis-jenis jaringan komputer") || input.includes("contoh jaringan komputer") || input.includes("perbedaan LAN, MAN, dan WAN")) {
+    responseMessage = "Jenis jaringan komputer meliputi: LAN (jaringan lokal), MAN (jaringan dalam kota), dan WAN (jaringan luas seperti internet).";
+} else if (input.includes("apa itu subnetting") || input.includes("pengertian subnetting") || input.includes("fungsi subnetting dalam jaringan")) {
+    responseMessage = "Subnetting adalah teknik membagi jaringan besar menjadi jaringan kecil agar lebih efisien. Contohnya: IP Address 192.168.1.0/24 dibagi menjadi beberapa subnet.";
+} else if (input.includes("pengertian router") || input.includes("fungsi router dalam jaringan") || input.includes("perbedaan router dan switch")) {
+    responseMessage = "Router adalah perangkat yang menghubungkan jaringan yang berbeda dan mengatur lalu lintas data, sedangkan switch menghubungkan perangkat dalam satu jaringan yang sama.";
+} else if (input.includes("perbedaan IPv4 dan IPv6") || input.includes("kelebihan IPv6") || input.includes("format alamat IPv6")) {
+    responseMessage = "IPv4 menggunakan alamat 32-bit (contoh: 192.168.1.1), sedangkan IPv6 menggunakan alamat 128-bit (contoh: 2001:db8::ff00:42:8329), yang lebih aman dan mendukung lebih banyak perangkat."
+}
+else if (input.includes("apa itu cloud computing") || input.includes("pengertian cloud computing") || input.includes("fungsi cloud computing")) {
+    responseMessage = "Cloud computing adalah teknologi yang memungkinkan penyimpanan dan pemrosesan data melalui internet tanpa harus bergantung pada perangkat lokal.";
+} else if (input.includes("jenis-jenis cloud computing") || input.includes("perbedaan IaaS, PaaS, SaaS") || input.includes("contoh layanan cloud computing")) {
+    responseMessage = "Cloud computing terbagi menjadi IaaS (Infrastructure as a Service, seperti AWS EC2), PaaS (Platform as a Service, seperti Google App Engine), dan SaaS (Software as a Service, seperti Gmail dan Google Drive).";
+} else if (input.includes("perbedaan cloud public dan private") || input.includes("kelebihan dan kekurangan cloud private") || input.includes("contoh layanan cloud private")) {
+    responseMessage = "Cloud Public adalah layanan cloud yang digunakan oleh banyak orang seperti Google Cloud dan AWS, sementara Cloud Private dibuat khusus untuk satu organisasi demi keamanan yang lebih baik.";
+} else if (input.includes("apa itu virtualisasi") || input.includes("fungsi virtualisasi dalam jaringan") || input.includes("contoh software virtualisasi")) {
+    responseMessage = "Virtualisasi adalah teknologi yang memungkinkan menjalankan beberapa sistem operasi dalam satu hardware fisik menggunakan software seperti VMware, VirtualBox, dan Hyper-V.";
+} else if (input.includes("perbedaan docker dan virtual machine") || input.includes("apa itu docker") || input.includes("kelebihan docker dibanding VM")) {
+    responseMessage = "Docker adalah platform yang menggunakan container untuk menjalankan aplikasi secara ringan dan efisien, sementara Virtual Machine (VM) menjalankan OS lengkap dalam lingkungan virtual."
+}
+else if (input.includes("apa itu IoT") || input.includes("pengertian Internet of Things") || input.includes("fungsi IoT dalam kehidupan sehari-hari")) {
+    responseMessage = "IoT (Internet of Things) adalah konsep menghubungkan perangkat elektronik ke internet agar bisa dikontrol dan berkomunikasi. Contohnya: Smart Home, Smart City, dan Wearable Devices.";
+} else if (input.includes("contoh perangkat IoT") || input.includes("contoh penggunaan IoT") || input.includes("aplikasi IoT dalam industri")) {
+    responseMessage = "Contoh perangkat IoT: lampu pintar, termostat pintar, kamera CCTV online, sistem pemantauan kesehatan, dan sensor industri otomatis.";
+} else if (input.includes("protokol komunikasi IoT") || input.includes("bagaimana IoT berkomunikasi") || input.includes("jenis jaringan untuk IoT")) {
+    responseMessage = "IoT menggunakan berbagai protokol komunikasi seperti MQTT, CoAP, dan HTTP untuk menghubungkan perangkat dan mengirimkan data ke cloud.";
+} else if (input.includes("tantangan keamanan dalam IoT") || input.includes("risiko keamanan IoT") || input.includes("bagaimana mengamankan IoT")) {
+    responseMessage = "Tantangan keamanan IoT meliputi serangan DDoS, kebocoran data, dan perangkat rentan terhadap peretasan. Pengamanan dapat dilakukan dengan enkripsi data, firewall, dan autentikasi perangkat.";
+}
+else if (input.includes("apa itu server") || input.includes("pengertian server") || input.includes("fungsi server dalam jaringan")) {
+    responseMessage = "Server adalah komputer yang menyediakan layanan untuk perangkat lain dalam jaringan, seperti web server, database server, dan file server.";
+} else if (input.includes("cara kerja web server") || input.includes("fungsi web server") || input.includes("contoh web server")) {
+    responseMessage = "Web server adalah sistem yang mengirimkan halaman web ke pengguna melalui protokol HTTP/HTTPS. Contoh: Apache, Nginx, dan Microsoft IIS.";
+} else if (input.includes("pengertian DNS") || input.includes("fungsi DNS dalam jaringan") || input.includes("bagaimana cara kerja DNS")) {
+    responseMessage = "DNS (Domain Name System) adalah sistem yang mengubah nama domain (seperti google.com) menjadi alamat IP agar dapat diakses melalui internet.";
+} else if (input.includes("pengertian firewall") || input.includes("fungsi firewall dalam jaringan") || input.includes("cara kerja firewall")) {
+    responseMessage = "Firewall adalah sistem keamanan yang mengontrol lalu lintas jaringan berdasarkan aturan tertentu untuk melindungi sistem dari ancaman luar.";
+} else if (input.includes("pengertian VPN") || input.includes("fungsi VPN dalam jaringan") || input.includes("bagaimana cara kerja VPN")) {
+    responseMessage = "VPN (Virtual Private Network) adalah teknologi yang mengenkripsi koneksi internet untuk menjaga privasi dan keamanan data pengguna."
+}
+else if (input.includes("apa itu peluang") || input.includes("pengertian peluang") || input.includes("definisi peluang")) {
+    responseMessage = "Peluang adalah kemungkinan terjadinya suatu peristiwa dalam suatu percobaan. Nilai peluang berkisar antara 0 hingga 1.";
+} else if (input.includes("rumus peluang") || input.includes("bagaimana cara menghitung peluang") || input.includes("cara mencari peluang")) {
+    responseMessage = "Rumus peluang adalah P(A) = jumlah kejadian yang diinginkan / jumlah total kejadian yang mungkin.";
+} else if (input.includes("peluang pasti dan peluang mustahil") || input.includes("contoh peluang pasti dan mustahil") || input.includes("pengertian peluang pasti")) {
+    responseMessage = "Peluang pasti adalah kejadian yang selalu terjadi (P = 1), contohnya matahari terbit dari timur. Peluang mustahil adalah kejadian yang tidak mungkin terjadi (P = 0), contohnya melempar dadu dan mendapatkan angka 7.";
+}
+else if (input.includes("contoh soal peluang") || input.includes("cara menghitung peluang dadu") || input.includes("peluang muncul angka pada dadu")) {
+    responseMessage = "Contoh soal: Jika sebuah dadu dilempar, berapa peluang muncul angka 3? \n\nPenyelesaian: Total kemungkinan = 6 (karena dadu memiliki 6 sisi). Peluang muncul angka 3 adalah 1/6 = 0.1667 atau 16.67%.";
+} else if (input.includes("peluang kartu remi") || input.includes("peluang menarik kartu as") || input.includes("peluang mendapatkan kartu merah")) {
+    responseMessage = "Contoh soal: Jika kita menarik satu kartu dari setumpuk kartu remi (52 kartu), berapa peluang mendapatkan kartu As? \n\nPenyelesaian: Dalam 52 kartu, terdapat 4 kartu As. Jadi, peluangnya adalah 4/52 = 1/13 = 7.69%.";
+} else if (input.includes("peluang koin") || input.includes("peluang muncul angka pada koin") || input.includes("peluang koin muncul gambar")) {
+    responseMessage = "Contoh soal: Jika sebuah koin dilempar sekali, berapa peluang muncul sisi angka? \n\nPenyelesaian: Koin memiliki 2 sisi (angka dan gambar), jadi peluang muncul angka adalah 1/2 atau 50%.";
+} else if (input.includes("peluang bola warna dalam kotak") || input.includes("peluang memilih bola merah") || input.includes("soal peluang bola warna")) {
+    responseMessage = "Contoh soal: Dalam sebuah kotak terdapat 5 bola merah, 3 bola biru, dan 2 bola hijau. Jika diambil 1 bola secara acak, berapa peluang mengambil bola merah? \n\nPenyelesaian: Total bola = 5 + 3 + 2 = 10. Peluang bola merah = 5/10 = 0.5 atau 50%.";
+} else if (input.includes("peluang gabungan") || input.includes("peluang kejadian A dan B") || input.includes("cara menghitung peluang gabungan")) {
+    responseMessage = "Rumus peluang gabungan adalah P(A ∪ B) = P(A) + P(B) - P(A ∩ B). Contoh: Dalam dadu 6 sisi, berapa peluang muncul angka genap atau angka prima? \n\nPenyelesaian: Angka genap {2,4,6}, peluangnya 3/6. Angka prima {2,3,5}, peluangnya 3/6. Karena angka 2 masuk ke dua kategori, maka P(A ∩ B) = 1/6. Jadi, P(A ∪ B) = (3/6) + (3/6) - (1/6) = 5/6 atau 83.33%.";
+}
+else if (input.includes("peluang bersyarat") || input.includes("peluang kejadian bersyarat") || input.includes("pengertian peluang bersyarat")) {
+    responseMessage = "Peluang bersyarat adalah peluang suatu kejadian terjadi berdasarkan informasi tambahan tentang kejadian lain. Rumusnya: P(A|B) = P(A ∩ B) / P(B).";
+} else if (input.includes("contoh soal peluang bersyarat") || input.includes("cara menghitung peluang bersyarat") || input.includes("peluang A terjadi setelah B terjadi")) {
+    responseMessage = "Contoh soal: Dalam kotak ada 3 bola merah dan 7 bola biru. Jika satu bola diambil tanpa dikembalikan, lalu diambil lagi satu bola, berapa peluang mendapatkan bola merah kedua jika bola pertama merah? \n\nPenyelesaian: Total awal bola = 10. Peluang bola pertama merah = 3/10. Jika bola pertama merah, tersisa 2 merah dan 7 biru (total 9). Peluang bola kedua merah = 2/9. Jadi, peluang keseluruhan = (3/10) × (2/9) = 6/90 = 1/15 atau 6.67%.";
+}
+else if (input.includes("pengertian kalimat") || input.includes("apa itu kalimat") || input.includes("definisi kalimat")) {
+    responseMessage = "Kalimat adalah satuan bahasa yang mengungkapkan pikiran secara utuh dan memiliki susunan minimal berupa subjek dan predikat.";
+} else if (input.includes("contoh kalimat efektif") || input.includes("pengertian kalimat efektif") || input.includes("ciri-ciri kalimat efektif")) {
+    responseMessage = "Kalimat efektif adalah kalimat yang jelas, tidak bertele-tele, sesuai kaidah tata bahasa, dan mudah dipahami. Contoh: 'Dia sedang belajar di perpustakaan.'";
+} else if (input.includes("apa itu paragraf") || input.includes("pengertian paragraf") || input.includes("ciri-ciri paragraf")) {
+    responseMessage = "Paragraf adalah kumpulan kalimat yang saling berhubungan dan memiliki satu ide pokok. Ciri-ciri paragraf: memiliki kalimat utama, kalimat pendukung, dan kesatuan ide.";
+} else if (input.includes("apa itu antonim") || input.includes("contoh antonim") || input.includes("pengertian antonim")) {
+    responseMessage = "Antonim adalah kata yang memiliki makna berlawanan. Contoh: besar ↔ kecil, panjang ↔ pendek, cepat ↔ lambat.";
+} else if (input.includes("apa itu sinonim") || input.includes("contoh sinonim") || input.includes("pengertian sinonim")) {
+    responseMessage = "Sinonim adalah kata yang memiliki makna sama atau mirip. Contoh: indah = cantik, pintar = cerdas, marah = murka.";
+} else if (input.includes("apa itu homonim") || input.includes("contoh homonim") || input.includes("pengertian homonim")) {
+    responseMessage = "Homonim adalah kata yang memiliki ejaan dan pengucapan sama tetapi maknanya berbeda. Contoh: 'Bisa ular' (racun) dan 'Saya bisa' (mampu).";
+} else if (input.includes("apa itu homofon") || input.includes("contoh homofon") || input.includes("pengertian homofon")) {
+    responseMessage = "Homofon adalah kata yang cara pengucapannya sama tetapi maknanya berbeda. Contoh: 'bang' (kakak laki-laki) dan 'bank' (tempat menyimpan uang).";
+} else if (input.includes("apa itu homograf") || input.includes("contoh homograf") || input.includes("pengertian homograf")) {
+    responseMessage = "Homograf adalah kata yang cara penulisannya sama tetapi cara membacanya berbeda. Contoh: 'terSerang' (diserang) dan 'TersErang' (nama kota Serang).";
+}
+else if (input.includes("apa itu teks narasi") || input.includes("pengertian teks narasi") || input.includes("contoh teks narasi")) {
+    responseMessage = "Teks narasi adalah teks yang menceritakan suatu peristiwa atau kejadian secara runtut. Contoh: cerita pendek, novel, dan biografi.";
+} else if (input.includes("apa itu teks deskripsi") || input.includes("pengertian teks deskripsi") || input.includes("contoh teks deskripsi")) {
+    responseMessage = "Teks deskripsi adalah teks yang menggambarkan suatu objek, tempat, atau peristiwa secara detail sehingga pembaca seolah-olah dapat melihat atau merasakannya. Contoh: 'Pantai itu memiliki pasir putih yang lembut dan ombak yang tenang.'";
+} else if (input.includes("apa itu teks eksposisi") || input.includes("pengertian teks eksposisi") || input.includes("contoh teks eksposisi")) {
+    responseMessage = "Teks eksposisi adalah teks yang bertujuan untuk menjelaskan atau memberikan informasi tentang suatu topik secara objektif. Contoh: artikel ilmiah, laporan penelitian.";
+} else if (input.includes("apa itu teks argumentasi") || input.includes("pengertian teks argumentasi") || input.includes("contoh teks argumentasi")) {
+    responseMessage = "Teks argumentasi adalah teks yang berisi pendapat atau argumen yang diperkuat dengan bukti atau alasan. Contoh: esai opini dalam surat kabar.";
+} else if (input.includes("apa itu teks persuasi") || input.includes("pengertian teks persuasi") || input.includes("contoh teks persuasi")) {
+    responseMessage = "Teks persuasi adalah teks yang bertujuan untuk meyakinkan pembaca agar melakukan sesuatu. Contoh: iklan, kampanye sosial.";
+}
+else if (input.includes("apa itu puisi") || input.includes("pengertian puisi") || input.includes("ciri-ciri puisi")) {
+    responseMessage = "Puisi adalah bentuk karya sastra yang menggunakan bahasa yang indah dan memiliki irama serta rima. Ciri-cirinya antara lain memiliki makna mendalam, menggunakan majas, dan memiliki struktur bait.";
+} else if (input.includes("contoh puisi pendek") || input.includes("puisi tentang alam") || input.includes("puisi tentang ibu")) {
+    responseMessage = "Contoh puisi pendek:\n\nIbu, kau bagai mentari,\nMenerangi langkahku setiap hari,\nDoa dan kasihmu tak pernah henti,\nMenyayangi sepenuh hati.";
+} else if (input.includes("apa itu pantun") || input.includes("contoh pantun") || input.includes("ciri-ciri pantun")) {
+    responseMessage = "Pantun adalah bentuk puisi lama yang terdiri dari empat baris dengan pola rima a-b-a-b. Contoh:\n\nJalan-jalan ke kota lama,\nJangan lupa beli durian,\nJadilah anak yang berguna,\nAgar hidup penuh kebaikan.";
+}
+else if (input.includes("apa itu imbuhan") || input.includes("pengertian imbuhan") || input.includes("contoh imbuhan")) {
+    responseMessage = "Imbuhan adalah tambahan pada kata dasar yang mengubah makna atau bentuk katanya. Contoh imbuhan: me-, di-, -an, -kan, -i.";
+}else if (input.includes("jenis-jenis imbuhan") || input.includes("contoh prefiks") || input.includes("contoh sufiks")) {
+    responseMessage = "Jenis-jenis imbuhan:\n- **Prefiks (awalan):** me-, ber-, di- (Contoh: membaca, berjalan, ditulis)\n- **Sufiks (akhiran):** -an, -kan, -i (Contoh: tulisan, berikan, warnai)\n- **Konfiks (gabungan awalan & akhiran):** ke-an, me-kan (Contoh: kebahagiaan, mempermudah)\n- **Infiks (sisipan):** -el-, -em-, -er- (Contoh: gemetar, gelembung).";
+}
+else if (input.includes("apa itu noun") || input.includes("pengertian noun") || input.includes("contoh noun")) {
+    responseMessage = "Noun (kata benda) adalah kata yang digunakan untuk menamai orang, tempat, benda, atau ide. Contoh: 'book' (buku), 'teacher' (guru), 'happiness' (kebahagiaan).";
+}else if (input.includes("apa itu asmaul husna") || input.includes("pengertian asmaul husna") || input.includes("asmaul husna adalah")) {
+    responseMessage = "Asmaul Husna adalah 99 nama indah Allah yang mencerminkan sifat-sifat-Nya yang sempurna, seperti Ar-Rahman (Maha Pengasih), Ar-Rahim (Maha Penyayang), dan Al-Malik (Maha Merajai).";
+} 
+else if (input.includes("berapa jumlah asmaul husna") || input.includes("asmaul husna ada berapa")) {
+    responseMessage = "Asmaul Husna terdiri dari 99 nama yang mencerminkan sifat-sifat Allah yang mulia.";
+} 
+else if (input.includes("sebutkan beberapa asmaul husna") || input.includes("contoh asmaul husna")) {
+    responseMessage = "Beberapa Asmaul Husna antara lain:\n1. Ar-Rahman (Maha Pengasih)\n2. Ar-Rahim (Maha Penyayang)\n3. Al-Malik (Maha Merajai)\n4. Al-Quddus (Maha Suci)\n5. As-Salam (Maha Pemberi Keselamatan).";
+} 
+else if (input.includes("apa manfaat menghafal asmaul husna") || input.includes("keutamaan asmaul husna")) {
+    responseMessage = "Menghafal dan memahami Asmaul Husna memiliki banyak manfaat, seperti mendekatkan diri kepada Allah, menenangkan hati, meningkatkan keimanan, serta menjadi doa yang mustajab.";
+} 
+else if (input.includes("bagaimana cara menghafal asmaul husna") || input.includes("tips menghafal asmaul husna")) {
+    responseMessage = "Beberapa cara menghafal Asmaul Husna:\n1. Menghafal sedikit demi sedikit setiap hari.\n2. Mendengarkan lantunan Asmaul Husna secara berulang.\n3. Memahami makna dari setiap nama.\n4. Menggunakan Asmaul Husna dalam doa dan dzikir sehari-hari.";
+} 
+
+else {
     responseMessage =
       "Maaf, saya tidak mengerti pertanyaan itu. Bisa ulangi lagi?";
   }
